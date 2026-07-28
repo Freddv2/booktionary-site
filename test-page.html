@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Booktionary — Test Page for App Review</title>
+<style>
+  body { background: #fff; color: #000;
+         font-family: Georgia, "Times New Roman", serif; margin: 0; padding: 1.5em; }
+  .how { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         font-size: 12pt; line-height: 1.5; color: #333; max-width: 40rem;
+         border-left: 3px solid #2c9c3f; padding-left: 1rem; margin-bottom: 2rem; }
+  .how strong { color: #000; }
+  p.sample { font-size: 44pt; line-height: 1.55; margin: 0.9em 0; text-align: center; }
+  @media print { .how { display: none; } p.sample { page-break-inside: avoid; } }
+</style>
+</head>
+<body>
+
+<div class="how">
+  <p><strong>How to test Booktionary.</strong> The app defines words in printed
+  books by camera. It needs real text in front of it, so please point the phone
+  at this page, displayed on any screen at full size, or print it.</p>
+  <ol>
+    <li>Open Booktionary and allow camera access.</li>
+    <li>Hold the phone roughly <strong>15&nbsp;cm (6&nbsp;inches)</strong> from one of
+        the large lines below. A "Closer" hint means move nearer.</li>
+    <li>Put the crosshair on a word. It turns <strong>green</strong> and a green
+        outline appears around the word.</li>
+    <li>Hold steady for about <strong>one second</strong>. The definition appears.</li>
+    <li>Tap outside the panel to return to the camera.</li>
+  </ol>
+  <p>Try <strong>mangeaient</strong> (French, resolves to the verb "manger") or
+  <strong>running</strong> (English, resolves to "run"). Pointing the camera at a
+  desk or a blank surface will correctly show a red crosshair, because there is
+  no word to read.</p>
+</div>
+
+<p class="sample">Les enfants mangeaient du pain.</p>
+<p class="sample">The mice were running here.</p>
+<p class="sample">Une chance inouïe les attendait.</p>
+<p class="sample">A luminous evening settled slowly.</p>
+<p class="sample">sous les yeux de leur mère</p>
+
+</body>
+</html>
