@@ -65,7 +65,8 @@ def check_alternates(html):
     return []
 
 def check_pairs(root):
-    """Every hreflang alternate must point at a file that exists and points back."""
+    """Every non-x-default, non-self hreflang alternate must point at a file
+    that exists, and that file's own alternates must point back at this page."""
     fails = []
     pages = {}
     for dirpath, dirnames, filenames in os.walk(root):
@@ -73,13 +74,28 @@ def check_pairs(root):
         if "index.html" in filenames:
             rel = os.path.relpath(os.path.join(dirpath, "index.html"), root)
             pages[rel] = open(os.path.join(dirpath, "index.html"), encoding="utf-8").read()
+
+    def url_path(rel):
+        d = os.path.dirname(rel)
+        return d + "/" if d else ""
+
+    def alt_paths(html):
+        return {m.group(2) for m in re.finditer(
+            r'<link rel="alternate" hreflang="(\w+)" href="https://booktionary\.io/([^"]*)"', html)
+            if m.group(1) != "x-default"}
+
     for rel, html in pages.items():
+        own_path = url_path(rel)
         for m in re.finditer(r'<link rel="alternate" hreflang="(\w+)" href="https://booktionary\.io/([^"]*)"', html):
             lang, path = m.group(1), m.group(2)
             if lang == "x-default": continue
+            if path == own_path: continue
             target = os.path.join(path, "index.html") if path else "index.html"
             if target not in pages:
                 fails.append(f"{rel}: hreflang {lang} points at missing {target}")
+                continue
+            if own_path not in alt_paths(pages[target]):
+                fails.append(f"{rel}: hreflang {lang} -> {target} does not point back")
     return fails
 
 def main():
