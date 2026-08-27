@@ -40,6 +40,21 @@ def check_file(path):
     for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>', html, re.S):
         try: json.loads(m.group(1))
         except json.JSONDecodeError as e: fails.append(f"invalid JSON-LD: {e}")
+    root = os.path.dirname(os.path.abspath(__file__))
+    parent = os.path.dirname(os.path.abspath(path))
+    is_home = parent in (root, os.path.join(root, "fr"))
+    if not is_home:
+        fails += check_question_page(html)
+    return fails
+
+def check_question_page(html):
+    fails = []
+    text = text_of(html)
+    words = len(text.split())
+    if words < 90:
+        fails.append(f"answer too thin ({words} words; needs 90+ to stand alone)")
+    if not re.search(r"<nav", html):
+        fails.append("no related-questions nav")
     return fails
 
 def main():
