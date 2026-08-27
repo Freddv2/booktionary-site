@@ -90,12 +90,21 @@ def render_page(page, pages):
 </html>
 """
 
+def write_sitemap():
+    urls = "\n".join(f"  <url><loc>{url_for(p)}</loc></url>" for p in PAGES)
+    xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+           f"{urls}\n</urlset>\n")
+    open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write(xml)
+    print("wrote sitemap.xml")
+
 def main():
     for page in PAGES:
         path = out_path(page)
         os.makedirs(os.path.dirname(path), exist_ok=True)
         open(path, "w", encoding="utf-8").write(render_page(page, PAGES))
         print("wrote", os.path.relpath(path, ROOT))
+    write_sitemap()
 
 if __name__ == "__main__":
     main()

@@ -6,6 +6,7 @@ BANNED_PHRASES = ["as mentioned above", "see below", "as we said",
                   "as discussed", "see above", "comme indiqué plus haut",
                   "voir ci-dessus", "comme dit plus haut"]
 APPSTORE = "https://apps.apple.com/app/id6796368335"
+REQUIRED_BOTS = ["GPTBot", "ClaudeBot", "PerplexityBot", "Google-Extended", "CCBot"]
 
 def text_of(html):
     body = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", html, flags=re.S | re.I)
@@ -98,6 +99,32 @@ def check_pairs(root):
                 fails.append(f"{rel}: hreflang {lang} -> {target} does not point back")
     return fails
 
+def check_sitemap_and_robots(root):
+    fails = []
+    sm_path = os.path.join(root, "sitemap.xml")
+    if not os.path.exists(sm_path):
+        return ["sitemap.xml missing"]
+    sm = open(sm_path, encoding="utf-8").read()
+    listed = set(re.findall(r"<loc>(.*?)</loc>", sm))
+    for dirpath, dirnames, filenames in os.walk(root):
+        dirnames[:] = [d for d in dirnames if not d.startswith(".")]
+        if "index.html" not in filenames: continue
+        rel = os.path.relpath(dirpath, root).replace(os.sep, "/")
+        url = "https://booktionary.io/" if rel == "." else f"https://booktionary.io/{rel}/"
+        if url not in listed:
+            fails.append(f"sitemap missing {url}")
+    rb_path = os.path.join(root, "robots.txt")
+    if not os.path.exists(rb_path):
+        return fails + ["robots.txt missing"]
+    rb = open(rb_path, encoding="utf-8").read()
+    for bot in REQUIRED_BOTS:
+        block = re.search(rf"User-agent:\s*{re.escape(bot)}\s*\nAllow:\s*/", rb, re.I)
+        if not block:
+            fails.append(f"robots.txt does not explicitly allow {bot}")
+    if re.search(r"Disallow:\s*/\s*$", rb, re.M):
+        fails.append("robots.txt disallows the whole site")
+    return fails
+
 def main():
     root = os.path.dirname(os.path.abspath(__file__))
     problems, checked = {}, 0
@@ -111,14 +138,18 @@ def main():
             f = check_file(p)
             if f: problems[os.path.relpath(p, root)] = f
     pair_fails = check_pairs(root)
+    sitemap_fails = check_sitemap_and_robots(root)
     for path, fails in sorted(problems.items()):
         print(f"FAIL {path}")
         for f in fails: print(f"       {f}")
     if pair_fails:
         print("FAIL hreflang reciprocity")
         for f in pair_fails: print(f"       {f}")
+    if sitemap_fails:
+        print("FAIL sitemap and robots")
+        for f in sitemap_fails: print(f"       {f}")
     print(f"\n{checked} page(s) checked, {len(problems)} failing")
-    return 1 if (problems or pair_fails) else 0
+    return 1 if (problems or pair_fails or sitemap_fails) else 0
 
 if __name__ == "__main__":
     sys.exit(main())
