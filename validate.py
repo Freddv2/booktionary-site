@@ -26,8 +26,9 @@ def check_file(path):
         fails.append("javascript present")
     if re.search(r'(src|href)="https?://(?!apps\.apple\.com|booktionary\.io)', html):
         fails.append("external asset or non-App-Store absolute link")
-    if html.count(APPSTORE) != 1:
-        fails.append(f"expected exactly 1 App Store link, found {html.count(APPSTORE)}")
+    appstore_links = re.findall(r'<a\s[^>]*href="' + re.escape(APPSTORE) + r'"[^>]*>', html)
+    if len(appstore_links) != 1:
+        fails.append(f"expected exactly 1 App Store link, found {len(appstore_links)}")
     if "apps.apple.com/ca/" in html:
         fails.append("storefront-pinned /ca/ App Store URL")
     body_text = text_of(html).lower()

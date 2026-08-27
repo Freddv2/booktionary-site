@@ -35,8 +35,10 @@ def jsonld(page, pages):
         data = {"@context": "https://schema.org", "@type": "SoftwareApplication",
                 "name": "Booktionary", "applicationCategory": "ReferenceApplication",
                 "operatingSystem": "iOS 17", "url": url_for(page),
+                "installUrl": SITE["appstore_url"],
                 "inLanguage": ["en", "fr"],
-                "offers": {"@type": "Offer", "price": "1.99", "priceCurrency": "USD"}}
+                "offers": {"@type": "Offer", "price": "1.99", "priceCurrency": "USD",
+                           "url": SITE["appstore_url"]}}
     return json.dumps(data, ensure_ascii=False, indent=1)
 
 def render_page(page, pages):
