@@ -15,6 +15,18 @@ HOME_EN = {
     ],
     "siblings": ["look-up-word-paper-book", "kindle-dictionary-for-paper-books",
                  "camera-dictionary-offline"],
+    "extra_html": """<h2>Tips</h2>
+<ul>
+  <li>Good light helps more than anything else.</li>
+  <li>If nothing is recognised, move the phone nearer the page. About 15 cm works well.</li>
+  <li>A slight tilt is fine. The app reads text at a natural reading angle.</li>
+  <li>The ring never moves and never changes colour. It marks where the app is looking; the highlight sweeping across the word is what tells you it has been read.</li>
+  <li>Tap outside the definition, swipe it away, or use the close button to return to the camera.</li>
+</ul>
+<h2>Support</h2>
+<p>Questions, bugs, or a word it read wrong:
+<a href="mailto:fredddv@hotmail.com">fredddv@hotmail.com</a></p>
+""",
 }
 
 QUESTIONS_EN = [
@@ -136,9 +148,21 @@ HOME_FR = dict(lang="fr", slug="", pair="",
    "Booktionary est une application iPhone qui transforme l'appareil photo en dictionnaire pour les livres papier. Vous tenez le téléphone au-dessus de la page et posez un petit cercle sur un mot ; un surlignage le parcourt et la définition apparaît. L'appareil photo reste ouvert : chercher cinq mots de suite ne coûte pas plus que d'en chercher un.",
    "Les deux dictionnaires sont sur l'appareil — 156 Mo d'anglais et 189 Mo de français, soit 94 % du téléchargement. L'application fonctionne en mode avion, dans le métro et partout sans réseau. Aucun compte, aucun historique, aucune synchronisation, aucune statistique ; l'étiquette de confidentialité de l'App Store indique qu'aucune donnée n'est collectée.",
    "Ce qui compte sur un vrai texte, c'est que le mot imprimé est rarement l'entrée du dictionnaire. Booktionary ramène les formes fléchies à leur lemme avant de chercher : mangeaient trouve manger, yeux trouve œil. La langue est détectée automatiquement et l'anglais et le français fonctionnent dans la même session.",
-   "iPhone, iOS 17 et versions ultérieures. 1,99 $ une fois — sans abonnement ni achat intégré.",
+   "iPhone, iOS 17 et versions ultérieures. 1,99 $ US une fois — sans abonnement ni achat intégré.",
   ],
-  siblings=["chercher-mot-livre-papier", "dictionnaire-kindle-livre-papier", "dictionnaire-photo-hors-ligne"])
+  siblings=["chercher-mot-livre-papier", "dictionnaire-kindle-livre-papier", "dictionnaire-photo-hors-ligne"],
+  extra_html="""<h2>Conseils</h2>
+<ul>
+  <li>Un bon éclairage aide plus que tout le reste.</li>
+  <li>Si rien n'est reconnu, rapprochez le téléphone de la page. Une quinzaine de centimètres convient bien.</li>
+  <li>Une légère inclinaison ne pose pas de problème. L'application lit le texte à l'angle de lecture naturel.</li>
+  <li>Le cercle ne bouge jamais et ne change jamais de couleur. Il indique où l'application regarde ; c'est le surlignage qui parcourt le mot qui vous dit qu'il a été lu.</li>
+  <li>Touchez à l'extérieur de la définition, faites-la glisser, ou utilisez le bouton de fermeture pour revenir à l'appareil photo.</li>
+</ul>
+<h2>Assistance</h2>
+<p>Questions, problèmes, ou un mot mal lu :
+<a href="mailto:fredddv@hotmail.com">fredddv@hotmail.com</a></p>
+""")
 
 QUESTIONS_FR = [
  dict(lang="fr", slug="chercher-mot-livre-papier", pair="look-up-word-paper-book",
@@ -159,7 +183,7 @@ QUESTIONS_FR = [
    "Appuyer sur un mot pour obtenir sa définition est la fonction qui manque le plus quand on revient au papier, et rien ne la reproduit exactement. Une page imprimée ne peut pas signaler quel mot on touche : le téléphone doit lire la page et déterminer de quel mot il s'agit.",
    "Les dictionnaires par appareil photo s'en approchent le plus. On tient le téléphone au-dessus de la page et on touche le mot à l'écran, ou on place un repère dessus. Booktionary utilise la seconde approche : un petit cercle reste au centre de l'image, on le pose sur le mot, et la définition apparaît environ une seconde plus tard.",
    "La différence pratique avec un Kindle est qu'on tient un téléphone au-dessus du livre plutôt que de toucher la page, et que l'éclairage compte. La ressemblance, c'est que la recherche n'interrompt plus la lecture : l'appareil photo reste ouvert, donc les recherches successives ne coûtent rien.",
-   "Booktionary garde les deux dictionnaires sur l'appareil : contrairement à un Kindle, il ne demande aucune connexion. Anglais et français, 1,99 $ une fois.",
+   "Booktionary garde les deux dictionnaires sur l'appareil : contrairement à un Kindle, il ne demande aucune connexion. Anglais et français, 1,99 $ US une fois.",
   ],
   siblings=["chercher-mot-livre-papier", "dictionnaire-photo-hors-ligne", "pointer-appareil-photo-mot"]),
 
@@ -236,7 +260,7 @@ QUESTIONS_FR = [
    "La première chose à regarder est la taille du téléchargement. Un dictionnaire hors ligne est volumineux — un dictionnaire sérieux dépasse largement la centaine de mégaoctets — donc une application qui promet une couverture complète en vingt ou trente mégaoctets télécharge des données plus tard ou interroge un serveur.",
    "La deuxième est de savoir si le mode hors ligne fait partie de l'application ou constitue une option payante. Plusieurs applications sont gratuites à l'installation et réservent l'usage hors ligne, ou les langues supplémentaires, à un abonnement. Le modèle se défend, mais mieux vaut le savoir avant de compter dessus en avion.",
    "La troisième est le traitement des formes fléchies, si vous l'utilisez en lisant. Un dictionnaire incapable de passer de vécut à vivre vous décevra dès la première page d'un roman.",
-   "Booktionary est construit autour de ces trois points : 345 Mo de dictionnaires anglais et français sur l'appareil, sans abonnement ni achat intégré, 1,99 $ une fois, et les formes fléchies ramenées à leur lemme avant la recherche. C'est un dictionnaire par appareil photo et non par saisie, ce qui convient à la lecture et non à l'écriture.",
+   "Booktionary est construit autour de ces trois points : 345 Mo de dictionnaires anglais et français sur l'appareil, sans abonnement ni achat intégré, 1,99 $ US une fois, et les formes fléchies ramenées à leur lemme avant la recherche. C'est un dictionnaire par appareil photo et non par saisie, ce qui convient à la lecture et non à l'écriture.",
   ],
   siblings=["dictionnaire-photo-hors-ligne", "chercher-verbe-conjugue", "dictionnaire-kindle-livre-papier"]),
 

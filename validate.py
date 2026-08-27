@@ -65,6 +65,32 @@ def check_alternates(html):
         return ["missing hreflang alternates (need self, twin, x-default)"]
     return []
 
+def check_xdefault(root):
+    """x-default must equal the English member of the page's own cluster
+    (itself if English, its twin if French), not the site root unconditionally
+    -- otherwise every cluster's x-default points at a page that never names
+    it back, and Google may discard the cluster for lack of a return tag."""
+    fails = []
+    for dirpath, dirnames, filenames in os.walk(root):
+        dirnames[:] = [d for d in dirnames if not d.startswith(".")]
+        if "index.html" not in filenames: continue
+        path = os.path.join(dirpath, "index.html")
+        html = open(path, encoding="utf-8").read()
+        alts = re.findall(r'<link rel="alternate" hreflang="([\w-]+)" href="([^"]*)">', html)
+        alt_map = {}
+        for lang, href in alts:
+            alt_map.setdefault(lang, href)
+        rel = os.path.relpath(path, root)
+        if "x-default" not in alt_map:
+            fails.append(f"{rel}: missing x-default")
+            continue
+        if "en" not in alt_map:
+            fails.append(f"{rel}: no English member found in this page's own cluster")
+            continue
+        if alt_map["x-default"] != alt_map["en"]:
+            fails.append(f"{rel}: x-default ({alt_map['x-default']}) != English member of its own cluster ({alt_map['en']})")
+    return fails
+
 def check_pairs(root):
     """Every non-x-default, non-self hreflang alternate must point at a file
     that exists, and that file's own alternates must point back at this page."""
@@ -125,6 +151,19 @@ def check_sitemap_and_robots(root):
         fails.append("robots.txt disallows the whole site")
     return fails
 
+def check_support_files(root):
+    """privacy.html and licenses.html are excluded from the per-page HTML-contract
+    walk below (they aren't build.py-generated pages), but they carry App Store
+    consequences (Guideline 1.5, licence disclosure) and must not go missing or empty."""
+    fails = []
+    for fn in ("privacy.html", "licenses.html"):
+        p = os.path.join(root, fn)
+        if not os.path.exists(p):
+            fails.append(f"{fn} is missing")
+        elif os.path.getsize(p) == 0:
+            fails.append(f"{fn} is empty")
+    return fails
+
 def main():
     root = os.path.dirname(os.path.abspath(__file__))
     problems, checked = {}, 0
@@ -138,18 +177,26 @@ def main():
             f = check_file(p)
             if f: problems[os.path.relpath(p, root)] = f
     pair_fails = check_pairs(root)
+    xdefault_fails = check_xdefault(root)
     sitemap_fails = check_sitemap_and_robots(root)
+    support_fails = check_support_files(root)
     for path, fails in sorted(problems.items()):
         print(f"FAIL {path}")
         for f in fails: print(f"       {f}")
     if pair_fails:
         print("FAIL hreflang reciprocity")
         for f in pair_fails: print(f"       {f}")
+    if xdefault_fails:
+        print("FAIL x-default")
+        for f in xdefault_fails: print(f"       {f}")
     if sitemap_fails:
         print("FAIL sitemap and robots")
         for f in sitemap_fails: print(f"       {f}")
+    if support_fails:
+        print("FAIL support files")
+        for f in support_fails: print(f"       {f}")
     print(f"\n{checked} page(s) checked, {len(problems)} failing")
-    return 1 if (problems or pair_fails or sitemap_fails) else 0
+    return 1 if (problems or pair_fails or xdefault_fails or sitemap_fails or support_fails) else 0
 
 if __name__ == "__main__":
     sys.exit(main())
