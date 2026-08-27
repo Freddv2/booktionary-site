@@ -40,6 +40,7 @@ def check_file(path):
     for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>', html, re.S):
         try: json.loads(m.group(1))
         except json.JSONDecodeError as e: fails.append(f"invalid JSON-LD: {e}")
+    fails += check_alternates(html)
     root = os.path.dirname(os.path.abspath(__file__))
     parent = os.path.dirname(os.path.abspath(path))
     is_home = parent in (root, os.path.join(root, "fr"))
@@ -57,6 +58,30 @@ def check_question_page(html):
         fails.append("no related-questions nav")
     return fails
 
+def check_alternates(html):
+    """Once both languages exist, every page carries self + twin + x-default."""
+    if len(re.findall(r'<link rel="alternate"', html)) < 3:
+        return ["missing hreflang alternates (need self, twin, x-default)"]
+    return []
+
+def check_pairs(root):
+    """Every hreflang alternate must point at a file that exists and points back."""
+    fails = []
+    pages = {}
+    for dirpath, dirnames, filenames in os.walk(root):
+        dirnames[:] = [d for d in dirnames if not d.startswith(".")]
+        if "index.html" in filenames:
+            rel = os.path.relpath(os.path.join(dirpath, "index.html"), root)
+            pages[rel] = open(os.path.join(dirpath, "index.html"), encoding="utf-8").read()
+    for rel, html in pages.items():
+        for m in re.finditer(r'<link rel="alternate" hreflang="(\w+)" href="https://booktionary\.io/([^"]*)"', html):
+            lang, path = m.group(1), m.group(2)
+            if lang == "x-default": continue
+            target = os.path.join(path, "index.html") if path else "index.html"
+            if target not in pages:
+                fails.append(f"{rel}: hreflang {lang} points at missing {target}")
+    return fails
+
 def main():
     root = os.path.dirname(os.path.abspath(__file__))
     problems, checked = {}, 0
@@ -69,11 +94,15 @@ def main():
             checked += 1
             f = check_file(p)
             if f: problems[os.path.relpath(p, root)] = f
+    pair_fails = check_pairs(root)
     for path, fails in sorted(problems.items()):
         print(f"FAIL {path}")
         for f in fails: print(f"       {f}")
+    if pair_fails:
+        print("FAIL hreflang reciprocity")
+        for f in pair_fails: print(f"       {f}")
     print(f"\n{checked} page(s) checked, {len(problems)} failing")
-    return 1 if problems else 0
+    return 1 if (problems or pair_fails) else 0
 
 if __name__ == "__main__":
     sys.exit(main())

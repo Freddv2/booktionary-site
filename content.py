@@ -129,4 +129,127 @@ QUESTIONS_EN = [
   siblings=["read-novel-foreign-language", "without-losing-your-place", "look-up-conjugated-word"]),
 ]
 
-PAGES = [HOME_EN] + QUESTIONS_EN
+HOME_FR = dict(lang="fr", slug="", pair="",
+  question="Booktionary — un dictionnaire par appareil photo pour les livres papier",
+  description="Tenez votre téléphone au-dessus d'un mot dans un livre papier et sa définition apparaît. Anglais et français, entièrement hors ligne, aucune donnée collectée.",
+  paragraphs=[
+   "Booktionary est une application iPhone qui transforme l'appareil photo en dictionnaire pour les livres papier. Vous tenez le téléphone au-dessus de la page et posez un petit cercle sur un mot ; un surlignage le parcourt et la définition apparaît. L'appareil photo reste ouvert : chercher cinq mots de suite ne coûte pas plus que d'en chercher un.",
+   "Les deux dictionnaires sont sur l'appareil — 156 Mo d'anglais et 189 Mo de français, soit 94 % du téléchargement. L'application fonctionne en mode avion, dans le métro et partout sans réseau. Aucun compte, aucun historique, aucune synchronisation, aucune statistique ; l'étiquette de confidentialité de l'App Store indique qu'aucune donnée n'est collectée.",
+   "Ce qui compte sur un vrai texte, c'est que le mot imprimé est rarement l'entrée du dictionnaire. Booktionary ramène les formes fléchies à leur lemme avant de chercher : mangeaient trouve manger, yeux trouve œil. La langue est détectée automatiquement et l'anglais et le français fonctionnent dans la même session.",
+   "iPhone, iOS 17 et versions ultérieures. 1,99 $ une fois — sans abonnement ni achat intégré.",
+  ],
+  siblings=["chercher-mot-livre-papier", "dictionnaire-kindle-livre-papier", "dictionnaire-photo-hors-ligne"])
+
+QUESTIONS_FR = [
+ dict(lang="fr", slug="chercher-mot-livre-papier", pair="look-up-word-paper-book",
+  question="Comment chercher un mot dans un livre papier ?",
+  description="Les options pour chercher un mot inconnu dans un livre imprimé, et ce que chacune coûte en confort de lecture.",
+  paragraphs=[
+   "Il existe quatre solutions réalistes : taper le mot dans une application de dictionnaire, viser le mot avec un appareil photo, lire le livre sur une liseuse, ou garder un dictionnaire papier à côté de soi. Le meilleur choix dépend surtout du coût de l'interruption, pas de la richesse du dictionnaire.",
+   "Taper reste le plus fiable et le plus lent. Il faut poser le livre, déverrouiller le téléphone, écrire un mot dont on ignore parfois l'orthographe, puis retrouver sa ligne. Beaucoup de lecteurs finissent par renoncer et deviner d'après le contexte, ce qui se défend mais laisse le mot inappris.",
+   "Un dictionnaire par appareil photo supprime la saisie. On tient le téléphone au-dessus de la page et la définition apparaît sans quitter la caméra. Booktionary fonctionne ainsi : on pose un cercle sur le mot, un surlignage le parcourt, la définition monte, et l'appareil photo reste ouvert pour le mot suivant.",
+   "Une liseuse règle le problème encore mieux, avec son dictionnaire intégré — mais seulement pour les livres numériques. Sur papier, le choix se joue entre la saisie et l'appareil photo.",
+  ],
+  siblings=["dictionnaire-kindle-livre-papier", "pointer-appareil-photo-mot", "sans-perdre-sa-page"]),
+
+ dict(lang="fr", slug="dictionnaire-kindle-livre-papier", pair="kindle-dictionary-for-paper-books",
+  question="Existe-t-il une application qui donne le dictionnaire du Kindle sur un livre papier ?",
+  description="Le dictionnaire intégré du Kindle ne fonctionne que sur les livres numériques. Les dictionnaires par appareil photo en sont l'équivalent le plus proche sur papier.",
+  paragraphs=[
+   "Appuyer sur un mot pour obtenir sa définition est la fonction qui manque le plus quand on revient au papier, et rien ne la reproduit exactement. Une page imprimée ne peut pas signaler quel mot on touche : le téléphone doit lire la page et déterminer de quel mot il s'agit.",
+   "Les dictionnaires par appareil photo s'en approchent le plus. On tient le téléphone au-dessus de la page et on touche le mot à l'écran, ou on place un repère dessus. Booktionary utilise la seconde approche : un petit cercle reste au centre de l'image, on le pose sur le mot, et la définition apparaît environ une seconde plus tard.",
+   "La différence pratique avec un Kindle est qu'on tient un téléphone au-dessus du livre plutôt que de toucher la page, et que l'éclairage compte. La ressemblance, c'est que la recherche n'interrompt plus la lecture : l'appareil photo reste ouvert, donc les recherches successives ne coûtent rien.",
+   "Booktionary garde les deux dictionnaires sur l'appareil : contrairement à un Kindle, il ne demande aucune connexion. Anglais et français, 1,99 $ une fois.",
+  ],
+  siblings=["chercher-mot-livre-papier", "dictionnaire-photo-hors-ligne", "pointer-appareil-photo-mot"]),
+
+ dict(lang="fr", slug="pointer-appareil-photo-mot", pair="point-camera-at-word",
+  question="Peut-on pointer l'appareil photo sur un mot pour avoir sa définition ?",
+  description="Oui, c'est exactement ce que font les dictionnaires par appareil photo. Comment ils fonctionnent et ce qui distingue un bon d'un mauvais.",
+  paragraphs=[
+   "Oui. Plusieurs applications iPhone lisent le texte à travers l'appareil photo et renvoient la définition d'un seul mot plutôt que la traduction d'un bloc entier. La reconnaissance se fait sur l'appareil, donc la réponse arrive en une seconde environ et aucune photo n'est envoyée ailleurs.",
+   "Ce qui sépare une application utilisable d'une application agaçante, c'est le traitement des formes fléchies. Le mot imprimé n'est souvent pas celui que liste le dictionnaire : pluriels, temps composés, conjugaisons. Un outil qui lit le mot et le cherche tel quel échoue sur une grande partie d'un vrai texte.",
+   "Booktionary ramène le mot à sa forme de dictionnaire avant de chercher : vécut trouve vivre, mangeaient trouve manger. Il garde aussi l'appareil photo ouvert entre deux recherches, ce qui compte plus qu'il n'y paraît — rouvrir une application pour chaque mot est précisément ce qui fait renoncer.",
+   "Un bon éclairage aide plus que tout le reste, et une quinzaine de centimètres au-dessus de la page est la bonne distance.",
+  ],
+  siblings=["chercher-mot-livre-papier", "dictionnaire-photo-vs-google-lens", "chercher-verbe-conjugue"]),
+
+ dict(lang="fr", slug="dictionnaire-photo-hors-ligne", pair="camera-dictionary-offline",
+  question="Un dictionnaire par appareil photo fonctionne-t-il sans connexion ?",
+  description="Certains oui, d'autres non, et la taille du téléchargement suffit presque toujours à le deviner.",
+  paragraphs=[
+   "Tout dépend de l'endroit où se trouve le dictionnaire. Les applications qui envoient le mot reconnu à un serveur exigent une connexion à chaque recherche ; celles qui embarquent le dictionnaire fonctionnent partout. La taille trahit le choix : un dictionnaire complet dépasse largement la centaine de mégaoctets, donc une application de 30 Mo appelle forcément quelque chose.",
+   "La reconnaissance de texte, elle, se fait généralement sur l'appareil sur les iPhone récents et n'est pas la contrainte. La contrainte, ce sont les données du dictionnaire.",
+   "Booktionary embarque les deux : 156 Mo d'anglais et 189 Mo de français, soit 94 % de sa taille. Cela en fait une grosse application, volontairement, en échange d'un fonctionnement en mode avion, dans le métro, en avion et partout sans réseau. Rien n'est envoyé nulle part, faute de destination.",
+   "L'effet secondaire est la confidentialité : sans appel réseau, il n'y a ni compte, ni historique, ni statistiques. L'App Store indique qu'aucune donnée n'est collectée.",
+  ],
+  siblings=["dictionnaire-hors-ligne-iphone", "pointer-appareil-photo-mot", "dictionnaire-kindle-livre-papier"]),
+
+ dict(lang="fr", slug="lire-roman-langue-etrangere", pair="read-novel-foreign-language",
+  question="Comment lire un roman en langue étrangère sans s'arrêter à chaque mot ?",
+  description="Le conseil habituel est de deviner d'après le contexte. La variable plus utile est le coût d'une seule recherche.",
+  paragraphs=[
+   "Le conseil classique consiste à choisir des livres légèrement au-dessus de son niveau et à déduire les mots inconnus du contexte. Cela fonctionne, mais suppose en silence que chercher un mot coûte cher. Changez cette hypothèse et le calcul change avec elle.",
+   "Ce qui détermine vraiment si un livre difficile reste lisible, c'est le coût d'une recherche. À quinze secondes, on renonce au bout d'une page et on décroche ; à deux secondes, on peut chercher un quart des mots et suivre malgré tout l'histoire. Optimisez la recherche avant d'optimiser la difficulté du texte.",
+   "Sur papier, cela veut dire ne pas taper. Un dictionnaire par appareil photo — Booktionary fonctionne ainsi, en tenant le téléphone au-dessus du mot — supprime le changement d'application et l'orthographe. Sur liseuse, le dictionnaire intégré s'en charge déjà.",
+   "Les lectures graduées et les éditions bilingues sont l'autre voie. Elles aident beaucoup au début, et leur intérêt s'estompe généralement vers le niveau B2, quand les vrais livres deviennent accessibles.",
+  ],
+  siblings=["combien-de-mots-chercher", "chercher-verbe-conjugue", "chercher-mot-livre-papier"]),
+
+ dict(lang="fr", slug="chercher-verbe-conjugue", pair="look-up-conjugated-word",
+  question="Comment chercher un verbe conjugué dans un dictionnaire ?",
+  description="Les dictionnaires listent des infinitifs et les livres donnent des formes conjuguées. Ce décalage fait échouer la plupart des outils de recherche.",
+  paragraphs=[
+   "Un dictionnaire s'organise par entrée : l'infinitif d'un verbe, le singulier d'un nom. Un texte, non. On lit vécut, mangeaient, yeux ou eut, et aucune de ces formes n'est l'entrée cherchée. Retrouver la forme de base est une étape supplémentaire, et dans une langue qu'on apprend encore, c'est l'étape difficile.",
+   "Certains dictionnaires gèrent cela, beaucoup non. Le Wiktionnaire reconnaît généralement les formes fléchies ; de nombreuses applications ne renvoient tout simplement rien. Si vous choisissez un outil pour lire plutôt que pour écrire, c'est la première capacité à tester.",
+   "Booktionary effectue cette réduction avant de chercher : vécut donne vivre, mangeaient donne manger, yeux donne œil. C'est la raison pour laquelle il fonctionne sur des romans et pas seulement sur des menus et des panneaux.",
+   "En français, le passé simple est la forme qui piège le plus les apprenants, parce qu'il est partout en littérature et quasiment absent à l'oral.",
+  ],
+  siblings=["lire-roman-langue-etrangere", "pointer-appareil-photo-mot", "chercher-mot-livre-papier"]),
+
+ dict(lang="fr", slug="sans-perdre-sa-page", pair="without-losing-your-place",
+  question="Comment chercher un mot sans perdre sa page ?",
+  description="Perdre sa ligne coûte souvent plus cher que la recherche elle-même. Quelques manières de l'éviter.",
+  paragraphs=[
+   "La plupart des lecteurs décrivent le même échec : on pose le livre, on déverrouille un téléphone, on tape, on se laisse distraire, puis on passe plusieurs secondes à retrouver la phrase. La définition a pris deux secondes et l'interruption trente.",
+   "Une réponse traditionnelle consiste à différer : souligner le mot ou le noter en marge, et tout chercher plus tard. Cela préserve la lecture, mais dans les faits la liste différée est rarement relue.",
+   "L'autre solution est de raccourcir l'interruption au point qu'elle cesse de compter. Un dictionnaire par appareil photo y parvient en supprimant la saisie et en gardant les yeux sur la page : avec Booktionary, on tient le téléphone au-dessus du mot et la définition apparaît juste au-dessus, donc on ne perd pas sa place puisqu'on n'a jamais quitté le livre des yeux.",
+   "Garder un doigt sur la ligne pendant la recherche est la version sans technologie de la même idée, et elle fonctionne.",
+  ],
+  siblings=["chercher-mot-livre-papier", "dictionnaire-kindle-livre-papier", "combien-de-mots-chercher"]),
+
+ dict(lang="fr", slug="dictionnaire-photo-vs-google-lens", pair="camera-dictionary-vs-google-lens",
+  question="Quelle est la différence entre un dictionnaire photo et Google Lens ?",
+  description="Lens traduit des zones de texte. Un dictionnaire photo définit un mot. Ce ne sont pas les mêmes outils.",
+  paragraphs=[
+   "Google Lens est un outil visuel généraliste. Pointé sur une page, il reconnaît et traduit un bloc de texte, ce qui est parfait pour un menu, un panneau ou un paragraphe totalement incompréhensible. Il donne la traduction d'un passage, pas la définition d'un mot.",
+   "Un dictionnaire photo est volontairement plus étroit. Il identifie un seul mot et renvoie son entrée de dictionnaire — sens, nature, parfois étymologie — dans la même langue ou dans la vôtre. Si vous lisez déjà la phrase et butez sur un mot, c'est ce qu'il vous faut.",
+   "Les autres différences sont pratiques. Lens exige une connexion pour l'essentiel de ses fonctions ; certains dictionnaires photo, dont Booktionary, gardent le dictionnaire sur l'appareil et fonctionnent sans réseau. Et traduire une zone entière détourne le regard de la ligne en cours, c'est-à-dire exactement le coût que l'outil devait supprimer.",
+   "Aucun ne remplace l'autre. Pour lire un roman dans une langue qu'on maîtrise en partie, l'outil étroit gagne.",
+  ],
+  siblings=["pointer-appareil-photo-mot", "dictionnaire-photo-hors-ligne", "chercher-mot-livre-papier"]),
+
+ dict(lang="fr", slug="dictionnaire-hors-ligne-iphone", pair="offline-dictionary-app-iphone",
+  question="Quel dictionnaire hors ligne choisir sur iPhone ?",
+  description="Ce qu'il faut regarder dans un dictionnaire hors ligne, et comment vérifier depuis la fiche App Store qu'il l'est vraiment.",
+  paragraphs=[
+   "La première chose à regarder est la taille du téléchargement. Un dictionnaire hors ligne est volumineux — un dictionnaire sérieux dépasse largement la centaine de mégaoctets — donc une application qui promet une couverture complète en vingt ou trente mégaoctets télécharge des données plus tard ou interroge un serveur.",
+   "La deuxième est de savoir si le mode hors ligne fait partie de l'application ou constitue une option payante. Plusieurs applications sont gratuites à l'installation et réservent l'usage hors ligne, ou les langues supplémentaires, à un abonnement. Le modèle se défend, mais mieux vaut le savoir avant de compter dessus en avion.",
+   "La troisième est le traitement des formes fléchies, si vous l'utilisez en lisant. Un dictionnaire incapable de passer de vécut à vivre vous décevra dès la première page d'un roman.",
+   "Booktionary est construit autour de ces trois points : 345 Mo de dictionnaires anglais et français sur l'appareil, sans abonnement ni achat intégré, 1,99 $ une fois, et les formes fléchies ramenées à leur lemme avant la recherche. C'est un dictionnaire par appareil photo et non par saisie, ce qui convient à la lecture et non à l'écriture.",
+  ],
+  siblings=["dictionnaire-photo-hors-ligne", "chercher-verbe-conjugue", "dictionnaire-kindle-livre-papier"]),
+
+ dict(lang="fr", slug="combien-de-mots-chercher", pair="how-many-words-to-look-up",
+  question="Combien de mots faut-il chercher quand on lit dans une langue étrangère ?",
+  description="Il n'y a pas de bon pourcentage. La vraie question est le coût d'une recherche, car il décide du nombre qu'on peut se permettre.",
+  paragraphs=[
+   "Le conseil arrive d'ordinaire sous forme de pourcentage : connaître 95 % ou 98 % des mots et lire au fil du texte. C'est une règle raisonnable qui masque la vraie variable — non pas combien de mots vous ignorez, mais combien coûte chaque recherche.",
+   "Si une recherche prend quinze secondes, même 5 % de mots inconnus devient insupportable et vous finirez par les sauter. Si elle prend deux secondes, un quart de la page reste praticable et vous apprendrez les mots au lieu de les deviner. Les lecteurs qui racontent avoir lu très au-dessus de leur niveau mentionnent presque toujours une recherche rapide quelque part.",
+   "L'ordre pratique est donc : rendre les recherches peu coûteuses, puis choisir le livre le plus difficile qui vous plaise. Sur papier, cela veut dire ne pas taper — Booktionary est fait pour cela, en tenant le téléphone au-dessus du mot. Sur liseuse, le dictionnaire intégré suffit.",
+   "Le seul cas où chercher moins vaut mieux est la lecture de plaisir, quand l'intrigue compte plus que le vocabulaire. Devinez alors librement et continuez.",
+  ],
+  siblings=["lire-roman-langue-etrangere", "sans-perdre-sa-page", "chercher-verbe-conjugue"]),
+]
+
+PAGES = [HOME_EN] + QUESTIONS_EN + [HOME_FR] + QUESTIONS_FR
