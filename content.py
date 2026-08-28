@@ -13,6 +13,7 @@ HOME_EN = {
         "The part that matters on real prose is that the printed word is rarely the dictionary's headword. Booktionary reduces inflected forms before it searches, so mangeaient finds manger and were finds be. Language is detected automatically and English and French work in the same session.",
         "iPhone, iOS 17 and later. $1.99 once — no subscription and no in-app purchases.",
     ],
+    "hero": ("assets/definition.jpg", "An iPhone held over an open novel; the word luminous is highlighted on the page and its dictionary definition is shown below it."),
     "siblings": ["look-up-word-paper-book", "kindle-dictionary-for-paper-books",
                  "camera-dictionary-offline"],
     "extra_html": """<h2>Tips</h2>
@@ -142,6 +143,7 @@ QUESTIONS_EN = [
 ]
 
 HOME_FR = dict(lang="fr", slug="", pair="",
+  hero=("assets/definition.jpg", "Un iPhone tenu au-dessus d'un roman ouvert ; le mot luminous est surligné sur la page et sa définition apparaît en dessous."),
   question="Booktionary — un dictionnaire par appareil photo pour les livres papier",
   description="Tenez votre téléphone au-dessus d'un mot dans un livre papier et sa définition apparaît. Anglais et français, entièrement hors ligne, aucune donnée collectée.",
   paragraphs=[
