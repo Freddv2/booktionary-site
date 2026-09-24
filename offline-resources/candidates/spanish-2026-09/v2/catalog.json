@@ -1,0 +1,55 @@
+{
+  "catalogVersion": 1,
+  "packs": [],
+  "translationPacks": [
+    {
+      "compressedSizeBytes": 897619,
+      "downloadURL": "https://raw.githubusercontent.com/Freddv2/booktionary-site/spanish-pack-pilot-20260924/offline-resources/candidates/spanish-2026-09/v2/en-to-es-v2.sqlite.gz",
+      "installedSizeBytes": 1982464,
+      "license": "CC BY-SA 4.0 (Wiktionary contributors)",
+      "schemaVersion": 1,
+      "sha256": "7af22c132138f689cf7644425102a04194b33672b1c516d008e92bddd0b939d0",
+      "source": "eswiktionary dump 2026-09-01 (processed 2026-09-22); Kaikki English-edition extract downloaded 2026-07-23",
+      "sourceLanguage": "en",
+      "targetLanguage": "es",
+      "version": 2
+    },
+    {
+      "compressedSizeBytes": 5441912,
+      "downloadURL": "https://raw.githubusercontent.com/Freddv2/booktionary-site/spanish-pack-pilot-20260924/offline-resources/candidates/spanish-2026-09/v2/es-to-en-v2.sqlite.gz",
+      "installedSizeBytes": 11833344,
+      "license": "CC BY-SA 4.0 (Wiktionary contributors)",
+      "schemaVersion": 1,
+      "sha256": "b4aed185f62230f7b02998cf8b7d73da5991b6a7371ddd795b801a60792ec447",
+      "source": "English Wiktionary dump 2026-09-02 (deprecated Spanish extract processed 2026-09-20); eswiktionary dump 2026-09-01",
+      "sourceLanguage": "es",
+      "targetLanguage": "en",
+      "version": 2
+    },
+    {
+      "compressedSizeBytes": 1783308,
+      "downloadURL": "https://raw.githubusercontent.com/Freddv2/booktionary-site/spanish-pack-pilot-20260924/offline-resources/candidates/spanish-2026-09/v2/es-to-fr-v2.sqlite.gz",
+      "installedSizeBytes": 3858432,
+      "license": "CC BY-SA 4.0 (Wiktionary contributors)",
+      "schemaVersion": 1,
+      "sha256": "ee53c6aea14c0d9553d668707b311172a3223708d407bf0a339a4fb7e9f3a866",
+      "source": "frwiktionary raw extract downloaded 2026-07-23; eswiktionary dump 2026-09-01",
+      "sourceLanguage": "es",
+      "targetLanguage": "fr",
+      "version": 2
+    },
+    {
+      "compressedSizeBytes": 261239,
+      "downloadURL": "https://raw.githubusercontent.com/Freddv2/booktionary-site/spanish-pack-pilot-20260924/offline-resources/candidates/spanish-2026-09/v2/fr-to-es-v2.sqlite.gz",
+      "installedSizeBytes": 577536,
+      "license": "CC BY-SA 4.0 (Wiktionary contributors)",
+      "schemaVersion": 1,
+      "sha256": "2b121eeaff442edaee6451fdd7637062043b29b05ccc343d857a8d93c2494cca",
+      "source": "eswiktionary dump 2026-09-01 (processed 2026-09-22); Kaikki French-headword extract downloaded 2026-09-06",
+      "sourceLanguage": "fr",
+      "targetLanguage": "es",
+      "version": 2
+    }
+  ],
+  "attributionURL": "https://raw.githubusercontent.com/Freddv2/booktionary-site/spanish-pack-pilot-20260924/offline-resources/candidates/spanish-2026-09/v2/ATTRIBUTION.txt"
+}

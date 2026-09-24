@@ -1,0 +1,29 @@
+Booktionary Spanish translation-pack pilot
+
+These four candidate packs are transformed extracts of Wiktionary translation
+content. Each catalog entry identifies the source editions, source snapshots,
+and processing dates used for that direction. Source material is attributed to
+Wiktionary contributors:
+
+  https://www.wiktionary.org/
+  https://en.wiktionary.org/
+  https://es.wiktionary.org/
+  https://fr.wiktionary.org/
+
+This pilot is distributed under the Creative Commons Attribution-ShareAlike
+4.0 International license (CC BY-SA 4.0):
+
+  https://creativecommons.org/licenses/by-sa/4.0/
+
+Wiktionary text is also available under the GNU Free Documentation License
+under Wiktionary's dual-licensing terms. Booktionary distributes these adapted
+translation extracts under CC BY-SA 4.0. Changes include filtering source
+entries for the requested language direction, extracting translation data,
+normalizing source keys, combining edition-specific extracts where listed in
+the catalog, and converting the selected data to Booktionary's SQLite format.
+
+These are test candidates. Row availability does not establish that a
+translation is correct for a particular sense or context. They have not had
+independent Spanish-language review and are not release-approved.
+
+Catalog: catalog.json
