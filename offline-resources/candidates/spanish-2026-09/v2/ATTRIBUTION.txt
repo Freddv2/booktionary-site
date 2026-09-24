@@ -1,8 +1,9 @@
-Booktionary Spanish translation-pack pilot
+Booktionary Spanish language-pack pilot
 
-These four candidate packs are transformed extracts of Wiktionary translation
-content. Each catalog entry identifies the source editions, source snapshots,
-and processing dates used for that direction. Source material is attributed to
+The Spanish dictionary and four candidate translation packs are transformed
+extracts of Wiktionary content. Each catalog entry identifies the source
+editions, source snapshots, and processing dates used for that resource. Source
+material is attributed to
 Wiktionary contributors:
 
   https://www.wiktionary.org/
