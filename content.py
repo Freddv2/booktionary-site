@@ -279,3 +279,12 @@ QUESTIONS_FR = [
 ]
 
 PAGES = [HOME_EN] + QUESTIONS_EN + [HOME_FR] + QUESTIONS_FR
+
+# Remove this release note after verifying that 1.0.6 is publicly available.
+for page in PAGES:
+    if any("Portuguese" in paragraph or "portugais" in paragraph for paragraph in page["paragraphs"]):
+        page["paragraphs"].append(
+            "Portuguese, Italian and German arrive in version 1.0.6, pending Apple review. The currently available version supports English, French and Spanish books."
+            if page["lang"] == "en" else
+            "Le portugais, l'italien et l'allemand arrivent avec la version 1.0.6, en attente de validation par Apple. La version actuellement disponible prend en charge les livres anglais, français et espagnols."
+        )
