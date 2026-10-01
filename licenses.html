@@ -16,20 +16,21 @@
 </head>
 <body>
 <h1>Dictionary data and licences</h1>
-<p class="updated">Last updated 28 September 2026</p>
+<p class="updated">Last updated 1 October 2026</p>
 
-<p>English definitions are built in. French and Spanish definition packs and
+<p>English definitions are built in. French, Spanish, Portuguese, Italian and German definition packs and
 translation packs are downloaded separately when selected. This page credits
 the sources used by those language resources; the app also shows source and
 license information.</p>
 
 <h2>Definitions and translations</h2>
-<p>The current English, French, and Spanish definition and translation data is
+<p>The current English, French, Spanish, Portuguese, Italian and German definition and translation data is
 derived from the corresponding language editions of
 <a href="https://www.wiktionary.org/">Wiktionary</a>, &copy; Wiktionary
 contributors. English source data is from the 2026-09-02 dump; French and
-Spanish source data is from the 2026-09-01 dumps. The source data was extracted
-on 2026-09-27 by <a href="https://kaikki.org/">Kaikki / Wiktextract</a>.</p>
+Spanish, Portuguese, Italian and German source data is from the 2026-09-01 dumps.
+Extraction dates are September 23 for Portuguese, September 28 for Italian and
+September 27 for the other editions, recorded per pack in the catalog. Data was extracted by <a href="https://kaikki.org/">Kaikki / Wiktextract</a>.</p>
 
 <p>Wiktionary entry text is dual-licensed under the
 <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
@@ -46,8 +47,20 @@ Proceedings of LREC 2022. Booktionary filtered language sections and
 restructured selected definitions, forms, and translation relations into
 separate SQLite files. The data has been modified. The pack catalog records
 the source editions, dump and extraction dates, license, and checksum for each
-file. Translation packs contain three independent directions for each pair:
-English ↔ French, English ↔ Spanish, and French ↔ Spanish.</p>
+file. Version 1.0.6 offers English-source translations into French, Spanish, Portuguese,
+Italian and German. Earlier directions among English, French and Spanish remain
+hosted for compatibility with older app versions. Italian heading-only definitions
+are cleaned or recovered from native sense labels; German source-confirmed spelling
+aliases are retained. Explicit equivalents are preferred for Italian and German.</p>
+
+<h2>Portuguese inflection forms</h2>
+<p>The Portuguese definition pack includes form-to-lemma relations from
+<a href="https://github.com/LuceleneL/PortiLexicon-UD">PortiLexicon-UD</a>,
+revision 315e063da1f89c89e2097c6e72428ebefb9ab1d1, copyright 2023 Lucelene Lopes.
+This supplement is distributed under the MIT License. Its full
+<a href="offline-resources/licenses/PortiLexicon-UD.txt">license notice</a>
+is included in the app and hosted here. Booktionary normalized and filtered
+these relations against the Portuguese dictionary.</p>
 
 <h2>Earlier French data</h2>
 <p>The French dictionary in app versions before the on-demand language release
