@@ -6,11 +6,11 @@ SITE = {
 HOME_EN = {
     "lang": "en", "slug": "", "pair": "",
     "question": "Booktionary — a camera dictionary for paper books",
-    "description": "Point your iPhone at a word in a paper book to see its definition. English is built in; French and Spanish packs are optional downloads. Lookups work offline.",
+    "description": "Point your iPhone at a word in a paper book to see its definition. English is built in; French, Spanish, Portuguese, Italian and German packs are optional downloads. Lookups work offline.",
     "paragraphs": [
         "Booktionary is an iPhone app that turns the camera into a dictionary for paper books. You hold the phone over the page and rest a small ring on a word; a highlight sweeps across it and the definition slides up. The camera stays open, so looking up five words in a row costs no more than looking up one.",
-        "English definitions are built in. Download French or Spanish definitions when you want them; translation packs are a separate choice. Once installed, definitions and translations stay on your phone and lookups work in airplane mode. Pack setup needs an internet connection, but camera images and lookup words stay on the device. There is no account, history, sync or analytics.",
-        "The part that matters on real prose is that the printed word is rarely the dictionary's headword. Booktionary reduces inflected forms before it searches, so mangeaient finds manger and were finds be. Language is detected automatically; English, French and Spanish can be used in the same session after their packs are installed.",
+        "English definitions are built in. Download French, Spanish, Portuguese, Italian or German definitions when you want them; translation packs are a separate choice. Once installed, definitions and translations stay on your phone and lookups work in airplane mode. Pack setup needs an internet connection, but camera images and lookup words stay on the device. There is no account, history, sync or analytics.",
+        "The part that matters on real prose is that the printed word is rarely the dictionary's headword. Booktionary reduces inflected forms before it searches, so mangeaient finds manger and were finds be. Choose the book language before reading. English books can also show translations into five languages after their separate packs are installed.",
         "iPhone, iOS 17 and later. $1.99 once — no subscription and no in-app purchases.",
     ],
     "hero": ("assets/definition.jpg", "An iPhone held over an open novel; the word luminous is highlighted on the page and its dictionary definition is shown below it."),
@@ -49,7 +49,7 @@ QUESTIONS_EN = [
    "Tap-to-define is the feature people miss most when they go back to paper, and nothing reproduces it exactly. A printed page cannot report which word you touched, so the phone has to read the page and work out which word you mean.",
    "Camera dictionaries are the closest equivalent. You hold the phone over the page and either tap the word on screen or hold a marker over it. Booktionary uses the second approach: a small ring stays in the centre of the frame, you put it on the word, and about a second later the definition appears.",
    "The practical difference from a Kindle is that you hold a phone above the book rather than touching the page, and that lighting matters. The practical similarity is that the lookup no longer interrupts you — the camera stays open, so consecutive lookups cost nothing.",
-   "English definitions are built in. Download French or Spanish definitions and a translation direction before reading offline; installed packs stay on the device. English, French and Spanish, $1.99 once.",
+   "English definitions are built in. Download French, Spanish, Portuguese, Italian or German definitions and an English-book translation target before reading offline; installed packs stay on the device. Six book languages, $1.99 once.",
   ],
   siblings=["look-up-word-paper-book", "camera-dictionary-offline", "point-camera-at-word"]),
 
@@ -70,7 +70,7 @@ QUESTIONS_EN = [
   paragraphs=[
    "It depends entirely on where the dictionary lives. Apps that send the recognised word to a server need a connection for every lookup; apps that bundle the dictionary work anywhere. The download size gives it away — a full English dictionary is well over a hundred megabytes, so a 30 MB app is almost certainly calling out to something.",
    "Text recognition itself is usually on-device on modern iPhones and is not the constraint. The constraint is the dictionary data.",
-   "Booktionary includes the English dictionary and offers French and Spanish dictionaries as optional downloads. You can also download a translation direction separately. After installation, recognition and lookups run on the phone and work offline. An internet connection is needed to load the pack catalog and download selected files; lookup words and camera images are not sent.",
+   "Booktionary includes the English dictionary and offers French, Spanish, Portuguese, Italian and German dictionaries as optional downloads. You can also download an English-book translation target separately. After installation, recognition and lookups run on the phone and work offline. An internet connection is needed to load the pack catalog and download selected files; lookup words and camera images are not sent.",
    "There is no account, history, sync or analytics. Optional pack requests go to booktionary.io; the hosting provider's security logging is described in the Privacy Policy.",
   ],
   siblings=["offline-dictionary-app-iphone", "point-camera-at-word", "kindle-dictionary-for-paper-books"]),
@@ -126,7 +126,7 @@ QUESTIONS_EN = [
    "The first thing to check is the download size. Offline dictionaries are large — a serious English dictionary runs to well over a hundred megabytes — so any app claiming full offline coverage in twenty or thirty megabytes is downloading data later or calling a server.",
    "The second is whether the offline dictionary is the whole app or a paid extra. Several apps are free to install and gate offline use, or additional languages, behind a subscription. That is a reasonable model, but it is worth knowing before you rely on it on a plane.",
    "The third is inflection handling, if you are using it while reading. A dictionary that cannot get from wended to wend will disappoint you on the first page of a novel.",
-   "Booktionary is built around all three: English definitions are built in, French and Spanish dictionaries are optional downloads, there is no subscription or in-app purchase, and inflected forms are reduced before searching. It is a camera dictionary rather than a typing one, which suits reading and does not suit writing.",
+   "Booktionary is built around all three: English definitions are built in, French, Spanish, Portuguese, Italian and German dictionaries are optional downloads, there is no subscription or in-app purchase, and inflected forms are reduced before searching. It is a camera dictionary rather than a typing one, which suits reading and does not suit writing.",
   ],
   siblings=["camera-dictionary-offline", "look-up-conjugated-word", "kindle-dictionary-for-paper-books"]),
 
@@ -145,11 +145,11 @@ QUESTIONS_EN = [
 HOME_FR = dict(lang="fr", slug="", pair="",
   hero=("assets/definition.jpg", "Un iPhone tenu au-dessus d'un roman ouvert ; le mot luminous est surligné sur la page et sa définition apparaît en dessous."),
   question="Booktionary — un dictionnaire par appareil photo pour les livres papier",
-  description="Visez un mot d'un livre papier avec l'iPhone pour afficher sa définition. L'anglais est intégré ; les packs français et espagnols se téléchargent à la demande. Les recherches fonctionnent hors ligne.",
+  description="Visez un mot d'un livre papier avec l'iPhone pour afficher sa définition. L'anglais est intégré ; les packs français, espagnols, portugais, italiens et allemands se téléchargent à la demande. Les recherches fonctionnent hors ligne.",
   paragraphs=[
    "Booktionary est une application iPhone qui transforme l'appareil photo en dictionnaire pour les livres papier. Vous tenez le téléphone au-dessus de la page et posez un petit cercle sur un mot ; un surlignage le parcourt et la définition apparaît. L'appareil photo reste ouvert : chercher cinq mots de suite ne coûte pas plus que d'en chercher un.",
-   "Le dictionnaire anglais est intégré. Téléchargez les définitions françaises ou espagnoles quand vous en avez besoin ; les packs de traduction sont un choix séparé. Une fois installés, dictionnaires et traductions restent sur le téléphone et les recherches fonctionnent en mode avion. La préparation des packs nécessite une connexion, mais les images de la caméra et les mots recherchés restent sur l'appareil. Il n'y a ni compte, ni historique, ni synchronisation, ni statistiques.",
-   "Ce qui compte sur un vrai texte, c'est que le mot imprimé est rarement l'entrée du dictionnaire. Booktionary ramène les formes fléchies à leur lemme avant de chercher : mangeaient trouve manger, yeux trouve œil. La langue est détectée automatiquement ; l'anglais, le français et l'espagnol peuvent être utilisés dans la même session une fois leurs packs installés.",
+   "Le dictionnaire anglais est intégré. Téléchargez les définitions françaises, espagnoles, portugaises, italiennes ou allemandes quand vous en avez besoin ; les packs de traduction sont un choix séparé. Une fois installés, dictionnaires et traductions restent sur le téléphone et les recherches fonctionnent en mode avion. La préparation des packs nécessite une connexion, mais les images de la caméra et les mots recherchés restent sur l'appareil. Il n'y a ni compte, ni historique, ni synchronisation, ni statistiques.",
+   "Ce qui compte sur un vrai texte, c'est que le mot imprimé est rarement l'entrée du dictionnaire. Booktionary ramène les formes fléchies à leur lemme avant de chercher : mangeaient trouve manger, yeux trouve œil. Choisissez la langue du livre avant de lire. Les livres anglais peuvent afficher des traductions en cinq langues après téléchargement des packs séparés.",
    "iPhone, iOS 17 et versions ultérieures. 1,99 $ US une fois — sans abonnement ni achat intégré.",
   ],
   siblings=["chercher-mot-livre-papier", "dictionnaire-kindle-livre-papier", "dictionnaire-photo-hors-ligne"],
@@ -185,7 +185,7 @@ QUESTIONS_FR = [
    "Appuyer sur un mot pour obtenir sa définition est la fonction qui manque le plus quand on revient au papier, et rien ne la reproduit exactement. Une page imprimée ne peut pas signaler quel mot on touche : le téléphone doit lire la page et déterminer de quel mot il s'agit.",
    "Les dictionnaires par appareil photo s'en approchent le plus. On tient le téléphone au-dessus de la page et on touche le mot à l'écran, ou on place un repère dessus. Booktionary utilise la seconde approche : un petit cercle reste au centre de l'image, on le pose sur le mot, et la définition apparaît environ une seconde plus tard.",
    "La différence pratique avec un Kindle est qu'on tient un téléphone au-dessus du livre plutôt que de toucher la page, et que l'éclairage compte. La ressemblance, c'est que la recherche n'interrompt plus la lecture : l'appareil photo reste ouvert, donc les recherches successives ne coûtent rien.",
-   "Le dictionnaire anglais est intégré. Téléchargez les définitions françaises ou espagnoles et une direction de traduction avant de lire hors ligne ; les packs installés restent sur l'appareil. Anglais, français et espagnol, 1,99 $ US une fois.",
+   "Le dictionnaire anglais est intégré. Téléchargez les définitions françaises, espagnoles, portugaises, italiennes ou allemandes et une langue de traduction pour un livre anglais avant de lire hors ligne ; les packs installés restent sur l'appareil. Six langues de livre, 1,99 $ US une fois.",
   ],
   siblings=["chercher-mot-livre-papier", "dictionnaire-photo-hors-ligne", "pointer-appareil-photo-mot"]),
 
@@ -206,7 +206,7 @@ QUESTIONS_FR = [
   paragraphs=[
    "Tout dépend de l'endroit où se trouve le dictionnaire. Les applications qui envoient le mot reconnu à un serveur exigent une connexion à chaque recherche ; celles qui embarquent le dictionnaire fonctionnent partout. La taille trahit le choix : un dictionnaire complet dépasse largement la centaine de mégaoctets, donc une application de 30 Mo appelle forcément quelque chose.",
    "La reconnaissance de texte, elle, se fait généralement sur l'appareil sur les iPhone récents et n'est pas la contrainte. La contrainte, ce sont les données du dictionnaire.",
-   "Booktionary intègre le dictionnaire anglais et propose les dictionnaires français et espagnol en téléchargement facultatif. Les directions de traduction se téléchargent séparément. Une fois installés, reconnaissance et recherches se font sur le téléphone et fonctionnent hors ligne. Une connexion est nécessaire pour consulter le catalogue et télécharger les fichiers choisis ; les mots recherchés et les images de la caméra ne sont pas envoyés.",
+   "Booktionary intègre le dictionnaire anglais et propose les dictionnaires français, espagnol, portugais, italien et allemand en téléchargement facultatif. Les directions de traduction se téléchargent séparément. Une fois installés, reconnaissance et recherches se font sur le téléphone et fonctionnent hors ligne. Une connexion est nécessaire pour consulter le catalogue et télécharger les fichiers choisis ; les mots recherchés et les images de la caméra ne sont pas envoyés.",
    "Il n'y a ni compte, ni historique, ni synchronisation, ni statistiques. Les requêtes de téléchargement passent par booktionary.io ; la journalisation de sécurité de l'hébergeur est décrite dans la politique de confidentialité.",
   ],
   siblings=["dictionnaire-hors-ligne-iphone", "pointer-appareil-photo-mot", "dictionnaire-kindle-livre-papier"]),
@@ -262,7 +262,7 @@ QUESTIONS_FR = [
    "La première chose à regarder est la taille du téléchargement. Un dictionnaire hors ligne est volumineux — un dictionnaire sérieux dépasse largement la centaine de mégaoctets — donc une application qui promet une couverture complète en vingt ou trente mégaoctets télécharge des données plus tard ou interroge un serveur.",
    "La deuxième est de savoir si le mode hors ligne fait partie de l'application ou constitue une option payante. Plusieurs applications sont gratuites à l'installation et réservent l'usage hors ligne, ou les langues supplémentaires, à un abonnement. Le modèle se défend, mais mieux vaut le savoir avant de compter dessus en avion.",
    "La troisième est le traitement des formes fléchies, si vous l'utilisez en lisant. Un dictionnaire incapable de passer de vécut à vivre vous décevra dès la première page d'un roman.",
-   "Booktionary répond à ces trois critères : le dictionnaire anglais est intégré, les dictionnaires français et espagnol se téléchargent à la demande, sans abonnement ni achat intégré, pour 1,99 $ US une fois ; les formes fléchies sont ramenées à leur lemme avant la recherche. Les packs installés fonctionnent hors ligne.",
+   "Booktionary répond à ces trois critères : le dictionnaire anglais est intégré, les dictionnaires français, espagnol, portugais, italien et allemand se téléchargent à la demande, sans abonnement ni achat intégré, pour 1,99 $ US une fois ; les formes fléchies sont ramenées à leur lemme avant la recherche. Les packs installés fonctionnent hors ligne.",
   ],
   siblings=["dictionnaire-photo-hors-ligne", "chercher-verbe-conjugue", "dictionnaire-kindle-livre-papier"]),
 
