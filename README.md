@@ -5,6 +5,9 @@ Static site, generated. `content.py` holds all copy and page structure;
 
 ## Editing
 
+Privacy and license documents are maintained as standalone HTML; `build.py` does
+not generate or replace them.
+
 Edit `content.py`, never the generated HTML directly — every page starts
 with a comment saying so, and hand edits are silently overwritten on the
 next build. Then:
