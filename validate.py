@@ -152,11 +152,11 @@ def check_sitemap_and_robots(root):
     return fails
 
 def check_support_files(root):
-    """privacy.html and licenses.html are excluded from the per-page HTML-contract
+    """Privacy policies and licenses are excluded from the generated-page contract
     walk below (they aren't build.py-generated pages), but they carry App Store
     consequences (Guideline 1.5, licence disclosure) and must not go missing or empty."""
     fails = []
-    for fn in ("privacy.html", "licenses.html"):
+    for fn in ("privacy.html", "privacy-android.html", "licenses.html"):
         p = os.path.join(root, fn)
         if not os.path.exists(p):
             fails.append(f"{fn} is missing")
@@ -171,7 +171,7 @@ def main():
         dirnames[:] = [d for d in dirnames if not d.startswith(".")]
         for fn in filenames:
             if not fn.endswith(".html"): continue
-            if fn in ("privacy.html", "licenses.html"): continue
+            if fn in ("privacy.html", "privacy-android.html", "licenses.html"): continue
             p = os.path.join(dirpath, fn)
             checked += 1
             f = check_file(p)
