@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Page-contract checks. Run after every build; exit code 0 means the site is shippable."""
 import json, os, re, sys
+from pathlib import Path
 
 BANNED_PHRASES = ["as mentioned above", "see below", "as we said",
                   "as discussed", "see above", "comme indiqué plus haut",
@@ -42,9 +43,7 @@ def check_file(path):
         try: json.loads(m.group(1))
         except json.JSONDecodeError as e: fails.append(f"invalid JSON-LD: {e}")
     fails += check_alternates(html)
-    root = os.path.dirname(os.path.abspath(__file__))
-    parent = os.path.dirname(os.path.abspath(path))
-    is_home = parent in (root, os.path.join(root, "fr"))
+    is_home = bool(re.search(r'"@type"\s*:\s*"SoftwareApplication"', html))
     if not is_home:
         fails += check_question_page(html)
     return fails
@@ -100,7 +99,7 @@ def check_pairs(root):
         dirnames[:] = [d for d in dirnames if not d.startswith(".")]
         if "index.html" in filenames:
             rel = os.path.relpath(os.path.join(dirpath, "index.html"), root)
-            pages[rel] = open(os.path.join(dirpath, "index.html"), encoding="utf-8").read()
+            pages[rel] = Path(dirpath, "index.html").read_text(encoding="utf-8")
 
     def url_path(rel):
         d = os.path.dirname(rel)
@@ -108,12 +107,12 @@ def check_pairs(root):
 
     def alt_paths(html):
         return {m.group(2) for m in re.finditer(
-            r'<link rel="alternate" hreflang="(\w+)" href="https://booktionary\.io/([^"]*)"', html)
+            r'<link rel="alternate" hreflang="([\w-]+)" href="https://booktionary\.io/([^"]*)"', html)
             if m.group(1) != "x-default"}
 
     for rel, html in pages.items():
         own_path = url_path(rel)
-        for m in re.finditer(r'<link rel="alternate" hreflang="(\w+)" href="https://booktionary\.io/([^"]*)"', html):
+        for m in re.finditer(r'<link rel="alternate" hreflang="([\w-]+)" href="https://booktionary\.io/([^"]*)"', html):
             lang, path = m.group(1), m.group(2)
             if lang == "x-default": continue
             if path == own_path: continue

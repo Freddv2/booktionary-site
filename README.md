@@ -32,3 +32,7 @@ The site root (`/` and `/fr/`) is the Support URL registered with Apple for
 the shipping iOS app. Apple's Guideline 1.5 expects real support
 information there. The Support section (and its `mailto:` link) on both
 home pages must not be removed or replaced with pure marketing copy.
+
+## Localization
+
+Home/support pages are available in English, French, Canadian French, Spanish, Brazilian Portuguese, European Portuguese, Italian and German. They share reciprocal hreflang links and a visible language selector. The English/French question pages retain their paired links. Edit content.py, regenerate with `python3 build.py`, then run `python3 validate.py` and `python3 -m unittest discover -s tests -v`. Purchase messaging avoids a fixed international price; the App Store supplies the regional price.

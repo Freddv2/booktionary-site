@@ -11,7 +11,7 @@ HOME_EN = {
         "Booktionary is an iPhone app that turns the camera into a dictionary for paper books. You hold the phone over the page and rest a small ring on a word; a highlight sweeps across it and the definition slides up. The camera stays open, so looking up five words in a row costs no more than looking up one.",
         "English definitions are built in. Download French, Spanish, Portuguese, Italian or German definitions when you want them; translation packs are a separate choice. Once installed, definitions and translations stay on your phone and lookups work in airplane mode. Pack setup needs an internet connection, but camera images and lookup words stay on the device. There is no account, history, sync or analytics.",
         "The part that matters on real prose is that the printed word is rarely the dictionary's headword. Booktionary reduces inflected forms before it searches, so mangeaient finds manger and were finds be. Choose the book language before reading. English books can also show translations into five languages after their separate packs are installed.",
-        "iPhone, iOS 17 and later. $1.99 once — no subscription and no in-app purchases.",
+        "One purchase includes all six dictionaries and available translation packs. No subscription or in-app purchases. iPhone, iOS 17 or later; the App Store shows the price in your region.",
     ],
     "hero": ("assets/definition.jpg", "An iPhone held over an open novel; the word luminous is highlighted on the page and its dictionary definition is shown below it."),
     "siblings": ["look-up-word-paper-book", "kindle-dictionary-for-paper-books",
@@ -49,7 +49,7 @@ QUESTIONS_EN = [
    "Tap-to-define is the feature people miss most when they go back to paper, and nothing reproduces it exactly. A printed page cannot report which word you touched, so the phone has to read the page and work out which word you mean.",
    "Camera dictionaries are the closest equivalent. You hold the phone over the page and either tap the word on screen or hold a marker over it. Booktionary uses the second approach: a small ring stays in the centre of the frame, you put it on the word, and about a second later the definition appears.",
    "The practical difference from a Kindle is that you hold a phone above the book rather than touching the page, and that lighting matters. The practical similarity is that the lookup no longer interrupts you — the camera stays open, so consecutive lookups cost nothing.",
-   "English definitions are built in. Download French, Spanish, Portuguese, Italian or German definitions and an English-book translation target before reading offline; installed packs stay on the device. Six book languages, $1.99 once.",
+   "English definitions are built in. Download French, Spanish, Portuguese, Italian or German definitions and an English-book translation target before reading offline; installed packs stay on the device. Six book languages, included in one purchase.",
   ],
   siblings=["look-up-word-paper-book", "camera-dictionary-offline", "point-camera-at-word"]),
 
@@ -123,7 +123,7 @@ QUESTIONS_EN = [
   question="What is the best offline dictionary app for iPhone?",
   description="What to look for in an offline dictionary, and how to tell from the App Store listing whether an app is genuinely offline.",
   paragraphs=[
-   "The first thing to check is the download size. Offline dictionaries are large — a serious English dictionary runs to well over a hundred megabytes — so any app claiming full offline coverage in twenty or thirty megabytes is downloading data later or calling a server.",
+   "Check what is available offline and whether a separate download is required. App size alone does not prove dictionary coverage: compression, included data and optional packs differ. Install the resources you need, enable airplane mode, and try words from your book before relying on the app without a connection.",
    "The second is whether the offline dictionary is the whole app or a paid extra. Several apps are free to install and gate offline use, or additional languages, behind a subscription. That is a reasonable model, but it is worth knowing before you rely on it on a plane.",
    "The third is inflection handling, if you are using it while reading. A dictionary that cannot get from wended to wend will disappoint you on the first page of a novel.",
    "Booktionary is built around all three: English definitions are built in, French, Spanish, Portuguese, Italian and German dictionaries are optional downloads, there is no subscription or in-app purchase, and inflected forms are reduced before searching. It is a camera dictionary rather than a typing one, which suits reading and does not suit writing.",
@@ -150,7 +150,7 @@ HOME_FR = dict(lang="fr", slug="", pair="",
    "Booktionary est une application iPhone qui transforme l'appareil photo en dictionnaire pour les livres papier. Vous tenez le téléphone au-dessus de la page et posez un petit cercle sur un mot ; un surlignage le parcourt et la définition apparaît. L'appareil photo reste ouvert : chercher cinq mots de suite ne coûte pas plus que d'en chercher un.",
    "Le dictionnaire anglais est intégré. Téléchargez les définitions françaises, espagnoles, portugaises, italiennes ou allemandes quand vous en avez besoin ; les packs de traduction sont un choix séparé. Une fois installés, dictionnaires et traductions restent sur le téléphone et les recherches fonctionnent en mode avion. La préparation des packs nécessite une connexion, mais les images de la caméra et les mots recherchés restent sur l'appareil. Il n'y a ni compte, ni historique, ni synchronisation, ni statistiques.",
    "Ce qui compte sur un vrai texte, c'est que le mot imprimé est rarement l'entrée du dictionnaire. Booktionary ramène les formes fléchies à leur lemme avant de chercher : mangeaient trouve manger, yeux trouve œil. Choisissez la langue du livre avant de lire. Les livres anglais peuvent afficher des traductions en cinq langues après téléchargement des packs séparés.",
-   "iPhone, iOS 17 et versions ultérieures. 1,99 $ US une fois — sans abonnement ni achat intégré.",
+   "Un seul achat inclut les six dictionnaires et les packs de traduction disponibles. Sans abonnement ni achat intégré. iPhone, iOS 17 ou version ultérieure ; le prix de votre région est indiqué sur l’App Store.",
   ],
   siblings=["chercher-mot-livre-papier", "dictionnaire-kindle-livre-papier", "dictionnaire-photo-hors-ligne"],
   extra_html="""<h2>Conseils</h2>
@@ -185,7 +185,7 @@ QUESTIONS_FR = [
    "Appuyer sur un mot pour obtenir sa définition est la fonction qui manque le plus quand on revient au papier, et rien ne la reproduit exactement. Une page imprimée ne peut pas signaler quel mot on touche : le téléphone doit lire la page et déterminer de quel mot il s'agit.",
    "Les dictionnaires par appareil photo s'en approchent le plus. On tient le téléphone au-dessus de la page et on touche le mot à l'écran, ou on place un repère dessus. Booktionary utilise la seconde approche : un petit cercle reste au centre de l'image, on le pose sur le mot, et la définition apparaît environ une seconde plus tard.",
    "La différence pratique avec un Kindle est qu'on tient un téléphone au-dessus du livre plutôt que de toucher la page, et que l'éclairage compte. La ressemblance, c'est que la recherche n'interrompt plus la lecture : l'appareil photo reste ouvert, donc les recherches successives ne coûtent rien.",
-   "Le dictionnaire anglais est intégré. Téléchargez les définitions françaises, espagnoles, portugaises, italiennes ou allemandes et une langue de traduction pour un livre anglais avant de lire hors ligne ; les packs installés restent sur l'appareil. Six langues de livre, 1,99 $ US une fois.",
+   "Le dictionnaire anglais est intégré. Téléchargez les définitions françaises, espagnoles, portugaises, italiennes ou allemandes et une langue de traduction pour un livre anglais avant de lire hors ligne ; les packs installés restent sur l'appareil. Six langues de livre, incluses dans un seul achat.",
   ],
   siblings=["chercher-mot-livre-papier", "dictionnaire-photo-hors-ligne", "pointer-appareil-photo-mot"]),
 
@@ -259,10 +259,10 @@ QUESTIONS_FR = [
   question="Quel dictionnaire hors ligne choisir sur iPhone ?",
   description="Ce qu'il faut regarder dans un dictionnaire hors ligne, et comment vérifier depuis la fiche App Store qu'il l'est vraiment.",
   paragraphs=[
-   "La première chose à regarder est la taille du téléchargement. Un dictionnaire hors ligne est volumineux — un dictionnaire sérieux dépasse largement la centaine de mégaoctets — donc une application qui promet une couverture complète en vingt ou trente mégaoctets télécharge des données plus tard ou interroge un serveur.",
+   "Vérifiez ce qui fonctionne hors ligne et si un téléchargement séparé est nécessaire. La taille de l’application ne prouve pas sa couverture : la compression, les données intégrées et les packs facultatifs varient. Installez les ressources voulues, activez le mode avion et essayez des mots de votre livre avant de compter sur l’application sans connexion.",
    "La deuxième est de savoir si le mode hors ligne fait partie de l'application ou constitue une option payante. Plusieurs applications sont gratuites à l'installation et réservent l'usage hors ligne, ou les langues supplémentaires, à un abonnement. Le modèle se défend, mais mieux vaut le savoir avant de compter dessus en avion.",
    "La troisième est le traitement des formes fléchies, si vous l'utilisez en lisant. Un dictionnaire incapable de passer de vécut à vivre vous décevra dès la première page d'un roman.",
-   "Booktionary répond à ces trois critères : le dictionnaire anglais est intégré, les dictionnaires français, espagnol, portugais, italien et allemand se téléchargent à la demande, sans abonnement ni achat intégré, pour 1,99 $ US une fois ; les formes fléchies sont ramenées à leur lemme avant la recherche. Les packs installés fonctionnent hors ligne.",
+   "Booktionary répond à ces trois critères : le dictionnaire anglais est intégré, les dictionnaires français, espagnol, portugais, italien et allemand se téléchargent à la demande, sans abonnement ni achat intégré, inclus dans un seul achat ; les formes fléchies sont ramenées à leur lemme avant la recherche. Les packs installés fonctionnent hors ligne.",
   ],
   siblings=["dictionnaire-photo-hors-ligne", "chercher-verbe-conjugue", "dictionnaire-kindle-livre-papier"]),
 
@@ -280,11 +280,70 @@ QUESTIONS_FR = [
 
 PAGES = [HOME_EN] + QUESTIONS_EN + [HOME_FR] + QUESTIONS_FR
 
-# Remove this release note after verifying that 1.0.6 is publicly available.
-for page in PAGES:
-    if any("Portuguese" in paragraph or "portugais" in paragraph for paragraph in page["paragraphs"]):
-        page["paragraphs"].append(
-            "Portuguese, Italian and German arrive in version 1.0.6, pending Apple review. The currently available version supports English, French and Spanish books."
-            if page["lang"] == "en" else
-            "Le portugais, l'italien et l'allemand arrivent avec la version 1.0.6, en attente de validation par Apple. La version actuellement disponible prend en charge les livres anglais, français et espagnols."
-        )
+
+# Translated home/support pages share a reciprocal hreflang cluster.
+import copy
+HOME_FR_CA = copy.deepcopy(HOME_FR)
+HOME_FR_CA.update(lang='fr-CA', siblings=[],
+    question='Booktionary — un dictionnaire avec caméra pour les livres papier',
+    description='Visez un mot dans un livre papier pour voir sa définition. Six langues, hors ligne après téléchargement. Un seul achat, sans abonnement ni achats intégrés.')
+HOME_FR_CA['paragraphs'] = [p.replace("l'appareil photo", 'la caméra').replace("L'appareil photo", 'La caméra').replace('packs', 'ensembles').replace('posez', 'placez').replace('caméra reste ouvert', 'caméra reste ouverte').replace('versions ultérieures', 'version ultérieure') for p in HOME_FR_CA['paragraphs']]
+HOME_FR_CA['hero'] = ('assets/definition.jpg', 'Un iPhone au-dessus d’un livre papier : le mot luminous est surligné et sa définition est ouverte.')
+HOME_FR_CA['extra_html'] = '<h2>Conseils et soutien</h2><p>Choisissez la langue du livre avant de lire. Pour les livres anglais, activez les traductions voulues et téléchargez l’ensemble correspondant. Placez l’anneau sur le mot et gardez la main stable environ une seconde. Un bon éclairage facilite la reconnaissance.</p><p>Besoin d’aide ? Écrivez à <a href="mailto:fredddv@hotmail.com">fredddv@hotmail.com</a> en précisant votre modèle d’iPhone, la version d’iOS, la langue du livre et le problème rencontré.</p>'
+
+HOME_ES = dict(lang='es', slug='', pair='', siblings=[],
+ question='Booktionary — diccionario con cámara para libros de papel',
+ description='Apunta a una palabra de un libro y consulta su definición. Seis idiomas, offline tras descargar. Una compra, sin suscripción ni compras integradas.',
+ hero=('assets/definition.jpg','Un iPhone sobre un libro de papel: luminous aparece resaltado y su definición está abierta.'),
+ paragraphs=[
+  'Consulta una palabra de un libro de papel con la cámara de tu iPhone y sigue leyendo. Coloca el anillo central sobre la palabra y mantén el teléfono estable durante aproximadamente un segundo. Un resaltado verde recorre la palabra y se abre su definición. Desliza el panel para volver al libro, sin escribir la palabra.',
+  'Elige el idioma del libro: inglés, francés, español, portugués, italiano o alemán. El diccionario inglés está integrado; los otros cinco se descargan cuando los necesitas. Las formas flexionadas pueden llevar a la entrada del diccionario. La interfaz también está disponible en estos seis idiomas.',
+  'Para los libros en inglés, puedes añadir traducciones al francés, español, portugués, italiano o alemán mediante paquetes separados. La cobertura varía según la palabra. Los libros en los otros cinco idiomas muestran definiciones en el idioma del libro, sin traducción. Las definiciones y equivalencias proceden de Wiktionary.',
+  'Una compra incluye los seis diccionarios y los paquetes de traducción disponibles. Sin suscripción ni compras integradas. Se necesita internet para consultar el catálogo y descargar los paquetes; una vez instalados, las consultas funcionan offline. Las imágenes de la cámara y las palabras reconocidas permanecen en el iPhone. Sin cuenta, analítica ni seguimiento. Requiere iOS 17 o posterior; solo iPhone. El App Store muestra el precio de tu región.',
+ ],
+ extra_html='<h2>Consejos y ayuda</h2><p>Busca buena iluminación y acerca el teléfono si no reconoce el texto. Elige el idioma del libro antes de empezar. Para comprobar el uso sin conexión, descarga los recursos y prueba una palabra en modo avión.</p><p>¿Necesitas ayuda? Escribe a <a href="mailto:fredddv@hotmail.com">fredddv@hotmail.com</a> indicando el modelo de iPhone, la versión de iOS, el idioma del libro y el problema.</p>')
+
+HOME_PT_BR = dict(lang='pt-BR', slug='', pair='', siblings=[],
+ question='Booktionary — dicionário com câmera para livros de papel',
+ description='Aponte para uma palavra num livro e veja a definição. Seis idiomas, offline após o download. Uma compra, sem assinatura nem compras no app.',
+ hero=('assets/definition.jpg','Um iPhone sobre um livro de papel: luminous está destacado e a definição está aberta.'),
+ paragraphs=[
+  'Consulte uma palavra num livro de papel com a câmera do iPhone e continue lendo. Coloque o anel central sobre a palavra e mantenha o telefone estável por cerca de um segundo. Um destaque verde percorre a palavra e a definição aparece. Deslize o painel para voltar ao livro, sem digitar a palavra.',
+  'Escolha o idioma do livro: inglês, francês, espanhol, português, italiano ou alemão. O dicionário inglês já está incluído no app; baixe os outros cinco quando precisar. As formas flexionadas podem levar à entrada do dicionário. A interface também está disponível nesses seis idiomas.',
+  'Para livros em inglês, você pode adicionar traduções para francês, espanhol, português, italiano ou alemão com pacotes separados. A cobertura varia conforme a palavra. Livros nos outros cinco idiomas mostram definições no idioma do livro, sem tradução. As definições e equivalentes vêm do Wiktionary.',
+  'Uma compra inclui os seis dicionários e os pacotes de tradução disponíveis. Sem assinatura nem compras no app. É preciso internet para consultar o catálogo e baixar os pacotes; depois de instalados, as consultas funcionam offline. As imagens da câmera e as palavras reconhecidas ficam no iPhone. Sem conta, análise de uso nem rastreamento. Requer iOS 17 ou posterior; apenas iPhone. A App Store mostra o preço da sua região.',
+ ],
+ extra_html='<h2>Dicas e suporte</h2><p>Uma boa iluminação ajuda. Aproxime o telefone se o texto não for reconhecido e escolha o idioma do livro antes de começar. Para verificar o uso offline, instale os recursos e consulte uma palavra em modo avião.</p><p>Precisa de ajuda? Escreva para <a href="mailto:fredddv@hotmail.com">fredddv@hotmail.com</a> com o modelo do iPhone, a versão do iOS, o idioma do livro e o problema.</p>')
+HOME_PT_PT = copy.deepcopy(HOME_PT_BR)
+HOME_PT_PT.update(lang='pt-PT',
+ question='Booktionary — dicionário com câmara para livros de papel',
+ description='Aponte para uma palavra num livro e veja a definição. Seis línguas, offline após descarregar. Uma compra, sem subscrição nem compras integradas.')
+HOME_PT_PT['paragraphs'] = [p.replace('câmera','câmara').replace('continue lendo','continue a ler').replace('telefone','telemóvel').replace('por cerca','durante cerca').replace('digitar','escrever').replace('idioma','língua').replace('no app','na aplicação').replace('baixe','descarregue').replace('nesses','nestes').replace('você pode','pode').replace('conforme','consoante').replace('baixar','descarregar').replace('assinatura','subscrição').replace('compras na aplicação','compras integradas').replace('É preciso internet','É necessária uma ligação à internet').replace('ficam','permanecem').replace('análise de uso','análise de utilização').replace('rastreamento','rastreio').replace('posterior','posterior').replace('sua região','sua região') for p in HOME_PT_BR['paragraphs']]
+HOME_PT_PT['hero'] = ('assets/definition.jpg','Um iPhone sobre um livro de papel: luminous está realçado e a definição está aberta.')
+HOME_PT_PT['extra_html'] = '<h2>Conselhos e apoio</h2><p>Uma boa iluminação ajuda. Aproxime o telemóvel se o texto não for reconhecido e escolha a língua do livro antes de começar. Para verificar a utilização offline, instale os recursos e consulte uma palavra em modo de voo.</p><p>Precisa de ajuda? Escreva para <a href="mailto:fredddv@hotmail.com">fredddv@hotmail.com</a> com o modelo do iPhone, a versão do iOS, a língua do livro e o problema.</p>'
+
+HOME_IT = dict(lang='it', slug='', pair='', siblings=[],
+ question='Booktionary — dizionario con fotocamera per libri di carta',
+ description='Inquadra una parola in un libro e leggi la definizione. Sei lingue, offline dopo il download. Un acquisto, senza abbonamenti né acquisti in-app.',
+ hero=('assets/definition.jpg','Un iPhone sopra un libro di carta: luminous è evidenziato e la definizione è aperta.'),
+ paragraphs=[
+  'Cerca una parola in un libro di carta con la fotocamera dell’iPhone e continua a leggere. Posiziona l’anello centrale sulla parola e tieni fermo il telefono per circa un secondo. Un’evidenziazione verde scorre sulla parola e si apre la definizione. Scorri il pannello per tornare al libro, senza digitare la parola.',
+  'Scegli la lingua del libro: inglese, francese, spagnolo, portoghese, italiano o tedesco. Il dizionario inglese è integrato; gli altri cinque sono download facoltativi. Le forme flesse possono rimandare alla voce del dizionario. Anche l’interfaccia è disponibile in queste sei lingue.',
+  'Per i libri in inglese puoi aggiungere traduzioni in francese, spagnolo, portoghese, italiano o tedesco con pacchetti separati. La copertura varia in base alla parola. I libri nelle altre cinque lingue mostrano definizioni nella lingua del libro, senza traduzione. Le definizioni e gli equivalenti provengono da Wiktionary.',
+  'Un acquisto include tutti e sei i dizionari e i pacchetti di traduzione disponibili. Nessun abbonamento né acquisto in-app. Serve internet per consultare il catalogo e scaricare i pacchetti; una volta installati, le ricerche funzionano offline. Le immagini della fotocamera e le parole riconosciute restano sull’iPhone. Nessun account, analisi d’uso o tracciamento. Richiede iOS 17 o successivo; solo iPhone. L’App Store mostra il prezzo nella tua regione.',
+ ],
+ extra_html='<h2>Consigli e assistenza</h2><p>Una buona illuminazione aiuta. Avvicina il telefono se il testo non viene riconosciuto e scegli la lingua del libro prima di iniziare. Per verificare l’uso offline, installa le risorse e cerca una parola in modalità aereo.</p><p>Serve aiuto? Scrivi a <a href="mailto:fredddv@hotmail.com">fredddv@hotmail.com</a> indicando il modello di iPhone, la versione di iOS, la lingua del libro e il problema.</p>')
+
+HOME_DE = dict(lang='de', slug='', pair='', siblings=[],
+ question='Booktionary — Kamera-Wörterbuch für Papierbücher',
+ description='Wort im Buch anvisieren und die Definition lesen. Sechs Sprachen, offline nach dem Download. Ein Kauf, kein Abo und keine In-App-Käufe.',
+ hero=('assets/definition.jpg','Ein iPhone über einem Papierbuch: luminous ist markiert und die Definition ist geöffnet.'),
+ paragraphs=[
+  'Schlage ein Wort in einem Papierbuch mit der iPhone-Kamera nach und lies weiter. Richte den mittleren Ring auf das Wort und halte das Telefon etwa eine Sekunde ruhig. Eine grüne Markierung wandert über das Wort, dann öffnet sich die Definition. Wische das Fenster weg, um zum Buch zurückzukehren, ohne das Wort einzutippen.',
+  'Wähle die Buchsprache: Englisch, Französisch, Spanisch, Portugiesisch, Italienisch oder Deutsch. Das englische Wörterbuch ist integriert; die anderen fünf kannst du bei Bedarf herunterladen. Flexionsformen können zum Wörterbucheintrag führen. Auch die Benutzeroberfläche ist in diesen sechs Sprachen verfügbar.',
+  'Für englische Bücher kannst du separate Übersetzungspakete für Französisch, Spanisch, Portugiesisch, Italienisch oder Deutsch hinzufügen. Die Abdeckung hängt vom Wort ab. Bücher in den anderen fünf Sprachen zeigen Definitionen in der Buchsprache, ohne Übersetzung. Definitionen und Entsprechungen stammen aus Wiktionary.',
+  'Ein Kauf enthält alle sechs Wörterbücher und verfügbaren Übersetzungspakete. Kein Abo und keine In-App-Käufe. Für den Katalog und den Download der Pakete brauchst du Internet; nach der Installation funktionieren Wortabfragen offline. Kamerabilder und erkannte Wörter bleiben auf dem iPhone. Kein Konto, keine Nutzungsanalyse und kein Tracking. Erfordert iOS 17 oder neuer; nur iPhone. Der App Store zeigt den Preis für deine Region.',
+ ],
+ extra_html='<h2>Tipps und Hilfe</h2><p>Gute Beleuchtung hilft. Halte das Telefon näher an die Seite, wenn der Text nicht erkannt wird, und wähle zuerst die Buchsprache. Prüfe die Offline-Nutzung, indem du die Ressourcen installierst und im Flugmodus ein Wort nachschlägst.</p><p>Brauchst du Hilfe? Schreibe an <a href="mailto:fredddv@hotmail.com">fredddv@hotmail.com</a> und nenne dein iPhone-Modell, die iOS-Version, die Buchsprache und das Problem.</p>')
+
+PAGES += [HOME_FR_CA, HOME_ES, HOME_PT_BR, HOME_PT_PT, HOME_IT, HOME_DE]

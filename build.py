@@ -4,20 +4,31 @@ import html as h, json, os, re
 from content import SITE, PAGES
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+LABELS = {
+    "en": ("English", "Booktionary on the App Store", "Privacy", "Licences", "Related questions"),
+    "fr": ("Français", "Booktionary sur l’App Store", "Confidentialité", "Licences", "Questions liées"),
+    "fr-CA": ("Français (Canada)", "Booktionary sur l’App Store", "Confidentialité", "Licences", "Questions liées"),
+    "es": ("Español", "Booktionary en el App Store", "Privacidad", "Licencias", "Preguntas relacionadas"),
+    "pt-BR": ("Português (Brasil)", "Booktionary na App Store", "Privacidade", "Licenças", "Perguntas relacionadas"),
+    "pt-PT": ("Português (Portugal)", "Booktionary na App Store", "Privacidade", "Licenças", "Perguntas relacionadas"),
+    "it": ("Italiano", "Booktionary sull’App Store", "Privacy", "Licenze", "Domande correlate"),
+    "de": ("Deutsch", "Booktionary im App Store", "Datenschutz", "Lizenzen", "Verwandte Fragen"),
+}
+
+def language_path(lang):
+    return "" if lang == "en" else lang + "/"
 
 def url_for(page):
-    if page["lang"] == "en":
-        return f"{SITE['domain']}/{page['slug']}/" if page["slug"] else f"{SITE['domain']}/"
-    return f"{SITE['domain']}/fr/{page['slug']}/" if page["slug"] else f"{SITE['domain']}/fr/"
+    return f"{SITE['domain']}/{language_path(page['lang'])}" + (page['slug'] + "/" if page['slug'] else "")
 
 def out_path(page):
     parts = [ROOT]
-    if page["lang"] == "fr": parts.append("fr")
+    if page["lang"] != "en": parts.append(page["lang"])
     if page["slug"]: parts.append(page["slug"])
     return os.path.join(*parts, "index.html")
 
 def depth_prefix(page):
-    n = (1 if page["lang"] == "fr" else 0) + (1 if page["slug"] else 0)
+    n = (1 if page["lang"] != "en" else 0) + (1 if page["slug"] else 0)
     return "../" * n if n else ""
 
 def find(pages, lang, slug):
@@ -36,15 +47,14 @@ def jsonld(page):
                 "name": "Booktionary", "applicationCategory": "ReferenceApplication",
                 "operatingSystem": "iOS 17.0 or later", "url": url_for(page),
                 "installUrl": SITE["appstore_url"],
-                "inLanguage": ["en", "fr"],
-                "offers": {"@type": "Offer", "price": "1.99", "priceCurrency": "USD",
-                           "url": SITE["appstore_url"]}}
+                "inLanguage": ["en", "fr", "fr-CA", "es", "pt", "it", "de"],
+                "description": page["description"]}
     return json.dumps(data, ensure_ascii=False, indent=1).replace("<", "\\u003c")
 
 def fr_typography(text, lang):
     """French typographic convention: a narrow no-break space before ? ! ; :
     instead of an ASCII space, so the punctuation cannot wrap onto its own line."""
-    if lang != "fr":
+    if not lang.startswith("fr"):
         return text
     return re.sub(r" ([?!;:])", " \\1", text)
 
@@ -58,6 +68,17 @@ def render_page(page, pages):
         src, alt = page["hero"]
         hero = f'    <img class="hero" src="{pre}{src}" alt="{h.escape(alt)}" width="880" height="1108">\n'
 
+    benefits = {
+        'en': 'One purchase. All language packs included. No subscription or in-app purchases.',
+        'fr': 'Un seul achat. Tous les packs de langues inclus. Sans abonnement ni achat intégré.',
+        'fr-CA': 'Un seul achat. Tous les ensembles de langues inclus. Sans abonnement ni achats intégrés.',
+        'es': 'Una compra. Todos los paquetes de idiomas incluidos. Sin suscripción ni compras integradas.',
+        'pt-BR': 'Uma compra. Todos os pacotes de idiomas incluídos. Sem assinatura nem compras no app.',
+        'pt-PT': 'Uma compra. Todos os pacotes de línguas incluídos. Sem subscrição nem compras integradas.',
+        'it': 'Un acquisto. Tutti i pacchetti di lingue inclusi. Nessun abbonamento né acquisto in-app.',
+        'de': 'Ein Kauf. Alle Sprachpakete enthalten. Kein Abo, keine In-App-Käufe.',
+    }
+    purchase = '' if page['slug'] else f'    <p class="purchase">{h.escape(benefits[lang])}</p>\n'
     extra = fr_typography(page.get("extra_html", ""), lang)
     if extra and not extra.endswith("\n"):
         extra += "\n"
@@ -67,26 +88,26 @@ def render_page(page, pages):
         s = find(pages, lang, slug)
         if s is None:
             raise ValueError(f"page {lang}/{page['slug'] or '(home)'!r}: sibling slug {slug!r} does not resolve to any page")
-        links.append(f'      <li><a href="{pre}{"fr/" if lang=="fr" else ""}{slug}/">{h.escape(fr_typography(s["question"], lang))}</a></li>')
+        links.append(f'      <li><a href="{pre}{language_path(lang)}{slug}/">{h.escape(fr_typography(s["question"], lang))}</a></li>')
     heading_id = "related-questions"
     if links:
-        heading = "Related questions" if lang == "en" else "Questions liées"
+        heading = LABELS[lang][4]
         sibs = f'    <nav aria-labelledby="{heading_id}">\n      <h2 id="{heading_id}">{heading}</h2>\n      <ul>\n' + "\n".join(links) + "\n      </ul>\n    </nav>\n"
     twin = find(pages, "fr" if lang == "en" else "en", page["pair"] or "")
-    alts = f'  <link rel="alternate" hreflang="{lang}" href="{url_for(page)}">\n'
-    if twin:
-        alts += f'  <link rel="alternate" hreflang="{twin["lang"]}" href="{url_for(twin)}">\n'
+    cluster = [p for p in pages if not p["slug"]] if not page["slug"] else [page] + ([twin] if twin else [])
+    alts = "".join(f'  <link rel="alternate" hreflang="{p["lang"]}" href="{url_for(p)}">\n' for p in cluster)
     # x-default must point at the English member of this page's own cluster,
     # so the cluster names the root back reciprocally (Google "no return tags").
     x_default = url_for(page) if lang == "en" else (url_for(twin) if twin else f"{SITE['domain']}/")
     alts += f'  <link rel="alternate" hreflang="x-default" href="{x_default}">\n'
-    cta = "Booktionary on the App Store" if lang == "en" else "Booktionary sur l'App Store"
-    home_href = (pre + "fr/") if lang == "fr" else (pre or "./")
+    cta = LABELS[lang][1]
+    home_href = pre + language_path(lang) or "./"
+    language_label = {'en':'Languages','fr':'Langues','fr-CA':'Langues','es':'Idiomas','pt-BR':'Idiomas','pt-PT':'Línguas','it':'Lingue','de':'Sprachen'}[lang]
+    language_links = " · ".join(f'<a href="{url_for(p)}" lang="{p["lang"]}" hreflang="{p["lang"]}"' + (' aria-current="page"' if p["lang"] == lang else '') + f'>{LABELS[p["lang"]][0]}</a>' for p in cluster)
     # A question page gets a wordmark linking home; the home page is already there.
     wordmark = "" if not page["slug"] else (
         f'  <div class="wordmark"><a href="{home_href}">Booktionary</a></div>\n')
-    privacy_label = "Privacy" if lang == "en" else "Confidentialité"
-    licences_label = "Licences"
+    privacy_label, licences_label = LABELS[lang][2:4]
     return f"""<!-- Generated by build.py from content.py. Do not edit this file by hand. -->
 <!DOCTYPE html>
 <html lang="{lang}">
@@ -104,9 +125,10 @@ def render_page(page, pages):
   </script>
 </head>
 <body>
+  <nav class="languages" aria-label="{language_label}">{language_links}</nav>
 {wordmark}  <main>
     <h1>{q}</h1>
-{hero}{body}
+{purchase}{hero}{body}
 {extra}{sibs}    <p class="cta"><a href="{SITE['appstore_url']}">{cta}</a></p>
   </main>
   <footer>
