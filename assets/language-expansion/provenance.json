@@ -1,0 +1,92 @@
+{
+  "release": "1.0.9 (19)",
+  "sourceCommit": "1bfaef7a48e1be349fbd6d56bb58f5f475a61294",
+  "captureDate": "2026-10-05",
+  "camera": "Replay only; meanings use actual production resources. Romanian native dictionary downloaded through the app.",
+  "images": [
+    {
+      "file": "de-home.png",
+      "source": "docs/appstore/screenshots/source/language-expansion-2026-10-05/de/de-home.png",
+      "sha256": "1c667ddc8b5f9ddf61bd81a85e1b993566b424c4b58e8e45b260c8f32aa3d5ab",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "file": "de-languages.png",
+      "source": "docs/appstore/screenshots/source/language-expansion-2026-10-05/de/de-languages.png",
+      "sha256": "20d1404c670b99897d8c4c7e6cc3e9b4a6d09039669e1099232b77e664c5374d",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "file": "en-home.png",
+      "source": "docs/appstore/screenshots/source/language-expansion-2026-10-05/en/en-home.png",
+      "sha256": "b7556f41b0bd00f644052988e31790fc59281c5a6e517fd8de97bb4a1aaf2670",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "file": "en-languages.png",
+      "source": "docs/appstore/screenshots/source/language-expansion-2026-10-05/en/en-languages.png",
+      "sha256": "4d964a4066ca5b969ad51206287185a3163dca5be947f0d201f450924eb12512",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "file": "es-home.png",
+      "source": "docs/appstore/screenshots/source/language-expansion-2026-10-05/es/es-home.png",
+      "sha256": "fe2f13eb1fdfcc7f77588efa63d57ca9202850fbc87a826dc7e31c5c5c5ddb46",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "file": "es-languages.png",
+      "source": "docs/appstore/screenshots/source/language-expansion-2026-10-05/es/es-languages.png",
+      "sha256": "7564abfb1e43db794af7120b96847bf4dcabb1571834ba0b5d650d90fa16ae2a",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "file": "fr-home.png",
+      "source": "docs/appstore/screenshots/source/language-expansion-2026-10-05/fr/fr-home.png",
+      "sha256": "d97e33847a32f15ff7ee270a4f071897ef84261c73480bd59398dcd67d3e69f9",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "file": "fr-languages.png",
+      "source": "docs/appstore/screenshots/source/language-expansion-2026-10-05/fr/fr-languages.png",
+      "sha256": "09e61901c586a9b92ea980b4afb7ddf83c594949d982b8fc62ed036e1bdbb2cf",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "file": "it-home.png",
+      "source": "docs/appstore/screenshots/source/language-expansion-2026-10-05/it/it-home.png",
+      "sha256": "9367a5abd0814533bc5771b8f4a804957a10398538b6c887b5d731ae98c5a010",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "file": "it-languages.png",
+      "source": "docs/appstore/screenshots/source/language-expansion-2026-10-05/it/it-languages.png",
+      "sha256": "67df6ebeb7af17fbd5db830f3189ffbdb0afecaa39f20f7d52bac44107da9fa5",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "file": "pt-home.png",
+      "source": "docs/appstore/screenshots/source/language-expansion-2026-10-05/pt/pt-home.png",
+      "sha256": "d4d26a76a3866c01af4fcaf63455846468029f78fcbb253297e71f09bbc5796d",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "file": "pt-languages.png",
+      "source": "docs/appstore/screenshots/source/language-expansion-2026-10-05/pt/pt-languages.png",
+      "sha256": "a9dd9097251fc618f9e8c0279a03823df815ea46c199751ef0c4264d2b21ae9e",
+      "width": 1206,
+      "height": 2622
+    }
+  ]
+}

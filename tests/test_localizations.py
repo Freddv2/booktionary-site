@@ -9,20 +9,22 @@ import validate
 
 class LocalizedSiteTests(unittest.TestCase):
     def test_regional_home_has_its_own_url_and_asset_depth(self):
-        page = dict(lang='fr-CA', slug='')
-        self.assertEqual(build.url_for(page), 'https://booktionary.io/fr-CA/')
-        self.assertEqual(build.out_path(page), str(Path(build.ROOT)/'fr-CA/index.html'))
+        page = dict(lang='pt-PT', slug='')
+        self.assertEqual(build.url_for(page), 'https://booktionary.io/pt-PT/')
+        self.assertEqual(build.out_path(page), str(Path(build.ROOT)/'pt-PT/index.html'))
         self.assertEqual(build.depth_prefix(page), '../')
 
     def test_home_hreflang_cluster_names_every_translated_home(self):
         pages = [dict(lang=lang, slug='', pair='', question='Booktionary',
                       description='Camera dictionary', paragraphs=[], siblings=[])
-                 for lang in ('en', 'fr', 'fr-CA', 'de')]
+                 for lang in ('en', 'fr', 'pt-PT', 'de')]
         html = build.render_page(pages[2], pages)
-        for lang, path in [('en',''), ('fr','fr/'), ('fr-CA','fr-CA/'), ('de','de/')]:
+        for lang, path in [('en',''), ('fr','fr/'), ('pt-PT','pt-PT/'), ('de','de/')]:
             self.assertIn(f'hreflang="{lang}" href="https://booktionary.io/{path}"', html)
         self.assertIn('hreflang="x-default" href="https://booktionary.io/"', html)
-        self.assertIn('lang="fr-CA"', html)
+        self.assertIn('lang="pt-PT"', html)
+        self.assertNotIn('hreflang="fr-CA"', html)
+        self.assertNotIn('Français (Canada)', html)
 
     def test_validator_rejects_missing_regional_alternate(self):
         with tempfile.TemporaryDirectory() as root:

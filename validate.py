@@ -16,6 +16,14 @@ def text_of(html):
 def check_file(path):
     fails = []
     html = open(path, encoding="utf-8").read()
+    if "<!-- Generated compatibility redirect -->" in html:
+        valid = (Path(path).parent.name == "fr-CA"
+                 and '<meta http-equiv="refresh" content="0; url=../fr/">' in html
+                 and '<link rel="canonical" href="https://booktionary.io/fr/">' in html
+                 and '<a href="../fr/">' in html
+                 and 'mailto:fredddv@hotmail.com' in html
+                 and (Path(path).parent.parent / 'fr/index.html').exists())
+        return [] if valid else ["invalid French compatibility redirect"]
     title = re.search(r"<title>(.*?)</title>", html, re.S)
     h1 = re.search(r"<h1[^>]*>(.*?)</h1>", html, re.S)
     desc = re.search(r'<meta name="description" content="(.*?)"', html, re.S)
@@ -54,7 +62,7 @@ def check_file(path):
 def check_home_page(html):
     """Keep the approved design and App Store support essentials on every locale."""
     fails = []
-    for asset in ("app-icon-main.png", "home-main-reference.png", "languages-main.png", "scanning.webp"):
+    for asset in ("app-icon-main.png", "assets/language-expansion/", "-home.png", "-languages.png", "scanning.webp"):
         if asset not in html:
             fails.append(f"missing home asset {asset}")
     if "$1.99 USD" not in html:
@@ -65,6 +73,12 @@ def check_home_page(html):
         fails.append("both app screenshots must be shown in phone frames")
     if "just your next chapter" in text_of(html).lower():
         fails.append("removed tagline has returned")
+    from language_support import BOOK_LANGUAGES
+    actual = re.findall(r'data-book-language="([^"]+)"', html)
+    if len(actual) != len(BOOK_LANGUAGES) or set(actual) != {code for code, _, _ in BOOK_LANGUAGES}:
+        fails.append("book-language list differs from the prepared release scope")
+    if 'class="release-note wrap"' not in html:
+        fails.append("missing upcoming-release availability notice")
     return fails
 
 def check_question_page(html):
@@ -94,6 +108,7 @@ def check_xdefault(root):
         if "index.html" not in filenames: continue
         path = os.path.join(dirpath, "index.html")
         html = open(path, encoding="utf-8").read()
+        if "<!-- Generated compatibility redirect -->" in html: continue
         alts = re.findall(r'<link rel="alternate" hreflang="([\w-]+)" href="([^"]*)">', html)
         alt_map = {}
         for lang, href in alts:
@@ -154,6 +169,8 @@ def check_sitemap_and_robots(root):
         dirnames[:] = [d for d in dirnames if not d.startswith(".")]
         if "index.html" not in filenames: continue
         rel = os.path.relpath(dirpath, root).replace(os.sep, "/")
+        if rel == "fr-CA" and "<!-- Generated compatibility redirect -->" in Path(dirpath, "index.html").read_text():
+            continue
         url = "https://booktionary.io/" if rel == "." else f"https://booktionary.io/{rel}/"
         if url not in listed:
             fails.append(f"sitemap missing {url}")
