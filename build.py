@@ -2,6 +2,7 @@
 """Render content.py to committed static HTML. No runtime dependencies."""
 import html as h, json, os, re
 from content import SITE, PAGES
+from home_ui import HOME_UI
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 LABELS = {
@@ -13,6 +14,16 @@ LABELS = {
     "pt-PT": ("Português (Portugal)", "Booktionary na App Store", "Privacidade", "Licenças", "Perguntas relacionadas"),
     "it": ("Italiano", "Booktionary sull’App Store", "Privacy", "Licenze", "Domande correlate"),
     "de": ("Deutsch", "Booktionary im App Store", "Datenschutz", "Lizenzen", "Verwandte Fragen"),
+}
+NAV_LABELS = {
+    "en": ("Main navigation", "Footer navigation", "Support"),
+    "fr": ("Navigation principale", "Navigation de bas de page", "Assistance"),
+    "fr-CA": ("Navigation principale", "Navigation de bas de page", "Soutien"),
+    "es": ("Navegación principal", "Navegación del pie de página", "Ayuda"),
+    "pt-BR": ("Navegação principal", "Navegação do rodapé", "Suporte"),
+    "pt-PT": ("Navegação principal", "Navegação do rodapé", "Apoio"),
+    "it": ("Navigazione principale", "Navigazione nel piè di pagina", "Assistenza"),
+    "de": ("Hauptnavigation", "Fußnavigation", "Hilfe"),
 }
 
 def language_path(lang):
@@ -48,7 +59,9 @@ def jsonld(page):
                 "operatingSystem": "iOS 17.0 or later", "url": url_for(page),
                 "installUrl": SITE["appstore_url"],
                 "inLanguage": ["en", "fr", "fr-CA", "es", "pt", "it", "de"],
-                "description": page["description"]}
+                "description": page["description"],
+                "offers": {"@type": "Offer", "price": "1.99", "priceCurrency": "USD",
+                           "url": SITE["appstore_url"]}}
     return json.dumps(data, ensure_ascii=False, indent=1).replace("<", "\\u003c")
 
 def fr_typography(text, lang):
@@ -58,7 +71,129 @@ def fr_typography(text, lang):
         return text
     return re.sub(r" ([?!;:])", " \\1", text)
 
+def render_home(page, pages):
+    """The approved editorial landing page, shared by every supported site locale."""
+    lang = page["lang"]
+    ui = HOME_UI[lang]
+    pre = depth_prefix(page)
+    esc = h.escape
+    twin = find(pages, "en", "")
+    homes = [p for p in pages if not p["slug"]]
+    alts = "".join(f'  <link rel="alternate" hreflang="{p["lang"]}" href="{url_for(p)}">\n' for p in homes)
+    alts += f'  <link rel="alternate" hreflang="x-default" href="{url_for(twin)}">\n'
+
+    def store_link(css_class, label):
+        return (f'<a class="{css_class}" href="{SITE["appstore_url"]}">'
+                f'{label}<span aria-hidden="true">↗</span></a>')
+
+    def download_button():
+        return store_link("download", (f'<span class="apple-symbol" aria-hidden="true"></span>'
+                                        f'<span><small>{esc(ui["download"])}</small>'
+                                        f'<strong>App Store</strong></span>'))
+
+    def price_note():
+        return f'<p class="purchase-note priced-note"><strong>$1.99 USD</strong><span>{esc(ui["price"])}</span></p>'
+
+    frame_home = (f'<div class="device-frame"><div class="device-screen">'
+                  f'<img src="{pre}assets/home-main-reference.png" alt="Booktionary home screen with language choices and Start reading button" width="1206" height="2622" loading="lazy">'
+                  '<span class="device-island" aria-hidden="true"></span><span class="device-home-indicator" aria-hidden="true"></span>'
+                  '</div></div>')
+    frame_languages = (f'<div class="device-frame"><div class="device-screen">'
+                       f'<img src="{pre}assets/languages-main.png" alt="Book language screen showing English included and five more dictionaries available to download" width="1206" height="2622" loading="lazy">'
+                       '<span class="device-island" aria-hidden="true"></span><span class="device-home-indicator" aria-hidden="true"></span>'
+                       '</div></div>')
+    step_illustrations = [
+        f'<div class="step-image native-home">{frame_home}</div>',
+        f'<div class="step-image scan-image"><img src="{pre}assets/scanning.webp" alt="" width="851" height="1848" loading="lazy"></div>',
+        f'<div class="step-image definition-image"><img src="{pre}assets/definition.webp" alt="" width="851" height="1848" loading="lazy"></div>',
+    ]
+    steps = "\n".join(
+        f'<article class="step">{step_illustrations[i]}<div class="step-title"><span>0{i+1}</span>'
+        f'<h3>{esc(title)}</h3></div><p>{esc(description)}</p></article>'
+        for i, (title, description) in enumerate(ui["steps"])
+    )
+    book_languages = ("English", "Français", "Español", "Português", "Italiano", "Deutsch")
+    language_strip = "".join(f'<span>{name}</span>' for name in book_languages)
+    language_rows = "".join(
+        f'<li><span>{name}</span><small>{esc(ui["built_in"] if i == 0 else ui["download_pack"])}</small></li>'
+        for i, name in enumerate(book_languages)
+    )
+    benefits = "".join(
+        f'<article><span aria-hidden="true">0{i+1}</span><div><h3>{esc(title)}</h3><p>{esc(description)}</p></div></article>'
+        for i, (title, description) in enumerate(ui["benefits"])
+    )
+    faqs = "".join(
+        f'<details><summary>{esc(question)}<span aria-hidden="true">+</span></summary><p>{esc(answer)}</p></details>'
+        for question, answer in ui["faqs"]
+    )
+    locale_links = " ".join(
+        f'<a href="{url_for(p)}" lang="{p["lang"]}" hreflang="{p["lang"]}"'
+        + (' aria-current="page"' if p["lang"] == lang else '')
+        + f'>{LABELS[p["lang"]][0]}</a>' for p in homes
+    )
+    related_links = "".join(
+        f'<li><a href="{pre}{language_path(lang)}{slug}/">{esc(find(pages, lang, slug)["question"])}</a></li>'
+        for slug in page["siblings"]
+    )
+    related = (f'<nav class="related-reading" aria-labelledby="related-title"><h2 id="related-title">{esc(ui["related"])}</h2>'
+               f'<ul>{related_links}</ul></nav>') if related_links else ""
+    support = fr_typography(page.get("extra_html", ""), lang)
+    return f'''<!-- Generated by build.py from content.py and home_ui.py. Do not edit this file by hand. -->
+<!DOCTYPE html>
+<html lang="{lang}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{esc(page["question"])}</title>
+  <meta name="description" content="{esc(fr_typography(page["description"], lang))}">
+  <link rel="canonical" href="{url_for(page)}">
+{alts}  <link rel="stylesheet" href="{pre}assets/home.css">
+  <link rel="icon" href="{pre}assets/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="{pre}assets/icon-180.png">
+  <script type="application/ld+json">
+{jsonld(page)}
+  </script>
+</head>
+<body>
+  <header class="site-header wrap">
+    <a class="brand" href="#top" aria-label="Booktionary"><img src="{pre}assets/app-icon-main.png" alt="" width="44" height="44"><span>Booktionary</span></a>
+    <nav aria-label="{NAV_LABELS[lang][0]}"><a href="#how-it-works">{esc(ui["nav"][0])}</a><a href="#languages">{esc(ui["nav"][1])}</a><a href="#questions">{esc(ui["nav"][2])}</a></nav>
+    {store_link("header-download", esc(ui["get"]))}
+  </header>
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>{esc(ui["eyebrow"])}</p>
+        <h1 id="hero-title">{esc(ui["title"][0])}<br>{esc(ui["title"][1])} <em>{esc(ui["title"][2])}</em></h1>
+        <p class="hero-description">{esc(ui["lead"])}</p>
+        <div class="hero-actions">{download_button()}<a class="text-link" href="#how-it-works">{esc(ui["see"])} <span aria-hidden="true">↓</span></a></div>
+        {price_note()}
+      </div>
+      <figure class="hero-figure"><div class="hero-photo"><img src="{pre}assets/scanning.webp" alt="An iPhone scans the word luminous in a paper book" width="851" height="1848" fetchpriority="high"><span class="photo-label">{esc(ui["photo"])}</span></div><figcaption>{esc(ui["photo_caption"])}</figcaption></figure>
+    </section>
+    <section class="language-strip wrap" aria-label="{esc(ui["language_title"])}"><span class="eyebrow">{esc(ui["strip"])}</span><div>{language_strip}</div></section>
+    <section class="how-section wrap" id="how-it-works" aria-labelledby="how-title">
+      <div class="section-heading"><div><p class="eyebrow">{esc(ui["how_kicker"])}</p><h2 id="how-title">{esc(ui["how_title"][0])}<br>{esc(ui["how_title"][1])} <em>{esc(ui["how_title"][2])}</em></h2></div><p>{esc(ui["how_lead"])}</p></div>
+      <div class="steps">{steps}</div>
+    </section>
+    <section class="languages-editorial" id="languages" aria-labelledby="language-title"><div class="wrap language-with-capture">
+      <div class="language-information"><p class="eyebrow">{esc(ui["language_kicker"])}</p><h2 id="language-title">{esc(ui["language_title"])}</h2><p class="language-description">{esc(ui["language_lead"])}</p>
+        <ul class="dictionary-rows">{language_rows}</ul><div class="language-reading-notes"><p>{esc(ui["translation"])}</p><p>{esc(ui["pack_note"])}</p></div></div>
+      <figure class="native-language-capture"><a class="language-device-link" href="{pre}assets/languages-main.png" aria-label="{esc(ui["full_screen"])}">{frame_languages}</a><figcaption><span>{esc(ui["screen_caption"])}</span><a href="{pre}assets/languages-main.png">{esc(ui["full_screen"])}</a></figcaption></figure>
+    </div></section>
+    <section class="quiet-section"><div class="wrap quiet-layout"><div><p class="eyebrow">{esc(ui["quiet_kicker"])}</p><h2>{esc(ui["quiet_title"][0])}<br>{esc(ui["quiet_title"][1])}<br><em>{esc(ui["quiet_title"][2])}</em></h2></div><div class="quiet-benefits">{benefits}</div></div></section>
+    <section class="questions-section wrap" id="questions" aria-labelledby="questions-title"><div><p class="eyebrow">{esc(ui["questions_kicker"])}</p><h2 id="questions-title">{esc(ui["questions_title"][0])}<br><em>{esc(ui["questions_title"][1])}</em></h2><a class="support-link" href="mailto:fredddv@hotmail.com">{esc(ui["support"])} <span aria-hidden="true">↗</span></a></div><div class="questions">{faqs}</div></section>
+    <section class="support-panel wrap" aria-label="{NAV_LABELS[lang][2]}">{support}{related}</section>
+    <section class="last-section wrap" aria-labelledby="last-title"><img src="{pre}assets/app-icon-main.png" alt="" width="76" height="76" loading="lazy"><p class="eyebrow">{esc(ui["final_kicker"])}</p><h2 id="last-title">{esc(ui["final_title"][0])}<br><em>{esc(ui["final_title"][1])}</em></h2>{download_button()}{price_note()}<p class="device-requirements">{esc(ui["requirements"])}</p></section>
+  </main>
+  <footer class="site-footer wrap"><div><a class="brand" href="#top"><img src="{pre}assets/app-icon-main.png" alt="" width="34" height="34" loading="lazy"><span>Booktionary</span></a><p>{esc(ui["footer_line"])}</p></div><nav aria-label="{NAV_LABELS[lang][1]}"><a href="{pre}privacy.html">{esc(ui["privacy"])}</a><a href="{pre}licenses.html">{esc(ui["licences"])}</a><a href="mailto:fredddv@hotmail.com">{NAV_LABELS[lang][2]}</a></nav><div class="locale-links" aria-label="{esc(ui["site_languages"])}">{locale_links}</div><p class="credit">{esc(ui["credit"])}</p></footer>
+</body>
+</html>
+'''
+
 def render_page(page, pages):
+    if not page["slug"]:
+        return render_home(page, pages)
     pre = depth_prefix(page)
     lang = page["lang"]
     q = h.escape(fr_typography(page["question"], lang))

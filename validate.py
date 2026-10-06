@@ -22,15 +22,17 @@ def check_file(path):
     if not title: fails.append("no <title>")
     if not h1: fails.append("no <h1>")
     if not desc: fails.append("no meta description")
-    if title and h1 and title.group(1).strip() != h1.group(1).strip():
+    is_home = bool(re.search(r'"@type"\s*:\s*"SoftwareApplication"', html))
+    if not is_home and title and h1 and title.group(1).strip() != h1.group(1).strip():
         fails.append("title and h1 differ")
     if re.search(r"<script(?![^>]*application/ld\+json)", html, re.I):
         fails.append("javascript present")
     if re.search(r'(src|href)="https?://(?!apps\.apple\.com|booktionary\.io)', html):
         fails.append("external asset or non-App-Store absolute link")
     appstore_links = re.findall(r'<a\s[^>]*href="' + re.escape(APPSTORE) + r'"[^>]*>', html)
-    if len(appstore_links) != 1:
-        fails.append(f"expected exactly 1 App Store link, found {len(appstore_links)}")
+    expected_store_links = 3 if is_home else 1
+    if len(appstore_links) != expected_store_links:
+        fails.append(f"expected exactly {expected_store_links} App Store link(s), found {len(appstore_links)}")
     if "apps.apple.com/ca/" in html:
         fails.append("storefront-pinned /ca/ App Store URL")
     body_text = text_of(html).lower()
@@ -43,9 +45,26 @@ def check_file(path):
         try: json.loads(m.group(1))
         except json.JSONDecodeError as e: fails.append(f"invalid JSON-LD: {e}")
     fails += check_alternates(html)
-    is_home = bool(re.search(r'"@type"\s*:\s*"SoftwareApplication"', html))
-    if not is_home:
+    if is_home:
+        fails += check_home_page(html)
+    else:
         fails += check_question_page(html)
+    return fails
+
+def check_home_page(html):
+    """Keep the approved design and App Store support essentials on every locale."""
+    fails = []
+    for asset in ("app-icon-main.png", "home-main-reference.png", "languages-main.png", "scanning.webp"):
+        if asset not in html:
+            fails.append(f"missing home asset {asset}")
+    if "$1.99 USD" not in html:
+        fails.append("missing confirmed US price")
+    if "mailto:fredddv@hotmail.com" not in html:
+        fails.append("missing support email")
+    if html.count('class="device-frame"') < 2:
+        fails.append("both app screenshots must be shown in phone frames")
+    if "just your next chapter" in text_of(html).lower():
+        fails.append("removed tagline has returned")
     return fails
 
 def check_question_page(html):
