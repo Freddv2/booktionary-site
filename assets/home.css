@@ -99,3 +99,28 @@ html[lang=de] .hero h1 em{letter-spacing:-3px}
 html[lang=it] .hero h1{font-size:clamp(58px,6.7vw,96px);letter-spacing:-4px}
 @media(max-width:650px){.support-panel{display:block;padding-block:27px 36px}.support-panel>*+*{margin-top:22px}.site-footer .locale-links{gap:7px 14px}.locale-links a{min-height:32px;display:inline-flex;align-items:center}html[lang=de] .hero h1{font-size:54px}html[lang=it] .hero h1{font-size:65px}}
 @media(max-width:360px){html[lang=de] .hero h1{font-size:48px}html[lang=it] .hero h1{font-size:57px}}
+
+/* Expanded language scope; keep the actual picker beside the full list. */
+.release-note{padding-block:15px;border-bottom:1px solid var(--rule);font-size:12px;line-height:1.7;color:var(--green)}
+.dictionary-rows li{align-items:flex-start}
+.dictionary-rows li>span{min-width:0;overflow-wrap:anywhere}
+.dictionary-rows .language-name{display:block;font:10px/1.5 var(--sans);color:var(--muted);margin-top:5px}
+.dictionary-rows small{padding-top:5px}
+.native-language-capture{align-self:start;position:sticky;top:25px}
+/* Two identical groups produce a continuous carousel without JavaScript.
+   Hover or keyboard focus pauses movement; reduced motion permits manual scroll. */
+.language-strip>.language-carousel{display:block;min-width:0;flex:1;overflow:hidden;width:auto;padding:8px 0}
+.language-carousel:focus-visible{outline:2px solid var(--green);outline-offset:4px}
+.language-carousel-track{display:flex;width:max-content;animation:language-scroll 90s linear infinite}
+.language-carousel-group{display:flex;align-items:center;gap:56px;padding-right:56px;flex-shrink:0}
+.language-carousel-group>span{display:block;white-space:nowrap;font:21px/1.4 var(--serif);color:#52604d}
+.language-carousel-group small{display:block;font:10px/1.4 var(--sans);color:var(--muted)}
+.language-carousel:hover .language-carousel-track,.language-carousel:focus-within .language-carousel-track{animation-play-state:paused}
+@keyframes language-scroll{to{transform:translateX(-50%)}}
+@media(max-width:900px){.language-strip>.language-carousel{width:100%;flex:auto}.language-carousel-group{gap:36px;padding-right:36px}}
+@media(max-width:650px){.native-language-capture{position:static}.release-note{font-size:11px}.language-carousel-group>span{font-size:19px}}
+@media(max-width:360px){.dictionary-rows{column-gap:15px}.dictionary-rows li>span{font-size:18px}}
+@media(prefers-reduced-motion:reduce){.language-strip>.language-carousel{overflow-x:auto}.language-carousel-track{animation:none}.language-carousel-group[aria-hidden=true]{display:none}}
+
+.language-strip>.language-strip-heading{display:block;width:auto;flex-shrink:0;text-align:left}
+.language-strip-heading>.eyebrow{display:block;font-size:9px}

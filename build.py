@@ -3,6 +3,8 @@
 import html as h, json, os, re
 from content import SITE, PAGES
 from home_ui import HOME_UI
+from language_support import (BOOK_LANGUAGES, INTERFACE_LANGUAGES,
+                              INTERFACE_LOCALES, SCREEN_LOCALES)
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 LABELS = {
@@ -58,7 +60,7 @@ def jsonld(page):
                 "name": "Booktionary", "applicationCategory": "ReferenceApplication",
                 "operatingSystem": "iOS 17.0 or later", "url": url_for(page),
                 "installUrl": SITE["appstore_url"],
-                "inLanguage": ["en", "fr", "fr-CA", "es", "pt", "it", "de"],
+                "inLanguage": list(INTERFACE_LOCALES),
                 "description": page["description"],
                 "offers": {"@type": "Offer", "price": "1.99", "priceCurrency": "USD",
                            "url": SITE["appstore_url"]}}
@@ -77,6 +79,9 @@ def render_home(page, pages):
     ui = HOME_UI[lang]
     pre = depth_prefix(page)
     esc = h.escape
+    screen_locale = SCREEN_LOCALES[lang]
+    home_asset = f"assets/language-expansion/{screen_locale}-home.png"
+    picker_asset = f"assets/language-expansion/{screen_locale}-languages.png"
     twin = find(pages, "en", "")
     homes = [p for p in pages if not p["slug"]]
     alts = "".join(f'  <link rel="alternate" hreflang="{p["lang"]}" href="{url_for(p)}">\n' for p in homes)
@@ -95,11 +100,11 @@ def render_home(page, pages):
         return f'<p class="purchase-note priced-note"><strong>$1.99 USD</strong><span>{esc(ui["price"])}</span></p>'
 
     frame_home = (f'<div class="device-frame"><div class="device-screen">'
-                  f'<img src="{pre}assets/home-main-reference.png" alt="Booktionary home screen with language choices and Start reading button" width="1206" height="2622" loading="lazy">'
+                  f'<img src="{pre}{home_asset}" alt="{esc(ui["home_alt"])}" width="1206" height="2622" loading="lazy">'
                   '<span class="device-island" aria-hidden="true"></span><span class="device-home-indicator" aria-hidden="true"></span>'
                   '</div></div>')
     frame_languages = (f'<div class="device-frame"><div class="device-screen">'
-                       f'<img src="{pre}assets/languages-main.png" alt="Book language screen showing English included and five more dictionaries available to download" width="1206" height="2622" loading="lazy">'
+                       f'<img src="{pre}{picker_asset}" alt="{esc(ui["picker_alt"])}" width="1206" height="2622" loading="lazy">'
                        '<span class="device-island" aria-hidden="true"></span><span class="device-home-indicator" aria-hidden="true"></span>'
                        '</div></div>')
     step_illustrations = [
@@ -112,11 +117,16 @@ def render_home(page, pages):
         f'<h3>{esc(title)}</h3></div><p>{esc(description)}</p></article>'
         for i, (title, description) in enumerate(ui["steps"])
     )
-    book_languages = ("English", "Français", "Español", "Português", "Italiano", "Deutsch")
-    language_strip = "".join(f'<span>{name}</span>' for name in book_languages)
+    language_strip = "".join(
+        f'<span lang="{locale}">{esc(name)}'
+        + (f'<small lang="{lang}">{esc(ui["greek_scope_label"])}</small>' if locale == "el" else '')
+        + '</span>' for locale, name in INTERFACE_LANGUAGES
+    )
     language_rows = "".join(
-        f'<li><span>{name}</span><small>{esc(ui["built_in"] if i == 0 else ui["download_pack"])}</small></li>'
-        for i, name in enumerate(book_languages)
+        f'<li data-book-language="{code}"><span lang="{code}">{esc(name)}'
+        + (f'<span class="language-name" lang="en">{esc(english_name)}</span>' if code != "en" else '') + '</span>'
+        f'<small>{esc(ui["built_in"] if code == "en" else ui["download_pack"])}</small></li>'
+        for code, name, english_name in BOOK_LANGUAGES
     )
     benefits = "".join(
         f'<article><span aria-hidden="true">0{i+1}</span><div><h3>{esc(title)}</h3><p>{esc(description)}</p></div></article>'
@@ -161,6 +171,7 @@ def render_home(page, pages):
     {store_link("header-download", esc(ui["get"]))}
   </header>
   <main id="top">
+    <aside class="release-note wrap">{esc(ui["release_note"])}</aside>
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>{esc(ui["eyebrow"])}</p>
@@ -171,15 +182,15 @@ def render_home(page, pages):
       </div>
       <figure class="hero-figure"><div class="hero-photo"><img src="{pre}assets/scanning.webp" alt="An iPhone scans the word luminous in a paper book" width="851" height="1848" fetchpriority="high"><span class="photo-label">{esc(ui["photo"])}</span></div><figcaption>{esc(ui["photo_caption"])}</figcaption></figure>
     </section>
-    <section class="language-strip wrap" aria-label="{esc(ui["language_title"])}"><span class="eyebrow">{esc(ui["strip"])}</span><div>{language_strip}</div></section>
+    <section class="language-strip wrap" id="language-preview"><div class="language-strip-heading"><span class="eyebrow">{esc(ui["strip"])}</span></div><div class="language-carousel" tabindex="0" role="region" aria-label="{esc(ui["interface_note"])}"><div class="language-carousel-track"><div class="language-carousel-group">{language_strip}</div><div class="language-carousel-group" aria-hidden="true">{language_strip}</div></div></div></section>
     <section class="how-section wrap" id="how-it-works" aria-labelledby="how-title">
       <div class="section-heading"><div><p class="eyebrow">{esc(ui["how_kicker"])}</p><h2 id="how-title">{esc(ui["how_title"][0])}<br>{esc(ui["how_title"][1])} <em>{esc(ui["how_title"][2])}</em></h2></div><p>{esc(ui["how_lead"])}</p></div>
       <div class="steps">{steps}</div>
     </section>
     <section class="languages-editorial" id="languages" aria-labelledby="language-title"><div class="wrap language-with-capture">
       <div class="language-information"><p class="eyebrow">{esc(ui["language_kicker"])}</p><h2 id="language-title">{esc(ui["language_title"])}</h2><p class="language-description">{esc(ui["language_lead"])}</p>
-        <ul class="dictionary-rows">{language_rows}</ul><div class="language-reading-notes"><p>{esc(ui["translation"])}</p><p>{esc(ui["pack_note"])}</p></div></div>
-      <figure class="native-language-capture"><a class="language-device-link" href="{pre}assets/languages-main.png" aria-label="{esc(ui["full_screen"])}">{frame_languages}</a><figcaption><span>{esc(ui["screen_caption"])}</span><a href="{pre}assets/languages-main.png">{esc(ui["full_screen"])}</a></figcaption></figure>
+        <ul class="dictionary-rows">{language_rows}</ul><div class="language-reading-notes"><p>{esc(ui["translation"])}</p><p>{esc(ui["language_scope"])}</p><p>{esc(ui["interface_note"])}</p><p>{esc(ui["pack_note"])}</p></div></div>
+      <figure class="native-language-capture"><a class="language-device-link" href="{pre}{picker_asset}" aria-label="{esc(ui["full_screen"])}">{frame_languages}</a><figcaption><span>{esc(ui["screen_caption"])}</span><a href="{pre}{picker_asset}">{esc(ui["full_screen"])}</a></figcaption></figure>
     </div></section>
     <section class="quiet-section"><div class="wrap quiet-layout"><div><p class="eyebrow">{esc(ui["quiet_kicker"])}</p><h2>{esc(ui["quiet_title"][0])}<br>{esc(ui["quiet_title"][1])}<br><em>{esc(ui["quiet_title"][2])}</em></h2></div><div class="quiet-benefits">{benefits}</div></div></section>
     <section class="questions-section wrap" id="questions" aria-labelledby="questions-title"><div><p class="eyebrow">{esc(ui["questions_kicker"])}</p><h2 id="questions-title">{esc(ui["questions_title"][0])}<br><em>{esc(ui["questions_title"][1])}</em></h2><a class="support-link" href="mailto:fredddv@hotmail.com">{esc(ui["support"])} <span aria-hidden="true">↗</span></a></div><div class="questions">{faqs}</div></section>
@@ -289,6 +300,24 @@ def main():
         os.makedirs(os.path.dirname(path), exist_ok=True)
         open(path, "w", encoding="utf-8").write(render_page(page, PAGES))
         print("wrote", os.path.relpath(path, ROOT))
+    # Old App Store/support URLs remain reachable, with a single French edition.
+    alias = os.path.join(ROOT, "fr-CA", "index.html")
+    os.makedirs(os.path.dirname(alias), exist_ok=True)
+    with open(alias, "w", encoding="utf-8") as output:
+        output.write('''<!-- Generated compatibility redirect -->
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Booktionary — Français</title>
+<meta name="description" content="La page française de Booktionary est disponible à une seule adresse.">
+<link rel="canonical" href="https://booktionary.io/fr/">
+<meta http-equiv="refresh" content="0; url=../fr/">
+</head><body><h1>Booktionary — Français</h1>
+<p><a href="../fr/">Consulter le site et l’assistance en français.</a></p>
+<p><a href="mailto:fredddv@hotmail.com">Contacter l’assistance</a></p>
+</body></html>
+''')
+    print("wrote fr-CA/index.html compatibility redirect")
     write_sitemap()
 
 if __name__ == "__main__":
