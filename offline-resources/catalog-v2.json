@@ -167,6 +167,17 @@
       "version": 1
     },
     {
+      "compressedSizeBytes": 10361779,
+      "downloadURL": "https://booktionary.io/offline-resources/releases/2026-10-05/ro-rown-v1.sqlite.gz",
+      "installedSizeBytes": 26202112,
+      "language": "ro",
+      "license": "CC BY-SA 4.0; English Wiktionary morphology CC BY-SA 4.0 / GFDL 1.3",
+      "schemaVersion": 1,
+      "sha256": "80d00e7ae2a34e01252cc1b8c35be07348bcf2f9eec4dec18fefb69b925a04c2",
+      "source": "RoWN 3.0, RACAI / Romanian Academy; source downloaded 2026-10-05, SHA-256 f271f9a1d2a8fd13cf393962b4f06c8cbf38988127b8eaf15ed264d8c4ab7d84; native Romanian definitions; independent English Wiktionary 2026-09-02 raw snapshot morphology, SHA-256 e1c1640bbd0e881aed73bdc004c811ba6c4304073a36dc0030b984f7fcc5ed0a; Booktionary linked native senses and unique source forms, normalized spacing and reviewed ordering for 29 selected headwords; data modified",
+      "version": 1
+    },
+    {
       "compressedSizeBytes": 70766121,
       "downloadURL": "https://booktionary.io/offline-resources/releases/2026-10-04/ru-v1.sqlite.gz",
       "installedSizeBytes": 298958848,
