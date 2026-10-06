@@ -1,14 +1,15 @@
 # booktionary.io
 
-Static site, generated. `content.py` holds all copy and page structure;
-`build.py` renders it to committed HTML.
+Static site, generated. `content.py` holds article copy and detailed home-page
+support content. `home_ui.py` holds the short, localized landing-page copy;
+`build.py` renders both to committed HTML.
 
 ## Editing
 
 Privacy and license documents are maintained as standalone HTML; `build.py` does
 not generate or replace them.
 
-Edit `content.py`, never the generated HTML directly — every page starts
+Edit `content.py` or `home_ui.py`, never the generated HTML directly — every page starts
 with a comment saying so, and hand edits are silently overwritten on the
 next build. Then:
 
@@ -17,7 +18,7 @@ python3 build.py && python3 validate.py
 ```
 
 `validate.py` is the test suite. A change is not done until it ends with
-`22 page(s) checked, 0 failing` and `git status --porcelain` is empty
+`28 page(s) checked, 0 failing` and `git status --porcelain` is empty
 (build.py's output is deterministic, so a clean tree after a rebuild means
 the committed HTML matches content.py).
 
