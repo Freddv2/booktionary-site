@@ -317,16 +317,16 @@
       "version": 1
     },
     {
-      "compressedSizeBytes": 6341984,
-      "downloadURL": "https://booktionary.io/offline-resources/releases/2026-09-28/en-to-fr-v1.sqlite.gz",
-      "installedSizeBytes": 14389248,
+      "compressedSizeBytes": 32297736,
+      "downloadURL": "https://booktionary.io/offline-resources/releases/2026-10-10/en-to-fr-v2.sqlite.gz",
+      "installedSizeBytes": 222203904,
       "license": "CC BY-SA 4.0 and GFDL (Wiktionary contributors)",
       "schemaVersion": 1,
-      "sha256": "c5e4cb0fe77e129f487296919f02fecaaa08ae8fd4bb37806720f6ade2e28293",
-      "source": "frwiktionary dump 2026-09-01 plus enwiktionary dump 2026-09-02; extracted 2026-09-27",
+      "sha256": "326d2cb9dfe571c8af70b024c05f9480ffe4514a3a21fc06c7e5db9a31bf4835",
+      "source": "frwiktionary dump 2026-09-01 plus enwiktionary dump 2026-09-02; extracted 2026-09-27; ordinary rows retained byte-for-byte by row; complete explicit English-source sense groups from immutable DataDock/wiktextract c18e1541ea518c1d8d384872ce6ba434c90919e4 raw e1c1640bbd0e881aed73bdc004c811ba6c4304073a36dc0030b984f7fcc5ed0a; English slice 563e703691491ec7ecabc52c04a8631fd2434197d6b157f20825e7578e188a4e; Booktionary filtered/restructured source-label projection",
       "sourceLanguage": "en",
       "targetLanguage": "fr",
-      "version": 1
+      "version": 2
     },
     {
       "compressedSizeBytes": 489500,
