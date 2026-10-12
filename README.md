@@ -1,7 +1,7 @@
 # booktionary.io
 
 Static site, generated. `content.py` holds article copy and detailed home-page
-support content. `home_ui.py` holds the short, localized landing-page copy;
+support content. `home_ui.py` and `home_refresh.py` hold the localized landing-page copy;
 `build.py` renders both to committed HTML.
 
 ## Editing
@@ -9,7 +9,7 @@ support content. `home_ui.py` holds the short, localized landing-page copy;
 Privacy and license documents are maintained as standalone HTML; `build.py` does
 not generate or replace them.
 
-Edit `content.py` or `home_ui.py`, never the generated HTML directly — every page starts
+Edit `content.py`, `home_ui.py` or `home_refresh.py`, never the generated HTML directly — every page starts
 with a comment saying so, and hand edits are silently overwritten on the
 next build. Then:
 
@@ -36,38 +36,36 @@ home pages must not be removed or replaced with pure marketing copy.
 
 ## Localization
 
-Home/support pages are available in English, French, Spanish, Brazilian Portuguese, European Portuguese, Italian and German. They share reciprocal hreflang links and a visible language selector. The English/French question pages retain their paired links. Edit content.py, regenerate with `python3 build.py`, then run `python3 validate.py` and `python3 -m unittest discover -s tests -v`. Purchase messaging avoids a fixed international price; the App Store supplies the regional price.
+Home/support pages are available in English, French, Spanish, Brazilian Portuguese, European Portuguese, Italian and German. They share reciprocal hreflang links and a visible language selector. The English/French question pages retain their paired links. Edit content.py, regenerate with `python3 build.py`, then run `python3 validate.py` and `python3 -m unittest discover -s tests -v`. The homepage labels its example price as USD; the App Store supplies the regional price.
 
-## Upcoming language expansion
+## Reading-first homepage
 
-All seven home editions list the candidate's **24 book languages**, **24
-English-word translation targets** and **27 interface localizations**.
-`language_support.py` keeps those scopes distinct. English definitions alone
-are bundled; the 23 other dictionaries and every translation pack are
-independent optional downloads. The native-language list must match
-`offline-resources/catalog-v2.json`; Greek belongs only to the interface and
-English translation scopes. Kurdish is Latin-script Kurmanji, Malay is Rumi,
-and Chinese supports Simplified and Traditional text.
+The October 11 approved mockup leads with “Stay in the story”, followed by
+pointing at an unfamiliar word, seeing the meaning, and continuing to read.
+The four supporting proofs follow this flow. `assets/home.css` contains the
+responsive layout shared by all seven editions.
 
-The site explicitly labels these additions as a **upcoming language expansion** because the
-expanded-language candidate is retained for a later release. The separate
-six-language 1.0.9 (18) is waiting for App Review. Keep that availability notice
-until the expansion itself is released. The current App Store version has
-six book languages. Do not redirect older builds to the expanded catalog or
-change the legacy `catalog.json` when updating presentation.
+Version 1.0.10 released on October 10 with **24 book languages**, **24
+English-word translation targets**, and **27 interface localizations**.
+`language_support.py` keeps the scopes distinct. English is bundled; 23 other
+dictionaries and word-translation packs are separate optional downloads.
+Greek is an interface/translation language, not a book language. Kurmanji is
+Latin-script Kurdish; Malay covers Rumi; Chinese covers both scripts.
 
-`assets/language-expansion/` contains 12 byte-for-byte screenshots from the
-app's October 5 actual-resource capture set. `provenance.json` records the
-source commit, source paths, dimensions and SHA-256. Each home uses its own
-localized home/picker screen (Portuguese variants share the app's `pt`
-interface). The separate screenshot gallery is omitted at the user’s request.
-Do not alter app UI in the screenshots or imply a Greek book dictionary.
+Optional full-definition translations into 19 destinations remain upcoming
+in 1.0.11 and require iOS 18+. Contextual sense selection requires supported
+Apple Intelligence hardware with the model available on iOS 26+; otherwise
+the first dictionary meaning is shown. Keep those qualifications in all locales.
 
-The language strip scrolls continuously through the implemented languages,
-including both Chinese scripts. French regional duplicates are omitted. Greek carries an
-interface/English-translation label. Its duplicate visual group is hidden from
-assistive technology. Hover or keyboard focus pauses movement;
-reduced-motion preferences disable animation and permit manual scrolling.
+`assets/booktionary-real-book-photo.jpg` is the user-approved generated product
+illustration, showing the English/French example. Its provenance is recorded
+alongside the asset. Actual historical app screenshots remain untouched in
+`assets/language-expansion/` but are no longer displayed in decorative frames.
+
+App Store anchors and SoftwareApplication schema use the tracked URL from
+`SITE["appstore_url"]`. Preserve all campaign parameters when editing it.
+Do not modify offline-resource catalogs or downloadable packs when updating
+presentation. Support details remain on every homepage for App Store use.
 
 The app repo's `docs/languages.md` contains the complete support matrix and
 download sizes; `docs/appstore/screenshots/README.md` identifies the 124

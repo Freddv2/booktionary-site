@@ -1,6 +1,6 @@
 SITE = {
     "domain": "https://booktionary.io",
-    "appstore_url": "https://apps.apple.com/app/id6796368335",
+    "appstore_url": "https://apps.apple.com/app/apple-store/id6796368335?pt=129235559&ct=booktionary_website_ios&mt=8",
 }
 
 HOME_EN = {
@@ -40,7 +40,7 @@ HOME_EN = {
   <li>If nothing is recognised, move the phone nearer the page. About 15 cm works well.</li>
   <li>A slight tilt is fine. The app reads text at a natural reading angle.</li>
   <li>The ring never moves and never changes colour. It marks where the app is looking; the highlight sweeping across the word is what tells you it has been read.</li>
-  <li>Tap outside the definition, swipe it away, or use the close button to return to the camera.</li>
+  <li>Swipe the definition away to return to the camera.</li>
 </ul>
 <h2>Support</h2>
 <p>Questions, bugs, or a word it read wrong:
@@ -197,7 +197,7 @@ HOME_FR = dict(lang="fr", slug="", pair="",
   <li>Si rien n'est reconnu, rapprochez le téléphone de la page. Une quinzaine de centimètres convient bien.</li>
   <li>Une légère inclinaison ne pose pas de problème. L'application lit le texte à l'angle de lecture naturel.</li>
   <li>Le cercle ne bouge jamais et ne change jamais de couleur. Il indique où l'application regarde ; c'est le surlignage qui parcourt le mot qui vous dit qu'il a été lu.</li>
-  <li>Touchez à l'extérieur de la définition, faites-la glisser, ou utilisez le bouton de fermeture pour revenir à l'appareil photo.</li>
+  <li>Faites glisser la définition pour revenir à l’appareil photo.</li>
 </ul>
 <h2>Assistance</h2>
 <p>Questions, problèmes, ou un mot mal lu :

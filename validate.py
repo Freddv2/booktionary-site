@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Page-contract checks. Run after every build; exit code 0 means the site is shippable."""
 import json, os, re, sys
+from html import unescape
 from pathlib import Path
 
 BANNED_PHRASES = ["as mentioned above", "see below", "as we said",
                   "as discussed", "see above", "comme indiqué plus haut",
                   "voir ci-dessus", "comme dit plus haut"]
-APPSTORE = "https://apps.apple.com/app/id6796368335"
+APPSTORE = "https://apps.apple.com/app/apple-store/id6796368335?pt=129235559&ct=booktionary_website_ios&mt=8"
 REQUIRED_BOTS = ["GPTBot", "ClaudeBot", "PerplexityBot", "Google-Extended", "CCBot"]
 
 def text_of(html):
@@ -37,7 +38,7 @@ def check_file(path):
         fails.append("javascript present")
     if re.search(r'(src|href)="https?://(?!apps\.apple\.com|booktionary\.io)', html):
         fails.append("external asset or non-App-Store absolute link")
-    appstore_links = re.findall(r'<a\s[^>]*href="' + re.escape(APPSTORE) + r'"[^>]*>', html)
+    appstore_links = re.findall(r'<a\s[^>]*href="' + re.escape(APPSTORE) + r'"[^>]*>', unescape(html))
     expected_store_links = 3 if is_home else 1
     if len(appstore_links) != expected_store_links:
         fails.append(f"expected exactly {expected_store_links} App Store link(s), found {len(appstore_links)}")
@@ -62,23 +63,31 @@ def check_file(path):
 def check_home_page(html):
     """Keep the approved design and App Store support essentials on every locale."""
     fails = []
-    for asset in ("app-icon-main.png", "assets/language-expansion/", "-home.png", "-languages.png", "scanning.webp"):
+    for asset in ("app-icon-main.png", "booktionary-real-book-photo.jpg", "scanning.webp"):
         if asset not in html:
             fails.append(f"missing home asset {asset}")
     if "$1.99 USD" not in html:
         fails.append("missing confirmed US price")
     if "mailto:fredddv@hotmail.com" not in html:
         fails.append("missing support email")
-    if html.count('class="device-frame"') < 2:
-        fails.append("both app screenshots must be shown in phone frames")
     if "just your next chapter" in text_of(html).lower():
         fails.append("removed tagline has returned")
     from language_support import BOOK_LANGUAGES
     actual = re.findall(r'data-book-language="([^"]+)"', html)
     if len(actual) != len(BOOK_LANGUAGES) or set(actual) != {code for code, _, _ in BOOK_LANGUAGES}:
         fails.append("book-language list differs from the prepared release scope")
-    if 'class="release-note wrap"' not in html:
-        fails.append("missing upcoming-release availability notice")
+    if 'class="release-note wrap"' in html:
+        fails.append("released language expansion incorrectly marked upcoming")
+    sections = ['id="how-it-works"', 'id="proof"', 'id="meaning"', 'id="languages"']
+    positions = [html.find(section) for section in sections]
+    if -1 in positions or positions != sorted(positions):
+        fails.append("reading journey must precede capability proof and detail")
+    if 'id="support"' not in html:
+        fails.append("missing dedicated support section")
+    if 'iOS 26' not in html or 'Apple Intelligence' not in html:
+        fails.append("missing contextual-definition requirements")
+    if 'class="bt-upcoming"' not in html or '1.0.11' not in html:
+        fails.append("missing upcoming full-definition release information")
     return fails
 
 def check_question_page(html):
