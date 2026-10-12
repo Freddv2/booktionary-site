@@ -1,0 +1,13 @@
+{
+  "type": "AI-generated product illustration",
+  "approved": "2026-10-11",
+  "generator": "built-in image_gen",
+  "source": "User-provided Booktionary screenshot; approved generated phone-over-book edit",
+  "file": "booktionary-real-book-photo.jpg",
+  "sha256": "40369096ade5069b11a5f8b8c4bb16a83bf2b6c23d56cb130b23cb785012c0e5",
+  "dimensions": [
+    667,
+    1100
+  ],
+  "preparation": "JPEG web encoding of approved original; app UI is illustrative, not a new captured screenshot"
+}
