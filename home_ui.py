@@ -203,13 +203,13 @@ HOME_UI["pt-BR"] = dict(
       'Sim. O dicionário inglês já vem no app. Baixe outros dicionários e traduções enquanto estiver conectado; '
       'depois, eles funcionam offline. Consultar o catálogo requer internet.'),
      ('Quais idiomas posso ler?',
-      'As 24 línguas de leitura estão listadas acima. O inglês está incluído; os outros 23 dicionários são '
-      'descarregados separadamente. Escolha a língua do livro antes de ler. O chinês aceita ambas as escritas; o '
+      'Os 24 idiomas de leitura estão listados acima. O inglês está incluído; os outros 23 dicionários são '
+      'baixados separadamente. Escolha o idioma do livro antes de ler. O chinês aceita ambas as escritas; o '
       'curdo cobre kurmanji latino e o malaio, rumi.'),
      ('Também traduz palavras?',
       'Para livros em inglês, escolha um pacote separado de tradução para qualquer uma das 23 línguas de '
       'dicionários disponíveis ou grego. São equivalentes de palavras, não traduções de páginas inteiras. A '
-      'cobertura varia. Descarregar um dicionário não instala traduções; outras línguas de leitura mostram '
+      'cobertura varia. Baixar um dicionário não instala traduções; outros idiomas de leitura mostram '
       'definições nativas.'),
      ('Funciona no meu iPhone?',
       'Booktionary requer iPhone com iOS 17 ou posterior. Boa iluminação facilita o reconhecimento de texto.'),
@@ -230,6 +230,17 @@ HOME_UI["pt-PT"] = {**HOME_UI["pt-BR"],
     "nav": ("Como funciona", "Línguas", "Perguntas"), "get": "Obter a aplicação", "eyebrow": "Uma companhia para livros em papel",
     "lead": "Uma palavra nova não devia interromper um bom livro. Aponte o iPhone à página, descubra o significado e continue a ler.",
     "download": "Descarregar na", "price": "Compra única. Sem subscrição.", "language_kicker": "Escolha a língua do livro",
+    "photo": "Menos pesquisas. Mais leitura.",
+    "how_lead": "Sem escrever nem mudar de aplicação. Uma consulta rápida e de volta ao livro.",
+    "support": "Precisa de ajuda? Fale connosco",
+    "final_kicker": "Para quem gosta de livros em papel", "final_title": ("Um bom livro", "espera por si."),
+    "faqs": [
+        ("Funciona sem ligação?", "Sim. O dicionário inglês está incluído na aplicação. Descarregue os outros dicionários e traduções enquanto tiver ligação à internet; depois, funcionam sem ligação. A consulta do catálogo requer internet."),
+        ("Em que línguas posso ler?", "As 24 línguas de leitura estão listadas acima. O inglês está incluído; os outros 23 dicionários são descarregados separadamente. Escolha a língua do livro antes de ler. O chinês aceita ambas as escritas; o curdo cobre kurmanji latino e o malaio, rumi."),
+        ("Também traduz palavras?", "Para livros em inglês, escolha um pacote separado de tradução para uma das outras 23 línguas de livros ou para grego. São equivalentes de palavras, não traduções de páginas inteiras. A cobertura varia. Descarregar um dicionário não instala traduções; os livros noutras línguas mostram definições da própria língua."),
+        ("Funciona no meu iPhone?", "O Booktionary requer um iPhone com iOS 17 ou posterior. Uma boa iluminação facilita o reconhecimento do texto."),
+        ("Os meus dados de leitura são recolhidos?", "Não. As imagens, as palavras reconhecidas e as consultas ficam no dispositivo. Sem conta, publicidade ou análises. As transferências contactam o servidor, que pode receber o seu endereço IP."),
+    ],
     "language_title": '24 línguas de leitura.', "language_lead": ('As definições em inglês estão incluídas. Escolha entre outros 23 dicionários e descarregue apenas os de '
      'que precisa.'),
     "download_pack": 'A pedido', "translation": ('A ler um livro em inglês? Escolha entre 24 pacotes separados de tradução de palavras: as 23 línguas de '
