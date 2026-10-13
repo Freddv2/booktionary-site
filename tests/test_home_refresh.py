@@ -20,6 +20,21 @@ class Links(HTMLParser):
             self.store.append(attrs['href'])
 
 class HomeRefreshTests(unittest.TestCase):
+    def test_settings_path_and_phone_fallback_are_localized(self):
+        from home_ui import HOME_UI
+        paths = {
+            'en': 'Settings → App language', 'fr': 'Réglages → Langue de l’app',
+            'es': 'Ajustes → Idioma de la app', 'pt-BR': 'Ajustes → Idioma do app',
+            'pt-PT': 'Definições → Língua da app',
+            'it': 'Impostazioni → Lingua dell’app', 'de': 'Einstellungen → App-Sprache',
+        }
+        for locale, path in paths.items():
+            with self.subTest(locale=locale):
+                note = HOME_UI[locale]['interface_note']
+                self.assertIn(path, note)
+                self.assertIn('27', note)
+                self.assertTrue(any(word in note.lower() for word in ('english', 'anglais', 'inglés', 'inglês', 'inglese', 'englisch')))
+
     def test_every_purchase_link_and_app_schema_preserves_campaign(self):
         for page in PAGES:
             with self.subTest(lang=page['lang'], slug=page['slug']):
