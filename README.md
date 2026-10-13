@@ -86,3 +86,14 @@ current App Store images. Historical capture directories remain preserved.
 The website has one French edition at `/fr/`. `/fr-CA/` is a generated
 compatibility redirect for existing support URLs, omitted from hreflang, the
 selector and sitemap. Canadian French remains an app/store localization.
+
+### Localized release images (1.0.12)
+
+The pending 1.0.12 website PR uses matching app interface controls in each
+localized homepage's definition example. The source images and checksums are
+recorded in `assets/localized-interface/manifest.json`; Portuguese regional pages
+share the app's Portuguese interface. The English book passage and definition
+remain English, and the caption names the demonstrated word-translation language.
+The scanning hero has no interface text and can remain shared. Publish these
+images only through the exact-version gate after 1.0.12 is public in the US and
+Canadian App Store listings.
