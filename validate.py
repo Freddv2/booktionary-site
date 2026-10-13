@@ -86,8 +86,8 @@ def check_home_page(html):
         fails.append("missing dedicated support section")
     if 'iOS 26' not in html or 'Apple Intelligence' not in html:
         fails.append("missing contextual-definition requirements")
-    if 'class="bt-upcoming"' not in html or '1.0.11' not in html:
-        fails.append("missing upcoming full-definition release information")
+    if 'class="bt-definition"' not in html:
+        fails.append("missing translated-definition information")
     return fails
 
 def check_question_page(html):
