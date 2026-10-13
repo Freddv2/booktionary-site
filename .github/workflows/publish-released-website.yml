@@ -1,0 +1,74 @@
+name: Publish website after App Store release
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: released-website
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      pages: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check public App Store versions
+        id: live
+        if: ${{ hashFiles('release/pending-website.json') != '' }}
+        run: python3 release/check_live.py release/pending-website.json
+      - name: Validate and merge prepared website PR
+        if: steps.live.outputs.ready == 'true'
+        env:
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          read -r PR HEAD_SHA EXPECTED_TEXT < <(python3 - <<'PY'
+          import json
+          item = json.load(open('release/pending-website.json'))
+          print(item['pull_request'], item['head_sha'], item['expected_text'])
+          PY
+          )
+          pr_json=$(gh pr view "$PR" --repo "$REPOSITORY" --json state,baseRefName,headRefOid,mergeable)
+          python3 - "$pr_json" "$HEAD_SHA" <<'PY'
+          import json,sys
+          pr=json.loads(sys.argv[1])
+          if pr['baseRefName'] != 'main' or pr['headRefOid'] != sys.argv[2]:
+              raise SystemExit('Prepared website PR does not match the pinned head or main base')
+          if pr['state'] not in ('OPEN', 'MERGED'):
+              raise SystemExit('Prepared website PR is closed without merging')
+          if pr['state'] == 'OPEN' and pr['mergeable'] != 'MERGEABLE':
+              raise SystemExit('Prepared website PR is not mergeable')
+          PY
+          if [[ $(python3 -c 'import json,sys;print(json.loads(sys.argv[1])["state"])' "$pr_json") == OPEN ]]; then
+            gh pr checkout "$PR" --repo "$REPOSITORY"
+            python3 build.py > /tmp/site-build.log
+            git diff --exit-code
+            python3 validate.py
+            python3 -m unittest discover -s tests -v
+            gh pr merge "$PR" --repo "$REPOSITORY" --merge
+          fi
+          if ! curl --fail --silent --show-error "https://booktionary.io/?release-check=$(date +%s)" | grep -Fq "$EXPECTED_TEXT"; then
+            gh api --method POST "repos/$REPOSITORY/pages/builds" >/tmp/pages-build.json
+          fi
+          for attempt in $(seq 1 20); do
+            if curl --fail --silent --show-error "https://booktionary.io/?release-check=$(date +%s)" | grep -Fq "$EXPECTED_TEXT"; then
+              echo "Website contains the released copy: $EXPECTED_TEXT"
+              exit 0
+            fi
+            sleep 15
+          done
+          echo "Published website did not reflect the released copy" >&2
+          exit 1

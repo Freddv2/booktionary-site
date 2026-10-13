@@ -6,6 +6,18 @@ support content. `home_ui.py` and `home_refresh.py` hold the localized landing-p
 
 ## Editing
 
+For an app release that changes website copy, prepare and validate the generated
+site on a branch and open a PR against `main`. Record its PR number, exact head
+SHA, target app version, and a unique expected English text fragment in
+`release/pending-website.json` on `main`. The scheduled
+`publish-released-website.yml` workflow checks the public App Store version in
+both the US and Canada. Only when both show the exact target version does it
+rebuild and test the prepared PR, merge it, request a Pages build, and verify
+the live site. It also supports manual dispatch for a release-day check.
+For a release with no website change, record that decision in the app release
+assessment and leave the pending file absent. Replace the pending file for the
+next release only after the previous site update is verified live.
+
 Privacy and license documents are maintained as standalone HTML; `build.py` does
 not generate or replace them.
 
