@@ -54,7 +54,6 @@ HOME_UI = {
         privacy="Privacy", licences="Licences", credit=('Dictionary sources include Wiktionary, wordnets and Taiwan’s Ministry of Education. See Licences for '
      'sources and changes.'), site_languages="Site language", related="Explore more reading questions",
     language_scope='Greek has an interface and English-word translations, but is not a book language. Kurdish covers Latin-script Kurmanji, not Sorani; Malay covers Latin-script Rumi. Chinese supports Simplified and Traditional text. Coverage varies by word, form and language.',
-    release_note='Upcoming language expansion. These additions are prepared for a later release. The current App Store version offers six book languages.',
     interface_note='27 interface localizations, including Canadian French and Simplified and Traditional Chinese.',
     home_alt='Booktionary home screen with the marked-book logo and separate book language and translation choices',
     picker_alt='Booktionary book language picker with English included and optional dictionary downloads',
@@ -110,7 +109,6 @@ HOME_UI = {
         privacy="Confidentialité", licences="Licences", credit=('Sources : Wiktionnaire, réseaux lexicaux et ministère de l’Éducation de Taïwan. Voir les licences pour les '
      'sources et adaptations.'), site_languages="Langue du site", related="Autres questions de lecture",
     language_scope='Le grec propose une interface et des traductions de mots anglais, sans lecture de livres grecs. Le kurde couvre le kurmanji en alphabet latin, pas le sorani ; le malais couvre le rumi en alphabet latin. Le chinois couvre les écritures simplifiée et traditionnelle. La couverture varie selon le mot, la forme et la langue.',
-    release_note='Aperçu des nouvelles langues. Ces ajouts sont préparés pour une version ultérieure. La version actuelle sur l’App Store propose six langues de livre.',
     interface_note='27 interfaces localisées, dont le français canadien et le chinois simplifié et traditionnel.',
     home_alt='Accueil de Booktionary avec le logo du livre marqué et les choix distincts de langue du livre et de traduction',
     picker_alt='Choix de la langue du livre dans Booktionary, avec l’anglais intégré et des dictionnaires à télécharger',
@@ -168,7 +166,6 @@ HOME_UI["es"] = dict(
     footer_line="Un poco más de significado en cada página.", privacy="Privacidad", licences="Licencias", credit=('Fuentes: Wiktionary, redes léxicas y Ministerio de Educación de Taiwán. Consulta las licencias para '
      'conocer las fuentes y adaptaciones.'), site_languages="Idioma del sitio", related="Más preguntas sobre la lectura",
     language_scope='El griego tiene interfaz y traducciones de palabras inglesas, pero no lectura de libros griegos. El kurdo cubre kurmanji en alfabeto latino, no sorani; el malayo cubre rumi en alfabeto latino. El chino admite escritura simplificada y tradicional. La cobertura varía según la palabra, la forma y el idioma.',
-    release_note='Próxima ampliación de idiomas. Estos idiomas están preparados para una versión posterior. La versión actual del App Store ofrece seis idiomas de lectura.',
     interface_note='27 interfaces localizadas, incluidas francés canadiense y chino simplificado y tradicional.',
     home_alt='Pantalla de inicio de Booktionary con el nuevo logotipo y opciones independientes de idioma del libro y traducción',
     picker_alt='Selector de idioma del libro de Booktionary con inglés incluido y diccionarios opcionales para descargar',
@@ -220,7 +217,6 @@ HOME_UI["pt-BR"] = dict(
     footer_line="Um pouco mais de sentido em cada página.", privacy="Privacidade", licences="Licenças", credit=('Fontes: Wiktionary, redes lexicais e Ministério da Educação de Taiwan. Veja as licenças para fontes e '
      'adaptações.'), site_languages="Idioma do site", related="Mais perguntas sobre leitura",
     language_scope='O grego tem interface e traduções de palavras inglesas, mas não leitura de livros gregos. O curdo cobre kurmanji em alfabeto latino, não sorani; o malaio cobre rumi em alfabeto latino. O chinês aceita escrita simplificada e tradicional. A cobertura varia por palavra, forma e idioma.',
-    release_note='Prévia dos novos idiomas. Estes idiomas estão preparados para uma versão futura. A versão atual na App Store oferece seis idiomas de leitura.',
     interface_note='27 interfaces localizadas, incluindo francês canadense e chinês simplificado e tradicional.',
     home_alt='Tela inicial do Booktionary com o novo logotipo e opções separadas de idioma do livro e tradução',
     picker_alt='Seleção de idioma do livro do Booktionary com inglês incluído e dicionários opcionais para baixar',
@@ -255,7 +251,6 @@ HOME_UI["pt-PT"] = {**HOME_UI["pt-BR"],
       'integradas.')],
     "requirements": "Para iPhone · iOS 17 ou posterior", "privacy": "Privacidade", "site_languages": "Língua do site",
     'language_scope': 'O grego tem interface e traduções de palavras inglesas, mas não leitura de livros gregos. O curdo cobre kurmanji em alfabeto latino, não sorani; o malaio cobre rumi em alfabeto latino. O chinês aceita escrita simplificada e tradicional. A cobertura varia por palavra, forma e língua.',
-    'release_note': 'Pré-visualização das novas línguas. Estas línguas estão preparadas para uma versão futura. A versão atual na App Store oferece seis línguas de leitura.',
     'interface_note': '27 interfaces localizadas, incluindo francês canadiano e chinês simplificado e tradicional.',
     'home_alt': 'Ecrã inicial do Booktionary com o novo logótipo e opções separadas de língua do livro e tradução',
     'picker_alt': 'Seleção da língua do livro no Booktionary com inglês incluído e dicionários opcionais para descarregar',
@@ -307,7 +302,6 @@ HOME_UI["it"] = dict(
     footer_line="Un po’ più di significato in ogni pagina.", privacy="Privacy", licences="Licenze", credit=('Fonti: Wiktionary, reti lessicali e Ministero dell’Istruzione di Taiwan. Vedi le licenze per fonti e '
      'adattamenti.'), site_languages="Lingua del sito", related="Altre domande sulla lettura",
     language_scope='Il greco offre interfaccia e traduzioni di parole inglesi, ma non lettura di libri greci. Il curdo copre il kurmanji in alfabeto latino, non il sorani; il malese copre il rumi in alfabeto latino. Il cinese supporta scrittura semplificata e tradizionale. La copertura varia per parola, forma e lingua.',
-    release_note='Anteprima delle nuove lingue. Queste lingue sono pronte per una versione futura. La versione attuale sull’App Store offre sei lingue di lettura.',
     interface_note='27 interfacce localizzate, compresi francese canadese e cinese semplificato e tradizionale.',
     home_alt='Schermata iniziale di Booktionary con il nuovo logo e scelte separate per lingua del libro e traduzione',
     picker_alt='Selezione della lingua del libro in Booktionary con inglese integrato e dizionari facoltativi da scaricare',
@@ -359,7 +353,6 @@ HOME_UI["de"] = dict(
     footer_line="Mehr Bedeutung auf jeder Seite.", privacy="Datenschutz", licences="Lizenzen", credit=('Quellen: Wiktionary, Wortnetze und Taiwans Bildungsministerium. Quellen und Anpassungen stehen in den '
      'Lizenzen.'), site_languages="Seitensprache", related="Weitere Fragen zum Lesen",
     language_scope='Griechisch bietet eine Oberfläche und Übersetzungen englischer Wörter, aber keine griechische Buchsprache. Kurdisch umfasst Kurmanji in lateinischer Schrift, nicht Sorani; Malaiisch umfasst Rumi in lateinischer Schrift. Chinesisch unterstützt vereinfachte und traditionelle Schrift. Die Abdeckung hängt von Wort, Form und Sprache ab.',
-    release_note='Vorschau auf weitere Sprachen. Diese Sprachen sind für eine spätere Version vorbereitet. Die aktuelle App-Store-Version bietet sechs Buchsprachen.',
     interface_note='27 lokalisierte Oberflächen, darunter kanadisches Französisch sowie vereinfachtes und traditionelles Chinesisch.',
     home_alt='Booktionary-Startbildschirm mit Spracherweiterung mit neuem Logo und getrennter Wahl von Buchsprache und Übersetzung',
     picker_alt='Buchsprachauswahl von Booktionary mit integriertem Englisch und optionalen Wörterbuchdownloads',

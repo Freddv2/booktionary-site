@@ -166,7 +166,7 @@ def render_home(page, pages):
       <details class="bt-all-languages"><summary>{esc(ui['all_languages'])}</summary><ul class="bt-language-list">{''.join(language_rows[6:])}</ul></details>
       <div class="bt-language-notes"><article><h3>{esc(ui['translation_title'])}</h3><p>{esc(ui['translation'])}</p></article><article><h3>{esc(ui['interface_title'])}</h3><p>{esc(ui['interface_note'])}</p></article></div>
       <p class="bt-small bt-scope">{esc(ui['language_scope'])}</p>
-      <aside class="bt-upcoming"><div><p class="bt-kicker">{esc(ui['upcoming_kicker'])}</p><h3>{esc(ui['upcoming_title'])}</h3></div><div><p>{esc(ui['upcoming_body'])}</p><p class="bt-small">{esc(ui['upcoming_note'])}</p></div></aside>
+      <aside class="bt-definition"><div><p class="bt-kicker">{esc(ui['definition_kicker'])}</p><h3>{esc(ui['definition_title'])}</h3></div><div><p>{esc(ui['definition_body'])}</p><p class="bt-small">{esc(ui['definition_note'])}</p></div></aside>
     </section>
     <section class="bt-quiet"><div class="bt-wrap bt-quiet-grid"><div><p class="bt-kicker">{esc(ui['quiet_kicker'])}</p><h2>{esc(ui['quiet_title'][0])}<br>{esc(ui['quiet_title'][1])}<br><em>{esc(ui['quiet_title'][2])}</em></h2></div><div>{benefits}</div></div></section>
     <section class="bt-faq bt-wrap" id="questions" aria-labelledby="questions-title"><div><p class="bt-kicker">{esc(ui['questions_kicker'])}</p><h2 id="questions-title">{heading(ui['questions_title'])}</h2><a class="bt-support" href="mailto:fredddv@hotmail.com">{esc(ui['support'])} ↗</a></div><div>{faqs}</div></section>

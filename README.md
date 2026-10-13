@@ -52,8 +52,8 @@ dictionaries and word-translation packs are separate optional downloads.
 Greek is an interface/translation language, not a book language. Kurmanji is
 Latin-script Kurdish; Malay covers Rumi; Chinese covers both scripts.
 
-Optional full-definition translations into 19 destinations remain upcoming
-in 1.0.11 and require iOS 18+. Contextual sense selection requires supported
+Version 1.0.11 added optional translated definitions for English books in 19
+supported destinations on iOS 18+. Contextual sense selection requires supported
 Apple Intelligence hardware with the model available on iOS 26+; otherwise
 the first dictionary meaning is shown. Keep those qualifications in all locales.
 

@@ -67,7 +67,7 @@ QUESTIONS_EN = [
    "Tap-to-define is the feature people miss most when they go back to paper, and nothing reproduces it exactly. A printed page cannot report which word you touched, so the phone has to read the page and work out which word you mean.",
    "Camera dictionaries are the closest equivalent. You hold the phone over the page and either tap the word on screen or hold a marker over it. Booktionary uses the second approach: a small ring stays in the centre of the frame, you put it on the word, and about a second later the definition appears.",
    "The practical difference from a Kindle is that you hold a phone above the book rather than touching the page, and that lighting matters. The practical similarity is that the lookup no longer interrupts you — the camera stays open, so consecutive lookups cost nothing.",
-   'English definitions are built in; additional dictionaries and English-word translation packs download separately and work offline once installed. The upcoming language expansion expands to 24 book languages and 24 English translation targets. See the home page for availability and the complete language list.',
+   'English definitions are built in; additional dictionaries and English-word translation packs download separately and work offline once installed. The app offers 24 book languages and 24 English translation targets. See the home page for availability and the complete language list.',
   ],
   siblings=["look-up-word-paper-book", "camera-dictionary-offline", "point-camera-at-word"]),
 
@@ -88,7 +88,7 @@ QUESTIONS_EN = [
   paragraphs=[
    "It depends entirely on where the dictionary lives. Apps that send the recognised word to a server need a connection for every lookup; apps that bundle the dictionary work anywhere. The download size gives it away — a full English dictionary is well over a hundred megabytes, so a 30 MB app is almost certainly calling out to something.",
    "Text recognition itself is usually on-device on modern iPhones and is not the constraint. The constraint is the dictionary data.",
-   'Booktionary includes English definitions. Additional dictionaries and English-word translation packs are separate optional downloads. The upcoming language expansion expands this selection to 24 book languages and 24 translation targets; see the home page for the list and release availability. After installation, recognition and lookups run on the phone and work offline. Internet is needed for the catalog and selected downloads; lookup words and camera images are not sent.',
+   'Booktionary includes English definitions. Additional dictionaries and English-word translation packs are separate optional downloads. The app offers 24 book languages and 24 translation targets; see the home page for the complete list and availability. After installation, recognition and lookups run on the phone and work offline. Internet is needed for the catalog and selected downloads; lookup words and camera images are not sent.',
    "There is no account, history, sync or analytics. Optional pack requests go to booktionary.io; the hosting provider's security logging is described in the Privacy Policy.",
   ],
   siblings=["offline-dictionary-app-iphone", "point-camera-at-word", "kindle-dictionary-for-paper-books"]),
