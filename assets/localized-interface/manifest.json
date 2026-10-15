@@ -4,9 +4,9 @@
   "assets": {
     "assets/localized-interface/fr/booktionary-real-book-photo.jpg": {
       "interfaceLanguage": "fr",
-      "sha256": "5b39773a48320fe96f0965abba870860700e2b0acb3d76f5753bb7978f776434",
-      "source": "booktionary/docs/appstore/screenshots/localized-interface-1.0.12-review-2026-10-13/store/fr/2b-english-book-translation-6.9.png",
-      "sourceSha256": "73c8f341f1eab8cd252fcc86459108c49958697ba02e4b9469036acdeab7f2b5",
+      "sha256": "127da9b5e5cf07d72a9bfbc00fab08b9a9fb97e3af8e490e58f3dfdc87597d93",
+      "source": "booktionary/docs/appstore/screenshots/localized-interface-1.0.12-review-2026-10-14/store/fr/2b-english-book-translation-6.9.png",
+      "sourceSha256": "ee5ead956d5658578aba194ed2050198f30c32b7d1c575dc43de692eb33fcb2f",
       "generatedArtwork": true,
       "nativePixelExact": false,
       "bookLanguage": "en",
@@ -14,9 +14,9 @@
     },
     "assets/localized-interface/es/booktionary-real-book-photo.jpg": {
       "interfaceLanguage": "es",
-      "sha256": "e2c254bb038002c0c38cea998cf6a6dca2c0a56dbbfc825a2d8752ed62d5ec60",
-      "source": "booktionary/docs/appstore/screenshots/localized-interface-1.0.12-review-2026-10-13/store/es/2b-english-book-translation-6.9.png",
-      "sourceSha256": "08ea4927a0dc3603350d4952d96382c210172e30e18621a5fe4b3b87b8d6df42",
+      "sha256": "552097691b6f3fcf405c960be14f66c7e0ecdeae267182a2fd7eefb0f9f3b9af",
+      "source": "booktionary/docs/appstore/screenshots/localized-interface-1.0.12-review-2026-10-14/store/es/2b-english-book-translation-6.9.png",
+      "sourceSha256": "079837fc003abbfcb452277389c49c383ba30575bc464a136882f7cb12fbc15c",
       "generatedArtwork": true,
       "nativePixelExact": false,
       "bookLanguage": "en",
@@ -24,9 +24,9 @@
     },
     "assets/localized-interface/pt/booktionary-real-book-photo.jpg": {
       "interfaceLanguage": "pt",
-      "sha256": "5182e4465e9ab0b58bc83d0bcea1127b1b03c4f645b0c795cf984511ea8495bd",
-      "source": "booktionary/docs/appstore/screenshots/localized-interface-1.0.12-review-2026-10-13/store/pt/2b-english-book-translation-6.9.png",
-      "sourceSha256": "1f2992ea44d025dcb4e805cf390c4d018a6fdd78af1908375255e4f36eee1fdf",
+      "sha256": "56ace088486b81dc89596a74704c706f91a80fdb7c17a1861bd2c0b34cba0641",
+      "source": "booktionary/docs/appstore/screenshots/localized-interface-1.0.12-review-2026-10-14/store/pt/2b-english-book-translation-6.9.png",
+      "sourceSha256": "485bc0252795608fde0ee7b4396ad61bf69139aed8ae491efdaa10e206cb7d16",
       "generatedArtwork": true,
       "nativePixelExact": false,
       "bookLanguage": "en",
@@ -34,9 +34,9 @@
     },
     "assets/localized-interface/it/booktionary-real-book-photo.jpg": {
       "interfaceLanguage": "it",
-      "sha256": "fb57e3183295483269745ab7f1a97d3317380f9441668f23b42ec5651e46d58c",
-      "source": "booktionary/docs/appstore/screenshots/localized-interface-1.0.12-review-2026-10-13/store/it/2b-english-book-translation-6.9.png",
-      "sourceSha256": "46ab301b357d6fb51113dfd0f7b7775956d47228d5da66aca60a6fa6a0e6f8d7",
+      "sha256": "d4920c2e9f72f873de057eb8f36be1a518220ca00110000cfd07790eb17ef208",
+      "source": "booktionary/docs/appstore/screenshots/localized-interface-1.0.12-review-2026-10-14/store/it/2b-english-book-translation-6.9.png",
+      "sourceSha256": "b3568826da68f6e30f878ab681d2499c7bd63798b13be91b5c2c98399849d7a2",
       "generatedArtwork": true,
       "nativePixelExact": false,
       "bookLanguage": "en",
@@ -44,13 +44,14 @@
     },
     "assets/localized-interface/de/booktionary-real-book-photo.jpg": {
       "interfaceLanguage": "de",
-      "sha256": "2fd883e23e8bbb070862109312498b6cf1d606df9034a61e96ba9b60beca5e74",
-      "source": "booktionary/docs/appstore/screenshots/localized-interface-1.0.12-review-2026-10-13/store/de/2b-english-book-translation-6.9.png",
-      "sourceSha256": "224c8ab58394ea4c15c683e65b712e7110f89b8d5e476e3f4547474c31dae327",
+      "sha256": "145664d1ced4bc3f260ad0d42e43536475cac053a107316019ef257537b7c055",
+      "source": "booktionary/docs/appstore/screenshots/localized-interface-1.0.12-review-2026-10-14/store/de/2b-english-book-translation-6.9.png",
+      "sourceSha256": "cd7f35b6ee5c5f9fc4fb8d8a159e156d3459886700e98955e2aaa44d278e6edd",
       "generatedArtwork": true,
       "nativePixelExact": false,
       "bookLanguage": "en",
       "translationLanguage": "de"
     }
-  }
+  },
+  "build": "37"
 }

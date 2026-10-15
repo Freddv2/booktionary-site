@@ -32,7 +32,7 @@ class HomeRefreshTests(unittest.TestCase):
             with self.subTest(locale=locale):
                 note = HOME_UI[locale]['interface_note']
                 self.assertIn(path, note)
-                self.assertIn('27', note)
+                self.assertIn('26', note)
                 self.assertTrue(any(word in note.lower() for word in ('english', 'anglais', 'inglés', 'inglês', 'inglese', 'englisch')))
 
     def test_every_purchase_link_and_app_schema_preserves_campaign(self):
