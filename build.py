@@ -158,7 +158,7 @@ def render_home(page, pages):
     <section class="bt-proof bt-wrap" id="proof" aria-labelledby="proof-title"><p class="bt-kicker" id="proof-title">{esc(ui['proof_kicker'])}</p><div class="bt-proof-grid">{proof}</div></section>
     <section class="bt-meaning" id="meaning" aria-labelledby="meaning-title"><div class="bt-wrap bt-meaning-grid">
       <div><p class="bt-kicker">{esc(ui['meaning_kicker'])}</p><h2 id="meaning-title">{heading(ui['meaning_heading'])}</h2>{features}</div>
-      <figure class="bt-native bt-photo-example"><div class="bt-reading-photo"><img src="{pre}assets/booktionary-real-book-photo.jpg" alt="{esc(ui['example_alt'])}" width="667" height="1100" loading="lazy"></div><figcaption>{esc(ui['example_caption'][0])}<br>{esc(ui['example_caption'][1])}</figcaption></figure>
+      <figure class="bt-native bt-photo-example"><div class="bt-reading-photo"><img src="{pre}assets/{esc(ui.get('example_image', 'booktionary-real-book-photo.jpg'))}" alt="{esc(ui['example_alt'])}" width="667" height="{ui.get('example_height', 1100)}" loading="lazy"></div><figcaption>{esc(ui['example_caption'][0])}<br>{esc(ui['example_caption'][1])}</figcaption></figure>
     </div></section>
     <section class="bt-languages bt-wrap" id="languages" aria-labelledby="language-title">
       <div class="bt-language-intro"><div><p class="bt-kicker">{esc(ui['language_kicker'])}</p><h2 id="language-title">{heading(ui['language_heading'])}</h2></div><p>{esc(ui['language_lead'])}</p></div>

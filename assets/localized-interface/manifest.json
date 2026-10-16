@@ -1,0 +1,57 @@
+{
+  "release": "1.0.12",
+  "status": "PREPARED_FOR_POST_RELEASE",
+  "assets": {
+    "assets/localized-interface/fr/booktionary-real-book-photo.jpg": {
+      "interfaceLanguage": "fr",
+      "sha256": "127da9b5e5cf07d72a9bfbc00fab08b9a9fb97e3af8e490e58f3dfdc87597d93",
+      "source": "booktionary/docs/appstore/screenshots/localized-interface-1.0.12-review-2026-10-14/store/fr/2b-english-book-translation-6.9.png",
+      "sourceSha256": "ee5ead956d5658578aba194ed2050198f30c32b7d1c575dc43de692eb33fcb2f",
+      "generatedArtwork": true,
+      "nativePixelExact": false,
+      "bookLanguage": "en",
+      "translationLanguage": "fr"
+    },
+    "assets/localized-interface/es/booktionary-real-book-photo.jpg": {
+      "interfaceLanguage": "es",
+      "sha256": "552097691b6f3fcf405c960be14f66c7e0ecdeae267182a2fd7eefb0f9f3b9af",
+      "source": "booktionary/docs/appstore/screenshots/localized-interface-1.0.12-review-2026-10-14/store/es/2b-english-book-translation-6.9.png",
+      "sourceSha256": "079837fc003abbfcb452277389c49c383ba30575bc464a136882f7cb12fbc15c",
+      "generatedArtwork": true,
+      "nativePixelExact": false,
+      "bookLanguage": "en",
+      "translationLanguage": "es"
+    },
+    "assets/localized-interface/pt/booktionary-real-book-photo.jpg": {
+      "interfaceLanguage": "pt",
+      "sha256": "56ace088486b81dc89596a74704c706f91a80fdb7c17a1861bd2c0b34cba0641",
+      "source": "booktionary/docs/appstore/screenshots/localized-interface-1.0.12-review-2026-10-14/store/pt/2b-english-book-translation-6.9.png",
+      "sourceSha256": "485bc0252795608fde0ee7b4396ad61bf69139aed8ae491efdaa10e206cb7d16",
+      "generatedArtwork": true,
+      "nativePixelExact": false,
+      "bookLanguage": "en",
+      "translationLanguage": "pt"
+    },
+    "assets/localized-interface/it/booktionary-real-book-photo.jpg": {
+      "interfaceLanguage": "it",
+      "sha256": "d4920c2e9f72f873de057eb8f36be1a518220ca00110000cfd07790eb17ef208",
+      "source": "booktionary/docs/appstore/screenshots/localized-interface-1.0.12-review-2026-10-14/store/it/2b-english-book-translation-6.9.png",
+      "sourceSha256": "b3568826da68f6e30f878ab681d2499c7bd63798b13be91b5c2c98399849d7a2",
+      "generatedArtwork": true,
+      "nativePixelExact": false,
+      "bookLanguage": "en",
+      "translationLanguage": "it"
+    },
+    "assets/localized-interface/de/booktionary-real-book-photo.jpg": {
+      "interfaceLanguage": "de",
+      "sha256": "145664d1ced4bc3f260ad0d42e43536475cac053a107316019ef257537b7c055",
+      "source": "booktionary/docs/appstore/screenshots/localized-interface-1.0.12-review-2026-10-14/store/de/2b-english-book-translation-6.9.png",
+      "sourceSha256": "cd7f35b6ee5c5f9fc4fb8d8a159e156d3459886700e98955e2aaa44d278e6edd",
+      "generatedArtwork": true,
+      "nativePixelExact": false,
+      "bookLanguage": "en",
+      "translationLanguage": "de"
+    }
+  },
+  "build": "37"
+}

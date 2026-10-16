@@ -58,7 +58,7 @@ The four supporting proofs follow this flow. `assets/home.css` contains the
 responsive layout shared by all seven editions.
 
 Version 1.0.10 released on October 10 with **24 book languages**, **24
-English-word translation targets**, and **27 interface localizations**.
+English-word translation targets**. Version 1.0.12 provides **26 interface language options**, with one French choice and separate Simplified and Traditional Chinese choices.
 `language_support.py` keeps the scopes distinct. English is bundled; 23 other
 dictionaries and word-translation packs are separate optional downloads.
 Greek is an interface/translation language, not a book language. Kurmanji is
@@ -85,4 +85,15 @@ current App Store images. Historical capture directories remain preserved.
 
 The website has one French edition at `/fr/`. `/fr-CA/` is a generated
 compatibility redirect for existing support URLs, omitted from hreflang, the
-selector and sitemap. Canadian French remains an app/store localization.
+selector and sitemap. Canadian French remains an App Store locale. Canadian phone preferences use the single French app-language choice.
+
+### Localized release images (1.0.12)
+
+The pending 1.0.12 website PR uses matching app interface controls in each
+localized homepage's definition example. The source images and checksums are
+recorded in `assets/localized-interface/manifest.json`; Portuguese regional pages
+share the app's Portuguese interface. The English book passage and definition
+remain English, and the caption names the demonstrated word-translation language.
+The scanning hero has no interface text and can remain shared. Publish these
+images only through the exact-version gate after 1.0.12 is public in the US and
+Canadian App Store listings.

@@ -54,7 +54,7 @@ HOME_UI = {
         privacy="Privacy", licences="Licences", credit=('Dictionary sources include Wiktionary, wordnets and Taiwan’s Ministry of Education. See Licences for '
      'sources and changes.'), site_languages="Site language", related="Explore more reading questions",
     language_scope='Greek has an interface and English-word translations, but is not a book language. Kurdish covers Latin-script Kurmanji, not Sorani; Malay covers Latin-script Rumi. Chinese supports Simplified and Traditional text. Coverage varies by word, form and language.',
-    interface_note='27 interface localizations, including Canadian French and Simplified and Traditional Chinese.',
+    interface_note='26 interface languages. Tap the gear on the home screen, then Settings → App language. It follows your phone language by default; unsupported phone languages use English. This does not change the book language.',
     home_alt='Booktionary home screen with the marked-book logo and separate book language and translation choices',
     picker_alt='Booktionary book language picker with English included and optional dictionary downloads',
     greek_scope_label='Interface + English translations',
@@ -109,7 +109,7 @@ HOME_UI = {
         privacy="Confidentialité", licences="Licences", credit=('Sources : Wiktionnaire, réseaux lexicaux et ministère de l’Éducation de Taïwan. Voir les licences pour les '
      'sources et adaptations.'), site_languages="Langue du site", related="Autres questions de lecture",
     language_scope='Le grec propose une interface et des traductions de mots anglais, sans lecture de livres grecs. Le kurde couvre le kurmanji en alphabet latin, pas le sorani ; le malais couvre le rumi en alphabet latin. Le chinois couvre les écritures simplifiée et traditionnelle. La couverture varie selon le mot, la forme et la langue.',
-    interface_note='27 interfaces localisées, dont le français canadien et le chinois simplifié et traditionnel.',
+    interface_note='26 langues d’interface. Touchez l’engrenage sur l’accueil, puis Réglages → Langue de l’app. La langue du téléphone est utilisée par défaut ; si elle n’est pas prise en charge, l’app utilise l’anglais. La langue du livre reste distincte.',
     home_alt='Accueil de Booktionary avec le logo du livre marqué et les choix distincts de langue du livre et de traduction',
     picker_alt='Choix de la langue du livre dans Booktionary, avec l’anglais intégré et des dictionnaires à télécharger',
     greek_scope_label='Interface + traductions depuis l’anglais',
@@ -166,7 +166,7 @@ HOME_UI["es"] = dict(
     footer_line="Un poco más de significado en cada página.", privacy="Privacidad", licences="Licencias", credit=('Fuentes: Wiktionary, redes léxicas y Ministerio de Educación de Taiwán. Consulta las licencias para '
      'conocer las fuentes y adaptaciones.'), site_languages="Idioma del sitio", related="Más preguntas sobre la lectura",
     language_scope='El griego tiene interfaz y traducciones de palabras inglesas, pero no lectura de libros griegos. El kurdo cubre kurmanji en alfabeto latino, no sorani; el malayo cubre rumi en alfabeto latino. El chino admite escritura simplificada y tradicional. La cobertura varía según la palabra, la forma y el idioma.',
-    interface_note='27 interfaces localizadas, incluidas francés canadiense y chino simplificado y tradicional.',
+    interface_note='26 idiomas de interfaz. Toca el engranaje en inicio y abre Ajustes → Idioma de la app. Se usa el idioma del teléfono por defecto; si no está disponible, se usa inglés. El idioma del libro se elige por separado.',
     home_alt='Pantalla de inicio de Booktionary con el nuevo logotipo y opciones independientes de idioma del libro y traducción',
     picker_alt='Selector de idioma del libro de Booktionary con inglés incluido y diccionarios opcionales para descargar',
     greek_scope_label='Interfaz + traducciones del inglés',
@@ -217,7 +217,7 @@ HOME_UI["pt-BR"] = dict(
     footer_line="Um pouco mais de sentido em cada página.", privacy="Privacidade", licences="Licenças", credit=('Fontes: Wiktionary, redes lexicais e Ministério da Educação de Taiwan. Veja as licenças para fontes e '
      'adaptações.'), site_languages="Idioma do site", related="Mais perguntas sobre leitura",
     language_scope='O grego tem interface e traduções de palavras inglesas, mas não leitura de livros gregos. O curdo cobre kurmanji em alfabeto latino, não sorani; o malaio cobre rumi em alfabeto latino. O chinês aceita escrita simplificada e tradicional. A cobertura varia por palavra, forma e idioma.',
-    interface_note='27 interfaces localizadas, incluindo francês canadense e chinês simplificado e tradicional.',
+    interface_note='26 idiomas de interface. Toque na engrenagem da tela inicial e abra Ajustes → Idioma do app. Por padrão, segue o idioma do celular; se não for compatível, usa inglês. O idioma do livro é independente.',
     home_alt='Tela inicial do Booktionary com o novo logotipo e opções separadas de idioma do livro e tradução',
     picker_alt='Seleção de idioma do livro do Booktionary com inglês incluído e dicionários opcionais para baixar',
     greek_scope_label='Interface + traduções do inglês',
@@ -251,7 +251,7 @@ HOME_UI["pt-PT"] = {**HOME_UI["pt-BR"],
       'integradas.')],
     "requirements": "Para iPhone · iOS 17 ou posterior", "privacy": "Privacidade", "site_languages": "Língua do site",
     'language_scope': 'O grego tem interface e traduções de palavras inglesas, mas não leitura de livros gregos. O curdo cobre kurmanji em alfabeto latino, não sorani; o malaio cobre rumi em alfabeto latino. O chinês aceita escrita simplificada e tradicional. A cobertura varia por palavra, forma e língua.',
-    'interface_note': '27 interfaces localizadas, incluindo francês canadiano e chinês simplificado e tradicional.',
+    'interface_note': '26 línguas de interface. Toque na engrenagem do ecrã inicial e abra Definições → Língua da app. Por predefinição, segue a língua do telefone; se não for suportada, usa inglês. A língua do livro é independente.',
     'home_alt': 'Ecrã inicial do Booktionary com o novo logótipo e opções separadas de língua do livro e tradução',
     'picker_alt': 'Seleção da língua do livro no Booktionary com inglês incluído e dicionários opcionais para descarregar',
 }
@@ -302,7 +302,7 @@ HOME_UI["it"] = dict(
     footer_line="Un po’ più di significato in ogni pagina.", privacy="Privacy", licences="Licenze", credit=('Fonti: Wiktionary, reti lessicali e Ministero dell’Istruzione di Taiwan. Vedi le licenze per fonti e '
      'adattamenti.'), site_languages="Lingua del sito", related="Altre domande sulla lettura",
     language_scope='Il greco offre interfaccia e traduzioni di parole inglesi, ma non lettura di libri greci. Il curdo copre il kurmanji in alfabeto latino, non il sorani; il malese copre il rumi in alfabeto latino. Il cinese supporta scrittura semplificata e tradizionale. La copertura varia per parola, forma e lingua.',
-    interface_note='27 interfacce localizzate, compresi francese canadese e cinese semplificato e tradizionale.',
+    interface_note='26 lingue per l’interfaccia. Tocca l’ingranaggio nella schermata iniziale, poi Impostazioni → Lingua dell’app. Per impostazione predefinita segue la lingua del telefono; se non è supportata, usa l’inglese. La lingua del libro resta separata.',
     home_alt='Schermata iniziale di Booktionary con il nuovo logo e scelte separate per lingua del libro e traduzione',
     picker_alt='Selezione della lingua del libro in Booktionary con inglese integrato e dizionari facoltativi da scaricare',
     greek_scope_label='Interfaccia + traduzioni dall’inglese',
@@ -353,7 +353,7 @@ HOME_UI["de"] = dict(
     footer_line="Mehr Bedeutung auf jeder Seite.", privacy="Datenschutz", licences="Lizenzen", credit=('Quellen: Wiktionary, Wortnetze und Taiwans Bildungsministerium. Quellen und Anpassungen stehen in den '
      'Lizenzen.'), site_languages="Seitensprache", related="Weitere Fragen zum Lesen",
     language_scope='Griechisch bietet eine Oberfläche und Übersetzungen englischer Wörter, aber keine griechische Buchsprache. Kurdisch umfasst Kurmanji in lateinischer Schrift, nicht Sorani; Malaiisch umfasst Rumi in lateinischer Schrift. Chinesisch unterstützt vereinfachte und traditionelle Schrift. Die Abdeckung hängt von Wort, Form und Sprache ab.',
-    interface_note='27 lokalisierte Oberflächen, darunter kanadisches Französisch sowie vereinfachtes und traditionelles Chinesisch.',
+    interface_note='26 Oberflächensprachen. Tippe auf dem Startbildschirm auf das Zahnrad und öffne Einstellungen → App-Sprache. Standardmäßig gilt die Sprache deines iPhones; wenn sie nicht unterstützt wird, wird Englisch angezeigt. Die Buchsprache bleibt unabhängig.',
     home_alt='Booktionary-Startbildschirm mit Spracherweiterung mit neuem Logo und getrennter Wahl von Buchsprache und Übersetzung',
     picker_alt='Buchsprachauswahl von Booktionary mit integriertem Englisch und optionalen Wörterbuchdownloads',
     greek_scope_label='Oberfläche + Übersetzungen aus dem Englischen',

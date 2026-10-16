@@ -111,3 +111,17 @@ REFRESH = {
  definition_kicker='Jetzt verfügbar', definition_title='Die Definition in deiner Sprache.', definition_body='Lade für englische Bücher die benötigten Sprachdateien und entscheide, ob du übersetzte Definitionen in einer von 19 unterstützten Sprachen lesen möchtest.', definition_note='Erfordert iOS 18 oder neuer und eine unterstützte Zielsprache. Tschechisch, Rumänisch, Griechisch, Kurmanji und Malaiisch bieten nur Wortübersetzungen.',
  translation_faq=('Kann ich das Wort oder die ganze Definition übersetzen?', 'Wortübersetzungen stehen neben englischen Definitionen. Unter iOS 18 oder neuer kannst du nach dem Laden der benötigten Dateien auch übersetzte Definitionen für englische Bücher in 19 unterstützten Sprachen wählen.'), context_question='Wie wählt die App eine Bedeutung?'),
 }
+
+# Use the app interface matching each homepage; book and dictionary text stay English.
+for locale, interface in {'fr':'fr','es':'es','pt-BR':'pt','pt-PT':'pt','it':'it','de':'de'}.items():
+    REFRESH[locale]['example_image'] = f'localized-interface/{interface}/booktionary-real-book-photo.jpg'
+    REFRESH[locale]['example_height'] = 1449
+REFRESH['es']['example_caption'] = ('Libro en inglés · Palabra traducida al español', 'La definición sigue en inglés.')
+REFRESH['es']['example_alt'] = 'Un iPhone muestra luminous, su equivalente español luminoso y una definición inglesa con controles en español'
+for locale in ('pt-BR','pt-PT'):
+    REFRESH[locale]['example_caption'] = ('Livro em inglês · Tradução da palavra para português', 'A definição permanece em inglês.')
+    REFRESH[locale]['example_alt'] = 'Um iPhone mostra luminous, o equivalente português luminoso e uma definição em inglês com controles em português'
+REFRESH['it']['example_caption'] = ('Libro inglese · Traduzione della parola in italiano', 'La definizione resta in inglese.')
+REFRESH['it']['example_alt'] = 'Un iPhone mostra luminous, l’equivalente italiano luminoso e una definizione inglese con controlli in italiano'
+REFRESH['de']['example_caption'] = ('Englisches Buch · Deutsche Wortübersetzung', 'Die Definition bleibt auf Englisch.')
+REFRESH['de']['example_alt'] = 'Ein iPhone zeigt luminous, die deutsche Entsprechung leuchtend und eine englische Definition mit deutschen Bedienelementen'
