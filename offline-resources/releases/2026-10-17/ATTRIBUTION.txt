@@ -1,0 +1,43 @@
+English-directed word packs — 17 October 2026
+
+Source: English Wiktionary contributors, via Kaikki/Wiktextract.
+https://en.wiktionary.org/ ; https://kaikki.org/dictionary/rawdata.html
+Dump: 2026-09-02. Extraction: 2026-10-03.
+Raw gzip SHA-256: 3dac8a09e57827bef493e2e6b552fe917bf3b1fc55dee05c4e4a3702aff5dbdb
+
+Content is available under CC BY-SA 4.0 and the GNU Free Documentation License:
+https://creativecommons.org/licenses/by-sa/4.0/
+https://www.gnu.org/licenses/fdl-1.3.html
+
+Booktionary filtered source-language headwords, retained their part of speech,
+excluded form-only senses and used the existing bounded English-gloss extraction.
+Headwords are normalized for lookup. These resources are distinct directed
+dictionaries; existing English-to-source archives were not reversed.
+
+de → English
+https://booktionary.io/offline-resources/releases/2026-10-17/de-to-en-v1.sqlite.gz
+Archive SHA-256: bd46c690246da12a5dc7d5e15b761d41b90eb4be2745648f46e113fc6946ed71
+Archive bytes: 4271204
+Installed bytes: 9510912
+Rows: 117729; distinct headwords: 95453
+
+it → English
+https://booktionary.io/offline-resources/releases/2026-10-17/it-to-en-v1.sqlite.gz
+Archive SHA-256: 7ef189e3b97db04e096e0b1e5456c05f3147f5f299eca1beb57d223ef43d6f96
+Archive bytes: 5797255
+Installed bytes: 14905344
+Rows: 194969; distinct headwords: 159099
+
+pt → English
+https://booktionary.io/offline-resources/releases/2026-10-17/pt-to-en-v1.sqlite.gz
+Archive SHA-256: 81ce6c2539ae6ac80bf22b18e84944a28cd1eaff386448fc50ad4518c86bfea8
+Archive bytes: 3753347
+Installed bytes: 9064448
+Rows: 103112; distinct headwords: 78014
+
+ja → English
+https://booktionary.io/offline-resources/releases/2026-10-17/ja-to-en-v1.sqlite.gz
+Archive SHA-256: a003dc9203abaf3fe53d92175b40f33dc18d93e5dd2ab982ed4993ba38b32d47
+Archive bytes: 5675036
+Installed bytes: 13221888
+Rows: 165565; distinct headwords: 120568
