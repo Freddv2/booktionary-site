@@ -41,3 +41,130 @@ Archive SHA-256: a003dc9203abaf3fe53d92175b40f33dc18d93e5dd2ab982ed4993ba38b32d4
 Archive bytes: 5675036
 Installed bytes: 13221888
 Rows: 165565; distinct headwords: 120568
+
+Remaining 17 book languages → English
+
+Bokmål includes nb only (not no/nn). Northern Kurdish ku/kmr requires an explicit
+compatible variety label and Latin headwords. Malay uses Latin/Rumi headwords,
+excluding Jawi. Chinese uses zh entries. Turkish and stressed Russian/Ukrainian
+headwords use Booktionary native lookup normalization. English equivalents retain
+the existing bounded source-gloss extraction; coverage varies by word and sense.
+
+da → English
+https://booktionary.io/offline-resources/releases/2026-10-17/da-to-en-v1.sqlite.gz
+Archive SHA-256: 71bff25daf3ba0eec9976add5656285beac39d7ed485fffd4cc75844389d8a02
+Archive bytes: 1049671
+Installed bytes: 2211840
+Rows: 31756; distinct headwords: 24630
+
+nl → English
+https://booktionary.io/offline-resources/releases/2026-10-17/nl-to-en-v1.sqlite.gz
+Archive SHA-256: 9f0aa454be8d7b86e33c84d6b08bb93b503d37c0d966a18de32f85362bb8404f
+Archive bytes: 2988138
+Installed bytes: 6934528
+Rows: 84901; distinct headwords: 68722
+
+nb → English
+https://booktionary.io/offline-resources/releases/2026-10-17/nb-to-en-v1.sqlite.gz
+Archive SHA-256: cb90634b2bb25a8b99dfbadafec9e1fa9c2ed6e1d21d8fbe95910c5c56fe8667
+Archive bytes: 1010447
+Installed bytes: 2199552
+Rows: 28813; distinct headwords: 22946
+
+ru → English
+https://booktionary.io/offline-resources/releases/2026-10-17/ru-to-en-v1.sqlite.gz
+Archive SHA-256: d02c4036d1df726d4dca3491846ca619866749aa17afcc131b0937cfbea34dc6
+Archive bytes: 2998816
+Installed bytes: 7462912
+Rows: 78371; distinct headwords: 59095
+
+sv → English
+https://booktionary.io/offline-resources/releases/2026-10-17/sv-to-en-v1.sqlite.gz
+Archive SHA-256: e25200bab49bb626b8bf49eee7b1f217361c75b5f77756de9ce3113e41849640
+Archive bytes: 2655429
+Installed bytes: 5681152
+Rows: 72098; distinct headwords: 59758
+
+pl → English
+https://booktionary.io/offline-resources/releases/2026-10-17/pl-to-en-v1.sqlite.gz
+Archive SHA-256: 7f9333149cad7ea3baf3a3645dc5c8113155a22a91f85997132daec2bda77996
+Archive bytes: 4747327
+Installed bytes: 11407360
+Rows: 137342; distinct headwords: 95268
+
+cs → English
+https://booktionary.io/offline-resources/releases/2026-10-17/cs-to-en-v1.sqlite.gz
+Archive SHA-256: e595c9784f4064c614f7d0a914b60de0e30ea307f667a224770a0f74e8a2b605
+Archive bytes: 1732493
+Installed bytes: 3715072
+Rows: 54126; distinct headwords: 46720
+
+th → English
+https://booktionary.io/offline-resources/releases/2026-10-17/th-to-en-v1.sqlite.gz
+Archive SHA-256: d09773466f0f250083d41ab6a291c5cc0e0620e2b044b6b75ea2ddfc8208187e
+Archive bytes: 980581
+Installed bytes: 2523136
+Rows: 24509; distinct headwords: 17485
+
+ro → English
+https://booktionary.io/offline-resources/releases/2026-10-17/ro-to-en-v1.sqlite.gz
+Archive SHA-256: e877dcf6b92c4d6eec576a54963e3844a767f25960d04232292aae790b056d91
+Archive bytes: 3298082
+Installed bytes: 7942144
+Rows: 116054; distinct headwords: 102970
+
+vi → English
+https://booktionary.io/offline-resources/releases/2026-10-17/vi-to-en-v1.sqlite.gz
+Archive SHA-256: 16ac28cc3c61f7f80e78688d617585f13d82522487288cf6fe4f0a30775da30b
+Archive bytes: 1951262
+Installed bytes: 4337664
+Rows: 52357; distinct headwords: 39296
+
+tr → English
+https://booktionary.io/offline-resources/releases/2026-10-17/tr-to-en-v1.sqlite.gz
+Archive SHA-256: 5381dd604180d3de264d93c5eb842c45a74e11c521cc966973e4919106de24ff
+Archive bytes: 1192233
+Installed bytes: 2617344
+Rows: 35188; distinct headwords: 26361
+
+id → English
+https://booktionary.io/offline-resources/releases/2026-10-17/id-to-en-v1.sqlite.gz
+Archive SHA-256: 85507fb062a778ff7107419a1749770508d5a3c4b3a00212702b4d539dc7f81f
+Archive bytes: 1757634
+Installed bytes: 3854336
+Rows: 45421; distinct headwords: 33390
+
+zh → English
+https://booktionary.io/offline-resources/releases/2026-10-17/zh-to-en-v1.sqlite.gz
+Archive SHA-256: 844caad369ed3fe4d3880119f5546e673130d7365cf15a83ed10d3042ffc0003
+Archive bytes: 8555915
+Installed bytes: 17702912
+Rows: 227403; distinct headwords: 176172
+
+ko → English
+https://booktionary.io/offline-resources/releases/2026-10-17/ko-to-en-v1.sqlite.gz
+Archive SHA-256: 81e01c268b5968f7d2323989f3771c2ee62d1c0fc88d71fdab2ddb66195aed81
+Archive bytes: 1783220
+Installed bytes: 3825664
+Rows: 48011; distinct headwords: 36412
+
+uk → English
+https://booktionary.io/offline-resources/releases/2026-10-17/uk-to-en-v1.sqlite.gz
+Archive SHA-256: 201da9a34dee9c0e957b7c3fff13eb0402332e07259a1d8bc968eaa55dd49de8
+Archive bytes: 1561269
+Installed bytes: 4030464
+Rows: 39824; distinct headwords: 29542
+
+ku → English
+https://booktionary.io/offline-resources/releases/2026-10-17/ku-to-en-v1.sqlite.gz
+Archive SHA-256: b113f75d24c90852a24f86c281226bda6c7ae9d1865a5ea5f4483b713c1fe7d6
+Archive bytes: 113259
+Installed bytes: 266240
+Rows: 3994; distinct headwords: 3376
+
+ms → English
+https://booktionary.io/offline-resources/releases/2026-10-17/ms-to-en-v1.sqlite.gz
+Archive SHA-256: 39ec74ff20ee04d50da56546d7530141ac8effa822dffe638349913777b58d33
+Archive bytes: 510528
+Installed bytes: 1097728
+Rows: 14649; distinct headwords: 10377
