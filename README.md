@@ -21,7 +21,7 @@ next release only after the previous site update is verified live.
 Privacy and license documents are maintained as standalone HTML; `build.py` does
 not generate or replace them.
 
-Edit `content.py`, `home_ui.py` or `home_refresh.py`, never the generated HTML directly — every page starts
+Edit `content.py`, `home_ui.py`, `home_refresh.py`, or the localized JSON sources, never the generated HTML directly — every page starts
 with a comment saying so, and hand edits are silently overwritten on the
 next build. Then:
 
@@ -30,7 +30,7 @@ python3 build.py && python3 validate.py
 ```
 
 `validate.py` is the test suite. A change is not done until it ends with
-`28 page(s) checked, 0 failing (27 content pages and one compatibility redirect)` and `git status --porcelain` is empty
+`48 page(s) checked, 0 failing` (47 content pages and one compatibility redirect) and `git status --porcelain` is empty
 (build.py's output is deterministic, so a clean tree after a rebuild means
 the committed HTML matches content.py).
 
@@ -48,14 +48,14 @@ home pages must not be removed or replaced with pure marketing copy.
 
 ## Localization
 
-Home/support pages are available in English, French, Spanish, Brazilian Portuguese, European Portuguese, Italian and German. They share reciprocal hreflang links and a visible language selector. The English/French question pages retain their paired links. Edit content.py, regenerate with `python3 build.py`, then run `python3 validate.py` and `python3 -m unittest discover -s tests -v`. The homepage labels its example price as USD; the App Store supplies the regional price.
+Home/support pages cover all 26 app interface choices and all 31 App Store locales through 27 canonical website editions. `site_locales.py` records every mapping. English, French and Spanish regional store locales share their language edition; Portuguese has Brazilian and European editions, Chinese has both scripts, and Kurmanji uses Latin script. They share reciprocal hreflang links and a visible language selector. The English/French question pages retain their paired links. Edit content.py, regenerate with `python3 build.py`, then run `python3 validate.py` and `python3 -m unittest discover -s tests -v`. The homepage labels its example price as USD; the App Store supplies the regional price.
 
 ## Reading-first homepage
 
 The October 11 approved mockup leads with “Stay in the story”, followed by
 pointing at an unfamiliar word, seeing the meaning, and continuing to read.
 The four supporting proofs follow this flow. `assets/home.css` contains the
-responsive layout shared by all seven editions.
+responsive visual system. The original seven homepages keep their full layout; the 20 additional editions use the same visual system with all ten released product-description blocks.
 
 Version 1.0.10 released on October 10 with **24 book languages**, **24
 English-word translation targets**. Version 1.0.12 provides **26 interface language options**, with one French choice and separate Simplified and Traditional Chinese choices.
@@ -74,8 +74,19 @@ illustration, showing the English/French example. Its provenance is recorded
 alongside the asset. Actual historical app screenshots remain untouched in
 `assets/language-expansion/` but are no longer displayed in decorative frames.
 
-App Store anchors and SoftwareApplication schema use the tracked URL from
-`SITE["appstore_url"]`. Preserve all campaign parameters when editing it.
+App Store anchors and SoftwareApplication schema use `build.appstore_url_for(lang)`.
+It preserves the app, provider and media parameters from `SITE["appstore_url"]`
+and assigns a campaign per page language: `booktionary_web_en`,
+`booktionary_web_fr`, `booktionary_web_de`, `booktionary_web_es`,
+`booktionary_web_it`, `booktionary_web_pt_br` and `booktionary_web_pt_pt`,
+with the same `booktionary_web_<locale>` convention for all 27 editions
+(locale tags are lowercased and hyphens become underscores).
+Question pages use their language's campaign too. These tokens describe the
+referring page, not the purchaser's territory. Historic traffic retains the old
+`booktionary_website_ios` campaign; compare periods with that migration in mind.
+Apple's privacy thresholds can hide low-volume campaigns, so absent data is not
+proof of zero downloads. This adds no website scripts, cookies or paid service.
+See [Apple's campaign-link documentation](https://developer.apple.com/help/app-store-connect-analytics/acquisition/campaign-links).
 Do not modify offline-resource catalogs or downloadable packs when updating
 presentation. Support details remain on every homepage for App Store use.
 
@@ -97,3 +108,25 @@ remain English, and the caption names the demonstrated word-translation language
 The scanning hero has no interface text and can remain shared. Publish these
 images only through the exact-version gate after 1.0.12 is public in the US and
 Canadian App Store listings.
+
+## All-language search discovery — 19 October 2026
+
+`search_descriptions.json` supplies 27 localized homepage summaries.
+`article_search_descriptions.json` supplies the 20 English/French article
+summaries. These describe the actual page; Google may choose a different
+snippet. Every generated page has a self-canonical URL, a reciprocal hreflang
+cluster and sitemap coverage.
+
+`locale_labels.json` supplies short native interface labels for the 20 new
+editions. `localized_homes.json` freezes the ten released App Store description
+blocks for 19 of them; Kurmanji has separately prepared copy following the same
+released feature boundaries. `localized_home.py` renders every block, including
+download, coverage and device limitations. Greek is for English-book readers
+and word translations; it does not advertise Greek book scanning. No independent
+native-speaker certification is claimed for the new website labels/copy.
+
+All 27 editions have a visible language selector and their own campaign token.
+The 20 new homepages add no new app capabilities, assets, scripts or paid service.
+Indexability checks do not establish that Google has indexed a URL. Read the
+Search Console evidence and actual deployment state in the app repository's
+`docs/qa/2026-10-19-all-locale-search-visibility.md`.

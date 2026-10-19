@@ -464,3 +464,21 @@ HOME_DE = dict(lang='de', slug='', pair='', siblings=[],
  extra_html='<h2>Tipps und Hilfe</h2><p>Gute Beleuchtung hilft. Halte das Telefon näher an die Seite, wenn der Text nicht erkannt wird, und wähle zuerst die Buchsprache. Prüfe die Offline-Nutzung, indem du die Ressourcen installierst und im Flugmodus ein Wort nachschlägst.</p><p>Brauchst du Hilfe? Schreibe an <a href="mailto:fredddv@hotmail.com">fredddv@hotmail.com</a> und nenne dein iPhone-Modell, die iOS-Version, die Buchsprache und das Problem.</p>')
 
 PAGES += [HOME_ES, HOME_PT_BR, HOME_PT_PT, HOME_IT, HOME_DE]
+
+# Search copy is separate from long-form support and released product copy.
+import json as _json
+from pathlib import Path as _Path
+_CONTENT_ROOT = _Path(__file__).resolve().parent
+SEARCH_DESCRIPTIONS = _json.loads((_CONTENT_ROOT / 'search_descriptions.json').read_text(encoding='utf-8'))
+ARTICLE_DESCRIPTIONS = _json.loads((_CONTENT_ROOT / 'article_search_descriptions.json').read_text(encoding='utf-8'))
+LOCALE_LABELS = _json.loads((_CONTENT_ROOT / 'locale_labels.json').read_text(encoding='utf-8'))
+LOCALIZED_HOMES = _json.loads((_CONTENT_ROOT / 'localized_homes.json').read_text(encoding='utf-8'))['pages']
+for _page in PAGES:
+    if not _page['slug']:
+        _page['description'] = SEARCH_DESCRIPTIONS[_page['lang']]
+    else:
+        _page['description'] = ARTICLE_DESCRIPTIONS[_page['lang'] + '/' + _page['slug']]
+for _locale, _copy in LOCALIZED_HOMES.items():
+    PAGES.append(dict(lang=_locale, slug='', pair='', siblings=[], layout='localized',
+                      question='Booktionary — ' + LOCALE_LABELS[_locale]['headline'],
+                      description=SEARCH_DESCRIPTIONS[_locale], paragraphs=_copy['blocks']))

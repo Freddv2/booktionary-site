@@ -26,3 +26,15 @@ html,body{margin:0;background:#f8f5ec}
 #bt-refresh .bt-header nav{flex-shrink:0}
 @container(max-width:580px){#bt-refresh .bt-hero h1{font-size:clamp(44px,14.5cqw,62px);letter-spacing:-2px}#bt-refresh .bt-footer-bottom nav{justify-content:flex-start}}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+
+/* Additional language editions reuse the reading-first visual system. */
+#bt-refresh.bt-localized .bt-hero h1{font-size:clamp(35px,5.2cqw,64px);line-height:1.15;letter-spacing:-.02em;overflow-wrap:anywhere}
+#bt-refresh .bt-local-copy{padding-block:28px;max-width:880px;line-height:1.75}
+#bt-refresh .bt-local-copy h2{font-size:clamp(27px,3.4cqw,40px);margin-block:0 18px;overflow-wrap:anywhere}
+#bt-refresh .bt-local-copy p{margin-block:0 20px;white-space:pre-line}
+#bt-refresh.bt-localized .bt-definition{display:block;line-height:1.75}
+#bt-refresh.bt-localized .bt-header{padding-right:0;flex-wrap:wrap;padding-block:10px}
+#bt-refresh.bt-localized .bt-header .bt-brand{flex-shrink:0}
+#bt-refresh.bt-localized .bt-header-get{white-space:normal;max-width:48%;text-align:center}
+#bt-refresh.bt-localized .bt-download{white-space:normal;max-width:100%}
+#bt-refresh .bt-footer-bottom nav a[aria-current=page]{font-weight:700;text-decoration-thickness:2px}
