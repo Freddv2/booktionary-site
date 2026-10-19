@@ -130,3 +130,8 @@ The 20 new homepages add no new app capabilities, assets, scripts or paid servic
 Indexability checks do not establish that Google has indexed a URL. Read the
 Search Console evidence and actual deployment state in the app repository's
 `docs/qa/2026-10-19-all-locale-search-visibility.md`.
+
+`BingSiteAuth.xml` is Bing's public ownership-verification file. Keep it at the
+site root so Bing Webmaster Tools can verify `https://booktionary.io/`. The
+existing `sitemap.xml` contains all 47 content URLs; verification and sitemap
+submission do not establish that Bing has indexed those pages.
