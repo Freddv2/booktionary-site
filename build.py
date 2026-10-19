@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Render content.py to committed static HTML. No runtime dependencies."""
 import html as h, json, os, re
-from content import SITE, PAGES
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
+from content import SITE, PAGES, LOCALE_LABELS, LOCALIZED_HOMES
 from home_ui import HOME_UI
 from home_refresh import REFRESH
 from language_support import BOOK_LANGUAGES, INTERFACE_LOCALES
@@ -28,8 +29,19 @@ NAV_LABELS = {
     "de": ("Hauptnavigation", "Fußnavigation", "Hilfe"),
 }
 
+for _locale, _labels in LOCALE_LABELS.items():
+    LABELS[_locale] = (_labels['native_name'], _labels['get'],
+                      _labels['privacy'], _labels['licenses'], _labels['support'])
+
 def language_path(lang):
     return "" if lang == "en" else lang + "/"
+
+def appstore_url_for(lang):
+    """Attribute referrals to page language, preserving the existing provider."""
+    parts = urlsplit(SITE['appstore_url'])
+    query = dict(parse_qsl(parts.query, keep_blank_values=True))
+    query['ct'] = 'booktionary_web_' + lang.lower().replace('-', '_')
+    return urlunsplit(parts._replace(query=urlencode(query)))
 
 def url_for(page):
     return f"{SITE['domain']}/{language_path(page['lang'])}" + (page['slug'] + "/" if page['slug'] else "")
@@ -59,11 +71,11 @@ def jsonld(page):
         data = {"@context": "https://schema.org", "@type": "SoftwareApplication",
                 "name": "Booktionary", "applicationCategory": "ReferenceApplication",
                 "operatingSystem": "iOS 17.0 or later", "url": url_for(page),
-                "installUrl": SITE["appstore_url"],
+                "installUrl": appstore_url_for(page['lang']),
                 "inLanguage": list(INTERFACE_LOCALES),
                 "description": page["description"],
                 "offers": {"@type": "Offer", "price": "1.99", "priceCurrency": "USD",
-                           "url": SITE["appstore_url"]}}
+                           "url": appstore_url_for(page['lang'])}}
     return json.dumps(data, ensure_ascii=False, indent=1).replace("<", "\\u003c")
 
 def fr_typography(text, lang):
@@ -82,7 +94,7 @@ def render_home(page, pages):
     homes = [p for p in pages if not p['slug']]
     alts = ''.join(f'  <link rel="alternate" hreflang="{p["lang"]}" href="{url_for(p)}">\n' for p in homes)
     alts += '  <link rel="alternate" hreflang="x-default" href="https://booktionary.io/">\n'
-    store_url = h.escape(SITE['appstore_url'], quote=True)
+    store_url = h.escape(appstore_url_for(lang), quote=True)
 
     def download_button():
         return (f'<a class="bt-download" href="{store_url}"><span><small>{esc(ui["download"])}</small>'
@@ -179,8 +191,18 @@ def render_home(page, pages):
 </html>
 '''
 
+def render_localized_home(page, pages):
+    from localized_home import render
+    return render(page, pages, labels=LOCALE_LABELS[page['lang']],
+                  copy=LOCALIZED_HOMES[page['lang']], url_for=url_for,
+                  store_url=appstore_url_for(page['lang']), schema=jsonld(page),
+                  locale_names={lang: values[0] for lang, values in LABELS.items()})
+
+
 def render_page(page, pages):
     if not page["slug"]:
+        if page.get('layout') == 'localized':
+            return render_localized_home(page, pages)
         return render_home(page, pages)
     pre = depth_prefix(page)
     lang = page["lang"]
@@ -252,7 +274,7 @@ def render_page(page, pages):
 {wordmark}  <main>
     <h1>{q}</h1>
 {purchase}{hero}{body}
-{extra}{sibs}    <p class="cta"><a href="{h.escape(SITE['appstore_url'], quote=True)}">{cta}</a></p>
+{extra}{sibs}    <p class="cta"><a href="{h.escape(appstore_url_for(lang), quote=True)}">{cta}</a></p>
   </main>
   <footer>
     <a href="{home_href}">Booktionary</a> ·

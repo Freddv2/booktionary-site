@@ -1,0 +1,327 @@
+{
+  "sourceVersion": "1.0.13",
+  "sourceArchiveSha256": "26087bd01910d581b1c419dee1849a6cfda071cbbab22f19e9fb4bc1d7fcf7d2",
+  "sourceNote": "Nineteen pages preserve all ten blocks of the released App Store description. Kurmanji copy follows released product facts; no Greek book source, Sorani, Jawi, full-page translation or unreleased native-to-English features are advertised.",
+  "pages": {
+    "cs": {
+      "subtitle": "Rychlé hledání slov při čtení",
+      "blocks": [
+        "Neznámé slovo vás nemusí vytrhnout z dobré knihy. Namiřte na něj fotoaparát iPhonu, zjistěte význam a pokračujte ve čtení. Bez psaní.",
+        "Význam podle věty\nSlova mohou mít více významů. Na podporovaných zařízeních Booktionary využívá okolní text a pomáhá vybrat vhodný slovníkový význam, který zobrazí jako první. Ostatní významy si můžete také prohlédnout.",
+        "Pomoc při čtení v angličtině\nK anglickým definicím přidejte české překlady jednotlivých slov. Překlad celých definic je dostupný pro jiné podporované cílové jazyky; v češtině zatím zůstávají definice anglicky.",
+        "Stáhněte jednou. Čtěte offline.\nAnglický slovník je součástí aplikace. Další slovníky a překlady slov si stáhněte podle potřeby. Nainstalované zdroje fungují offline. Účet není potřeba. Snímky z fotoaparátu a rozpoznaná slova zůstávají v iPhonu.",
+        "Jeden nákup zahrnuje všechny dostupné slovníky a balíčky překladů slov. Bez předplatného a nákupů v aplikaci.",
+        "Slovníky pro knihy ve 24 jazycích\nAngličtina, čeština, čínština (zjednodušené i tradiční písmo), dánština, francouzština, indonéština, italština, japonština, korejština, kurdština (kurmándží, latinka), malajština (rumi), němčina, nizozemština, norština bokmål, polština, portugalština, rumunština, ruština, španělština, švédština, thajština, turečtina, ukrajinština a vietnamština.",
+        "Anglická slova lze překládat do ostatních uvedených jazyků a do řečtiny. Čtení řeckých knih není podporováno. Kurdština zahrnuje kurmándží v latince, ne sorání; malajština zahrnuje rumi, ne jawi.",
+        "Co je dobré vědět\nVyberte jazyk knihy, namiřte na slovo a krátce podržte. Přejetím zavřete definici. Pokrytí slovníků a překladů slov se liší. K procházení a stahování jazykových zdrojů potřebujete internet.",
+        "Výběr významu podle kontextu vyžaduje iOS 26 nebo novější s dostupnou Apple Intelligence a závisí na jazyku. Bez kontextové shody se zobrazí běžná slovníková definice. Přeložené definice vyžadují iOS 18 nebo novější a kompatibilní jazykové modely; dostupnost závisí na zařízení a iOS. Čeština, rumunština, řečtina, kurmándží a malajština zatím nabízejí jen překlady slov.",
+        "Pro iPhone s iOS 17 nebo novějším."
+      ],
+      "sourceLocale": "cs"
+    },
+    "da": {
+      "subtitle": "Læs og slå hurtigt ord op",
+      "blocks": [
+        "Et ukendt ord skal ikke tage dig ud af en god bog. Peg iPhone-kameraet mod ordet, find betydningen, og læs videre. Du behøver ikke skrive ordet.",
+        "Find betydningen i sætningen\nOrd kan have flere betydninger. På understøttede enheder bruger Booktionary teksten omkring ordet til at hjælpe med at vise den relevante ordbogsbetydning først. Du kan også se de øvrige betydninger.",
+        "Mere hjælp til engelske bøger\nSe danske ordoversættelser ved siden af engelske definitioner. Du kan også slå oversatte definitioner til og skifte mellem engelsk og dansk. Hent de nødvendige sprogmodeller før læsning.",
+        "Hent én gang. Læs offline.\nDen engelske ordbog er indbygget. Hent andre ordbøger, ordoversættelser og nødvendige oversættelsesmodeller efter behov. Installerede ressourcer virker offline. Ingen konto er nødvendig. Kamerabilleder og genkendte ord bliver på din iPhone.",
+        "Ét køb omfatter alle tilgængelige ordbøger og ordoversættelsespakker. Intet abonnement eller køb i appen.",
+        "Ordbøger til 24 bogsprog\nDansk, engelsk, fransk, indonesisk, italiensk, japansk, kinesisk (forenklet og traditionelt), koreansk, kurdisk (kurmanji, latinsk skrift), malajisk (rumi), nederlandsk, norsk bokmål, polsk, portugisisk, rumænsk, russisk, spansk, svensk, thai, tjekkisk, tyrkisk, tysk, ukrainsk og vietnamesisk.",
+        "Engelske ord kan oversættes til de andre sprog på listen samt græsk. Græske bøger understøttes ikke. Kurdisk dækker kurmanji med latinsk skrift, ikke sorani; malajisk dækker rumi, ikke jawi.",
+        "Godt at vide\nVælg bogens sprog, peg på et ord, og hold kortvarigt stille. Stryg definitionen væk for at fortsætte. Ordbøgernes og ordoversættelsernes dækning varierer. Internet kræves for at finde og hente sprogressourcer.",
+        "Valg af betydning ud fra konteksten kræver iOS 26 eller nyere med tilgængelig Apple Intelligence og afhænger af sproget. Uden et kontekstmatch vises den almindelige ordbogsdefinition. Oversatte definitioner kræver iOS 18 eller nyere og kompatible modeller; tilgængeligheden afhænger af enhed og iOS-version. Tjekkisk, rumænsk, græsk, kurmanji og malajisk tilbyder foreløbig kun ordoversættelser.",
+        "Til iPhone med iOS 17 eller nyere."
+      ],
+      "sourceLocale": "da"
+    },
+    "el": {
+      "subtitle": "Βρες λέξεις αμέσως διαβάζοντας",
+      "blocks": [
+        "Μια άγνωστη αγγλική λέξη δεν χρειάζεται να σας βγάλει από την ιστορία. Στρέψτε την κάμερα του iPhone στη λέξη, δείτε τη σημασία της και συνεχίστε την ανάγνωση. Χωρίς πληκτρολόγηση.",
+        "Το νόημα μέσα στην πρόταση\nΟι λέξεις μπορεί να έχουν πολλές σημασίες. Σε συμβατές συσκευές, το Booktionary χρησιμοποιεί το γύρω κείμενο για να βοηθήσει να εμφανιστεί πρώτη η κατάλληλη σημασία του λεξικού. Μπορείτε να δείτε και τις υπόλοιπες.",
+        "Ελληνικές μεταφράσεις για αγγλικά βιβλία\nΠροσθέστε ελληνικές μεταφράσεις λέξεων δίπλα στους αγγλικούς ορισμούς. Οι ορισμοί παραμένουν στα αγγλικά: η μετάφραση ορισμών στα ελληνικά και η σάρωση ελληνικών βιβλίων δεν υποστηρίζονται προς το παρόν.",
+        "Κατεβάστε μία φορά. Διαβάστε χωρίς σύνδεση.\nΤο αγγλικό λεξικό περιλαμβάνεται. Κατεβάστε όσα άλλα λεξικά και μεταφράσεις λέξεων χρειάζεστε. Οι εγκατεστημένοι πόροι λειτουργούν χωρίς σύνδεση. Δεν χρειάζεται λογαριασμός. Οι εικόνες της κάμερας και οι αναγνωρισμένες λέξεις παραμένουν στο iPhone.",
+        "Μία αγορά περιλαμβάνει όλα τα διαθέσιμα λεξικά και πακέτα μετάφρασης λέξεων. Χωρίς συνδρομή ή αγορές εντός εφαρμογής.",
+        "Λεξικά για βιβλία σε 24 γλώσσες\nΑγγλικά, γαλλικά, γερμανικά, δανικά, ιαπωνικά, ινδονησιακά, ισπανικά, ιταλικά, κινεζικά (απλοποιημένη και παραδοσιακή γραφή), κορεατικά, κουρδικά (κουρμαντζί, λατινική γραφή), μαλαϊκά (ρούμι), νορβηγικά μποκμόλ, ολλανδικά, ουκρανικά, πολωνικά, πορτογαλικά, ρουμανικά, ρωσικά, σουηδικά, ταϊλανδικά, τουρκικά, τσεχικά και βιετναμικά.",
+        "Οι αγγλικές λέξεις μεταφράζονται στις άλλες γλώσσες της λίστας και στα ελληνικά. Τα κουρδικά καλύπτουν κουρμαντζί με λατινική γραφή, όχι σορανί· τα μαλαϊκά καλύπτουν ρούμι, όχι τζάουι.",
+        "Χρήσιμες πληροφορίες\nΕπιλέξτε τη γλώσσα του βιβλίου, στοχεύστε μια λέξη και περιμένετε λίγο. Σύρετε τον ορισμό για να συνεχίσετε. Η κάλυψη λεξικών και μεταφράσεων λέξεων διαφέρει. Χρειάζεται διαδίκτυο για την αναζήτηση και λήψη γλωσσικών πόρων.",
+        "Η επιλογή σημασίας βάσει συμφραζομένων απαιτεί iOS 26 ή νεότερο με διαθέσιμο Apple Intelligence και εξαρτάται από τη γλώσσα. Χωρίς αντιστοίχιση, εμφανίζεται ο συνήθης ορισμός. Οι μεταφρασμένοι ορισμοί σε υποστηριζόμενες γλώσσες απαιτούν iOS 18 ή νεότερο και συμβατά μοντέλα· η διαθεσιμότητα εξαρτάται από τη συσκευή και το iOS. Τσεχικά, ρουμανικά, ελληνικά, κουρμαντζί και μαλαϊκά προσφέρουν μόνο μεταφράσεις λέξεων.",
+        "Για iPhone με iOS 17 ή νεότερο."
+      ],
+      "sourceLocale": "el"
+    },
+    "id": {
+      "subtitle": "Cari kata cepat sambil membaca",
+      "blocks": [
+        "Kata yang belum Anda kenal tidak perlu memutus keseruan membaca. Arahkan kamera iPhone ke kata itu, temukan artinya, lalu lanjutkan membaca. Tidak perlu mengetik.",
+        "Temukan makna sesuai kalimat\nSatu kata bisa memiliki beberapa arti. Pada perangkat yang didukung, Booktionary menggunakan teks di sekitarnya untuk membantu menampilkan makna kamus yang sesuai terlebih dahulu. Makna lainnya tetap bisa dilihat.",
+        "Lebih mudah membaca buku bahasa Inggris\nTampilkan terjemahan kata dalam bahasa Indonesia di samping definisi bahasa Inggris. Anda juga dapat mengaktifkan terjemahan definisi dan beralih antara bahasa Inggris dan Indonesia. Unduh model bahasa yang diperlukan sebelum membaca.",
+        "Unduh sekali. Baca offline.\nKamus bahasa Inggris sudah tersedia di aplikasi. Unduh kamus lain, terjemahan kata, dan model terjemahan sesuai kebutuhan. Sumber daya yang terpasang dapat digunakan offline. Tidak perlu akun. Gambar kamera dan kata yang dikenali tetap di iPhone Anda.",
+        "Sekali beli mencakup semua kamus dan paket terjemahan kata yang tersedia. Tanpa langganan atau pembelian dalam aplikasi.",
+        "Kamus untuk buku dalam 24 bahasa\nBahasa Belanda, Ceko, Denmark, Indonesia, Inggris, Italia, Jepang, Jerman, Korea, Kurdi (Kurmanji, aksara Latin), Melayu (Rumi), Norwegia Bokmål, Polandia, Portugis, Prancis, Rumania, Rusia, Spanyol, Swedia, Thai, Tionghoa (Sederhana dan Tradisional), Turki, Ukraina, dan Vietnam.",
+        "Kata bahasa Inggris dapat diterjemahkan ke bahasa lain dalam daftar ini, serta bahasa Yunani. Pemindaian buku berbahasa Yunani tidak didukung. Bahasa Kurdi mencakup Kurmanji dengan aksara Latin, bukan Sorani; bahasa Melayu mencakup Rumi, bukan Jawi.",
+        "Sebelum mulai\nPilih bahasa buku, arahkan kamera ke sebuah kata, lalu tahan sebentar. Geser definisi untuk melanjutkan. Cakupan kamus dan terjemahan kata bervariasi. Internet diperlukan untuk melihat dan mengunduh sumber daya bahasa.",
+        "Pemilihan makna berdasarkan konteks memerlukan iOS 26 atau lebih baru dengan Apple Intelligence yang tersedia, dan bergantung pada bahasa. Jika tidak ada kecocokan konteks, definisi kamus biasa ditampilkan. Terjemahan definisi memerlukan iOS 18 atau lebih baru dan model yang kompatibel; ketersediaannya bergantung pada perangkat dan versi iOS. Bahasa Ceko, Rumania, Yunani, Kurmanji, dan Melayu saat ini hanya menyediakan terjemahan kata.",
+        "Untuk iPhone dengan iOS 17 atau lebih baru."
+      ],
+      "sourceLocale": "id"
+    },
+    "ja": {
+      "subtitle": "読書中の言葉の意味をすばやく検索",
+      "blocks": [
+        "知らない言葉に出会っても、読書の楽しみはそのままに。紙の本の言葉にiPhoneのカメラを向けて、意味を確認し、続きを読みましょう。文字を入力する必要はありません。",
+        "その文に合う意味を見つける\n一つの言葉にも、いくつもの意味があります。対応するデバイスでは、Booktionaryが周囲の文章を手がかりに、文に合う辞書の意味を優先して表示します。ほかの意味も確認できます。",
+        "英語の本を、もっと読みやすく\n英語の説明に日本語の訳語を添えられます。説明文そのものの翻訳も有効にでき、英語と日本語を切り替えて読めます。必要な言語モデルを事前にダウンロードしてください。",
+        "ダウンロードして、オフラインで読書\n英語辞書はアプリに内蔵。ほかの辞書や訳語、説明文の翻訳に必要なモデルは、使うものだけダウンロードできます。インストール済みのリソースはオフラインで利用でき、アカウント登録も不要です。カメラ画像や認識した言葉はiPhone内で処理されます。",
+        "1回の購入で、提供中のすべての辞書と単語翻訳パックを利用できます。サブスクリプションやアプリ内課金はありません。",
+        "24言語の本に対応する辞書\n日本語、英語、フランス語、ドイツ語、スペイン語、ポルトガル語、イタリア語、中国語（簡体字・繁体字）、韓国語、チェコ語、デンマーク語、オランダ語、インドネシア語、クルド語（クルマンジー、ラテン文字）、マレー語（ルミ）、ノルウェー語（ブークモール）、ポーランド語、ルーマニア語、ロシア語、スウェーデン語、タイ語、トルコ語、ウクライナ語、ベトナム語。",
+        "英単語は上記の英語以外の言語とギリシャ語に翻訳できます。ギリシャ語の本の読み取りには対応していません。クルド語はラテン文字のクルマンジーに対応し、ソラニーは対象外です。マレー語はルミに対応し、ジャウィは対象外です。",
+        "ご利用について\n本の言語を選び、言葉にカメラを向けて少し待つと意味が表示されます。表示をスワイプすると読書に戻れます。辞書や訳語の収録範囲は、言葉や言語によって異なります。言語リソースの一覧表示とダウンロードにはインターネット接続が必要です。",
+        "文脈に応じた意味の選択には、Apple Intelligenceが利用可能なiOS 26以降の環境が必要です。対応状況は言語により異なり、文脈に合う意味を選べない場合は通常の辞書の意味を表示します。説明文の翻訳にはiOS 18以降と対応モデルが必要で、利用可否はデバイスやiOSのバージョンによって異なります。チェコ語、ルーマニア語、ギリシャ語、クルマンジー、マレー語は、現在は単語の訳語のみ対応しています。",
+        "iOS 17以降のiPhoneで利用できます。"
+      ],
+      "sourceLocale": "ja"
+    },
+    "ko": {
+      "subtitle": "읽으면서 빠르게 단어 찾기",
+      "blocks": [
+        "모르는 단어 때문에 좋은 책의 흐름을 놓치지 마세요. iPhone 카메라를 단어에 비추고 뜻을 확인한 뒤 계속 읽으세요. 직접 입력할 필요가 없습니다.",
+        "문장에 맞는 뜻 찾기\n하나의 단어에도 여러 뜻이 있습니다. 지원되는 기기에서 Booktionary는 주변 문장을 활용해 적절한 사전 뜻풀이를 먼저 보여주도록 돕습니다. 다른 뜻도 살펴볼 수 있습니다.",
+        "영어 책을 더 편하게\n영어 뜻풀이 옆에 한국어 단어 번역을 표시하세요. 뜻풀이 자체의 번역도 켤 수 있으며 영어와 한국어를 전환해 읽을 수 있습니다. 필요한 언어 모델을 미리 다운로드하세요.",
+        "한 번 다운로드하고 오프라인으로\n영어 사전은 기본으로 제공됩니다. 다른 사전, 단어 번역, 뜻풀이 번역에 필요한 모델은 원하는 것만 다운로드하세요. 설치된 자료는 오프라인에서 사용할 수 있습니다. 계정은 필요하지 않으며 카메라 영상과 인식한 단어는 iPhone에 남습니다.",
+        "한 번 구매하면 제공되는 모든 사전과 단어 번역 팩이 포함됩니다. 구독이나 앱 내 구입이 없습니다.",
+        "24개 언어의 책을 위한 사전\n한국어, 영어, 일본어, 중국어(간체 및 번체), 프랑스어, 독일어, 스페인어, 포르투갈어, 이탈리아어, 체코어, 덴마크어, 네덜란드어, 인도네시아어, 쿠르드어(쿠르만지, 라틴 문자), 말레이어(루미), 노르웨이어 보크몰, 폴란드어, 루마니아어, 러시아어, 스웨덴어, 태국어, 튀르키예어, 우크라이나어, 베트남어.",
+        "영어 단어는 위 목록의 다른 언어와 그리스어로 번역할 수 있습니다. 그리스어 책 스캔은 지원하지 않습니다. 쿠르드어는 라틴 문자 쿠르만지를 지원하며 소라니는 제외됩니다. 말레이어는 루미를 지원하며 자위는 제외됩니다.",
+        "이용 안내\n책의 언어를 선택하고 단어를 비춘 채 잠시 기다리세요. 뜻풀이를 쓸어 넘기면 계속 읽을 수 있습니다. 사전과 단어 번역의 수록 범위는 단어와 언어마다 다르며 복잡한 활용형은 찾지 못할 수 있습니다. 언어 자료를 확인하고 다운로드할 때는 인터넷 연결이 필요합니다.",
+        "문맥에 맞는 뜻 선택은 Apple Intelligence를 사용할 수 있는 iOS 26 이상 환경이 필요하며 언어 지원에 따라 달라집니다. 문맥에 맞는 뜻을 선택할 수 없으면 일반 사전 뜻풀이가 표시됩니다. 뜻풀이 번역은 iOS 18 이상과 호환 모델이 필요하며 기기와 iOS 버전에 따라 제공 여부가 달라집니다. 체코어, 루마니아어, 그리스어, 쿠르만지, 말레이어는 현재 단어 번역만 제공합니다.",
+        "iOS 17 이상을 사용하는 iPhone용입니다."
+      ],
+      "sourceLocale": "ko"
+    },
+    "ku": {
+      "subtitle": "Ferhenga kamerayê ji bo pirtûkên çapkirî",
+      "blocks": [
+        "Peyveke nenas divê we ji pirtûkeke xweş dûr nexîne. Kameraya iPhone li peyva di pirtûkê de bigirin, wateya wê bixwînin û xwendinê bidomînin. Pêwîst nake hûn peyvê binivîsin.",
+        "Wateya li gorî hevokê\nLi ser amûrên piştgirîkirî, Booktionary dikare bi alîkariya nivîsa derdora peyvê wateya guncaw a ferhengê pêşî nîşan bide. Wateyên din jî tên dîtin.",
+        "Wergerên peyvên îngilîzî\nBi daxistina pakêta pêwîst, hûn dikarin li kêleka pênaseya îngilîzî wergera peyvê bi kurmancî bibînin. Ev wergera peyvên yekane ye, ne ya rûpelên tevahî. Pênase bi îngilîzî dimîne; wergera pênaseyan bi kurmancî tune ye.",
+        "Piştî daxistinê, bê înternet bixwînin\nFerhenga îngilîzî di sepanê de ye. Ferhengên din û pakêtên wergerê cuda tên daxistin. Piştî sazkirinê, çavkanî bê înternet dixebitin. Ji bo katalog û daxistinan înternet pêwîst e. Hesab ne pêwîst e; wêne û peyvên naskirî li ser iPhone dimînin.",
+        "Yek kirîn hemû ferheng û pakêtên wergera peyvan ên berdest digire. Abonetî û kirînên din ên di sepanê de tune ne.",
+        "Ferheng ji bo 24 zimanên pirtûkan\nJi lîsteya jêrîn zimanê pirtûkê hilbijêrin. Ferhenga kurdî tenê kurmanciya bi alfabeya latînî digire, ne soranî. Malayî tenê bi alfabeya Rumi ye; norwecî Bokmål e. Çînî her du nivîsên hêsankirî û kevneşopî digire.",
+        "Peyvên îngilîzî dikarin bo 23 zimanên din ên ferhengê û bo yewnanî werin wergerandin. Xwendina pirtûkên yewnanî nayê piştgirîkirin. Hemû peyv û şêweyên peyvan di çavkaniyan de nînin.",
+        "Çawa tê bikaranîn\nZimanê pirtûkê hilbijêrin, kamera li peyvekê bigirin û hinekî bisekinin. Pênaseyê bikişînin da ku xwendinê bidomînin. Ferheng û werger li gorî peyv û zimanê diguherin.",
+        "Vebijartina wateyê li gorî hevokê iOS 26 an nûtir û Apple Intelligence ya berdest li ser amûreke piştgirîkirî dixwaze; piştgirî li gorî zimanê diguhere. Wekî din wateya asayî ya ferhengê tê nîşandan. Wergera pênaseyên îngilîzî ji bo hin zimanên din iOS 18 an nûtir û modelên guncaw dixwaze. Çekî, romanî, yewnanî, kurmancî û malayî tenê wergerên peyvan hene.",
+        "Ji bo iPhone bi iOS 17 an nûtir."
+      ],
+      "sourceLocale": null
+    },
+    "ms": {
+      "subtitle": "Cari kata cepat sambil membaca",
+      "blocks": [
+        "Perkataan yang belum dikenali tidak perlu mengganggu keseronokan membaca. Halakan kamera iPhone ke perkataan itu, cari maknanya dan teruskan membaca. Tidak perlu menaip.",
+        "Makna yang sesuai dengan ayat\nSatu perkataan boleh membawa beberapa makna. Pada peranti yang disokong, Booktionary menggunakan teks sekeliling untuk membantu memaparkan makna kamus yang sesuai terlebih dahulu. Makna lain juga boleh dilihat.",
+        "Bantuan untuk buku bahasa Inggeris\nPaparkan terjemahan perkataan dalam bahasa Melayu di sebelah takrif bahasa Inggeris. Terjemahan takrif tersedia untuk bahasa sasaran lain yang disokong; bagi bahasa Melayu, takrif kekal dalam bahasa Inggeris buat masa ini.",
+        "Muat turun sekali. Baca tanpa internet.\nKamus bahasa Inggeris sudah tersedia dalam aplikasi. Muat turun kamus lain dan terjemahan perkataan mengikut keperluan. Sumber yang dipasang boleh digunakan tanpa internet. Akaun tidak diperlukan. Imej kamera dan perkataan yang dikenal pasti kekal pada iPhone anda.",
+        "Satu pembelian merangkumi semua kamus dan pek terjemahan perkataan yang tersedia. Tiada langganan atau pembelian dalam aplikasi.",
+        "Kamus untuk buku dalam 24 bahasa\nBahasa Belanda, Cina (Ringkas dan Tradisional), Czech, Denmark, Indonesia, Inggeris, Itali, Jepun, Jerman, Korea, Kurdi (Kurmanji, tulisan Latin), Melayu (Rumi), Norway Bokmål, Perancis, Poland, Portugis, Romania, Rusia, Sepanyol, Sweden, Thai, Turki, Ukraine dan Vietnam.",
+        "Perkataan bahasa Inggeris boleh diterjemahkan ke bahasa lain dalam senarai ini, serta bahasa Yunani. Pengimbasan buku bahasa Yunani tidak disokong. Sokongan Kurdi meliputi Kurmanji dalam tulisan Latin, bukan Sorani. Sokongan Melayu meliputi Rumi, bukan Jawi.",
+        "Sebelum bermula\nPilih bahasa buku, halakan kamera ke perkataan dan tunggu sebentar. Leret takrif untuk meneruskan bacaan. Liputan kamus dan terjemahan perkataan berbeza. Internet diperlukan untuk melihat dan memuat turun sumber bahasa.",
+        "Pemilihan makna mengikut konteks memerlukan iOS 26 atau lebih baharu dengan Apple Intelligence tersedia, dan bergantung pada bahasa. Jika tiada padanan konteks, takrif kamus biasa dipaparkan. Terjemahan takrif memerlukan iOS 18 atau lebih baharu dan model yang serasi; ketersediaan bergantung pada peranti dan versi iOS. Bahasa Czech, Romania, Yunani, Kurmanji dan Melayu kini menawarkan terjemahan perkataan sahaja.",
+        "Untuk iPhone dengan iOS 17 atau lebih baharu."
+      ],
+      "sourceLocale": "ms"
+    },
+    "nb": {
+      "subtitle": "Les og slå opp ord raskt",
+      "blocks": [
+        "Et ukjent ord skal ikke rive deg ut av en god bok. Pek iPhone-kameraet mot ordet, finn betydningen og les videre. Du slipper å skrive inn ordet.",
+        "Finn betydningen i setningen\nOrd kan ha flere betydninger. På støttede enheter bruker Booktionary teksten rundt ordet for å hjelpe med å vise den relevante ordbokbetydningen først. Du kan også lese de andre betydningene.",
+        "Mer hjelp med engelske bøker\nSe ordoversettelser til bokmål ved siden av engelske definisjoner. Du kan også slå på oversatte definisjoner og bytte mellom engelsk og bokmål. Last ned nødvendige språkmodeller før du leser.",
+        "Last ned én gang. Les uten nett.\nDen engelske ordboken er innebygd. Last ned andre ordbøker, ordoversettelser og nødvendige oversettelsesmodeller etter behov. Installerte ressurser virker uten nett. Du trenger ingen konto. Kamerabilder og gjenkjente ord blir på din iPhone.",
+        "Ett kjøp inkluderer alle tilgjengelige ordbøker og ordoversettelsespakker. Uten abonnement eller kjøp i appen.",
+        "Ordbøker for 24 bokspråk\nDansk, engelsk, fransk, indonesisk, italiensk, japansk, kinesisk (forenklet og tradisjonell skrift), koreansk, kurdisk (kurmanji, latinsk skrift), malayisk (rumi), nederlandsk, norsk bokmål, polsk, portugisisk, rumensk, russisk, spansk, svensk, thai, tsjekkisk, tyrkisk, tysk, ukrainsk og vietnamesisk.",
+        "Engelske ord kan oversettes til de andre språkene på listen og til gresk. Greske bøker støttes ikke. Kurdisk dekker kurmanji med latinsk skrift, ikke sorani; malayisk dekker rumi, ikke jawi.",
+        "Greit å vite\nVelg bokspråk, pek på et ord og hold stille et øyeblikk. Sveip bort definisjonen for å fortsette. Dekningen i ordbøker og ordoversettelser varierer. Du trenger internett for å finne og laste ned språkressurser.",
+        "Kontekstbasert valg av betydning krever iOS 26 eller nyere med tilgjengelig Apple Intelligence og avhenger av språket. Uten et konteksttreff vises den vanlige ordbokdefinisjonen. Oversatte definisjoner krever iOS 18 eller nyere og kompatible modeller; tilgjengeligheten avhenger av enhet og iOS-versjon. Tsjekkisk, rumensk, gresk, kurmanji og malayisk tilbyr foreløpig bare ordoversettelser.",
+        "For iPhone med iOS 17 eller nyere."
+      ],
+      "sourceLocale": "no"
+    },
+    "nl": {
+      "subtitle": "Lees en zoek snel woorden op",
+      "blocks": [
+        "Een onbekend woord hoeft je niet uit een goed boek te halen. Richt de iPhone-camera op het woord, zoek de betekenis op en lees verder. Zonder te typen.",
+        "Vind de betekenis in de zin\nWoorden kunnen verschillende betekenissen hebben. Op ondersteunde apparaten gebruikt Booktionary de omringende tekst om te helpen bepalen welke woordenboekbetekenis bij de zin past. Die betekenis verschijnt eerst; de andere blijven beschikbaar.",
+        "Meer hulp bij Engelse boeken\nBekijk Nederlandse woordvertalingen naast Engelse definities. Je kunt ook vertaalde definities inschakelen en wisselen tussen Engels en Nederlands. Download de benodigde taalmodellen voordat je gaat lezen.",
+        "Eenmaal downloaden. Offline lezen.\nHet Engelse woordenboek is ingebouwd. Download andere woordenboeken, woordvertalingen en benodigde vertaalmodellen wanneer je ze nodig hebt. Geïnstalleerde bronnen werken offline. Geen account nodig. Camerabeelden en herkende woorden blijven op je iPhone.",
+        "Eén aankoop omvat alle beschikbare woordenboeken en woordvertaalpakketten. Geen abonnement of in-app aankopen.",
+        "Woordenboeken voor 24 boektalen\nChinees (vereenvoudigd en traditioneel), Deens, Duits, Engels, Frans, Indonesisch, Italiaans, Japans, Koreaans, Koerdisch (Kurmanji, Latijns schrift), Maleis (Rumi), Nederlands, Noors Bokmål, Oekraïens, Pools, Portugees, Roemeens, Russisch, Spaans, Thai, Tsjechisch, Turks, Vietnamees en Zweeds.",
+        "Engelse woorden kunnen worden vertaald naar de andere talen op de lijst en naar het Grieks. Griekse boeken worden niet ondersteund. Koerdisch omvat Kurmanji in Latijns schrift, geen Sorani; Maleis omvat Rumi, geen Jawi.",
+        "Goed om te weten\nKies de taal van je boek, richt op een woord en houd even stil. Veeg de definitie weg om verder te lezen. De dekking van woordenboeken en woordvertalingen varieert. Voor de taalcatalogus en downloads is internet nodig.",
+        "Betekenisselectie op basis van context vereist iOS 26 of nieuwer met beschikbare Apple Intelligence en hangt af van de taal. Zonder contextmatch verschijnt de gewone woordenboekdefinitie. Vertaalde definities vereisen iOS 18 of nieuwer en geschikte taalmodellen; de beschikbaarheid hangt af van apparaat en iOS-versie. Tsjechisch, Roemeens, Grieks, Kurmanji en Maleis bieden voorlopig alleen woordvertalingen.",
+        "Voor iPhone met iOS 17 of nieuwer."
+      ],
+      "sourceLocale": "nl-NL"
+    },
+    "pl": {
+      "subtitle": "Czytaj i sprawdzaj słowa w mig",
+      "blocks": [
+        "Nieznane słowo nie musi odrywać Cię od dobrej książki. Skieruj na nie aparat iPhone’a, sprawdź znaczenie i czytaj dalej. Bez wpisywania słowa.",
+        "Znaczenie pasujące do zdania\nSłowa mogą mieć kilka znaczeń. Na obsługiwanych urządzeniach Booktionary korzysta z otaczającego tekstu, aby pomóc dobrać znaczenie słownikowe do zdania i wyświetlić je jako pierwsze. Pozostałe znaczenia też możesz sprawdzić.",
+        "Więcej pomocy przy książkach po angielsku\nWyświetlaj polskie tłumaczenia słów obok angielskich definicji. Możesz też włączyć tłumaczenie definicji i przełączać się między angielskim a polskim. Przed czytaniem pobierz potrzebne modele językowe.",
+        "Pobierz raz. Czytaj offline.\nSłownik angielski jest wbudowany. Pobierz inne słowniki, tłumaczenia słów i potrzebne modele tłumaczeń. Zainstalowane zasoby działają offline. Konto nie jest wymagane. Obrazy z aparatu i rozpoznane słowa pozostają na iPhonie.",
+        "Jeden zakup obejmuje wszystkie dostępne słowniki i pakiety tłumaczeń słów. Bez abonamentu i zakupów w aplikacji.",
+        "Słowniki do książek w 24 językach\nAngielski, chiński (pismo uproszczone i tradycyjne), czeski, duński, francuski, hiszpański, indonezyjski, japoński, koreański, kurdyjski (kurmandżi, alfabet łaciński), malajski (rumi), niderlandzki, niemiecki, norweski bokmål, polski, portugalski, rosyjski, rumuński, szwedzki, tajski, turecki, ukraiński, wietnamski i włoski.",
+        "Angielskie słowa można tłumaczyć na pozostałe języki z listy oraz grecki. Czytanie greckich książek nie jest obsługiwane. Kurdyjski obejmuje kurmandżi w alfabecie łacińskim, nie sorani; malajski obejmuje rumi, nie jawi.",
+        "Warto wiedzieć\nWybierz język książki, skieruj aparat na słowo i przytrzymaj przez chwilę. Przesuń definicję, aby czytać dalej. Zakres słowników i tłumaczeń słów jest różny. Internet jest potrzebny do przeglądania i pobierania zasobów językowych.",
+        "Dobór znaczenia do kontekstu wymaga iOS 26 lub nowszego z dostępnym Apple Intelligence i zależy od języka. Bez dopasowania do kontekstu pojawia się zwykła definicja słownikowa. Tłumaczenie definicji wymaga iOS 18 lub nowszego i zgodnych modeli; dostępność zależy od urządzenia i iOS. Czeski, rumuński, grecki, kurmandżi i malajski oferują obecnie tylko tłumaczenia słów.",
+        "Dla iPhone’a z iOS 17 lub nowszym."
+      ],
+      "sourceLocale": "pl"
+    },
+    "ro": {
+      "subtitle": "Caută rapid cuvinte citind",
+      "blocks": [
+        "Un cuvânt necunoscut nu ar trebui să te scoată din poveste. Îndreaptă camera iPhone-ului spre cuvânt, află sensul și continuă lectura. Fără să tastezi.",
+        "Sensul potrivit în propoziție\nCuvintele pot avea mai multe sensuri. Pe dispozitivele compatibile, Booktionary folosește textul din jur pentru a ajuta la afișarea mai întâi a sensului relevant din dicționar. Poți consulta și celelalte sensuri.",
+        "Ajutor pentru cărțile în engleză\nAdaugă traduceri în română ale cuvintelor lângă definițiile în engleză. Traducerea definițiilor este disponibilă pentru alte limbi acceptate; pentru română, definițiile rămân deocamdată în engleză.",
+        "Descarcă o dată. Citește offline.\nDicționarul de engleză este inclus. Descarcă celelalte dicționare și traduceri de cuvinte de care ai nevoie. Resursele instalate funcționează offline. Nu ai nevoie de cont. Imaginile camerei și cuvintele recunoscute rămân pe iPhone.",
+        "O singură achiziție include toate dicționarele și pachetele de traducere a cuvintelor disponibile. Fără abonament sau achiziții în aplicație.",
+        "Dicționare pentru cărți în 24 de limbi\nCehă, chineză (scriere simplificată și tradițională), coreeană, curdă (kurmanji, alfabet latin), daneză, engleză, franceză, germană, indoneziană, italiană, japoneză, malaieză (rumi), neerlandeză, norvegiană bokmål, polonă, portugheză, română, rusă, spaniolă, suedeză, thailandeză, turcă, ucraineană și vietnameză.",
+        "Cuvintele englezești pot fi traduse în celelalte limbi din listă, precum și în greacă. Citirea cărților în greacă nu este acceptată. Curda acoperă kurmanji în alfabet latin, nu sorani; malaieza acoperă rumi, nu jawi.",
+        "Bine de știut\nAlege limba cărții, îndreaptă camera spre un cuvânt și așteaptă o clipă. Glisează definiția pentru a continua. Dicționarul românesc folosește Romanian WordNet de la RACAI. Acoperirea variază în funcție de cuvânt și formă. Ai nevoie de internet pentru a consulta și descărca resursele.",
+        "Selectarea sensului după context necesită iOS 26 sau ulterior cu Apple Intelligence disponibil și depinde de limbă. În lipsa unei potriviri contextuale, apare definiția obișnuită. Definițiile traduse necesită iOS 18 sau ulterior și modele compatibile; disponibilitatea depinde de dispozitiv și iOS. Ceha, româna, greaca, kurmanji și malaieza oferă momentan doar traduceri de cuvinte.",
+        "Pentru iPhone cu iOS 17 sau ulterior."
+      ],
+      "sourceLocale": "ro"
+    },
+    "ru": {
+      "subtitle": "Быстрый поиск слов при чтении",
+      "blocks": [
+        "Незнакомое слово не должно отвлекать от хорошей книги. Наведите на него камеру iPhone, узнайте значение и продолжайте читать. Вводить слово не нужно.",
+        "Значение с учётом предложения\nУ слова может быть несколько значений. На поддерживаемых устройствах Booktionary использует окружающий текст, чтобы помочь показать подходящее словарное значение первым. Остальные значения тоже можно посмотреть.",
+        "Больше помощи с книгами на английском\nДобавьте русские переводы слов рядом с английскими определениями. Можно также включить перевод определений и переключаться между английским и русским. Заранее загрузите нужные языковые модели.",
+        "Загрузите один раз. Читайте без интернета.\nАнглийский словарь встроен. Загрузите другие словари, переводы слов и необходимые модели перевода. Установленные ресурсы работают офлайн. Учётная запись не нужна. Кадры камеры и распознанные слова остаются на iPhone.",
+        "Одна покупка включает все доступные словари и пакеты перевода слов. Без подписки и встроенных покупок.",
+        "Словари для книг на 24 языках\nАнглийский, вьетнамский, датский, индонезийский, испанский, итальянский, китайский (упрощённое и традиционное письмо), корейский, курдский (курманджи, латиница), малайский (руми), немецкий, нидерландский, норвежский букмол, польский, португальский, румынский, русский, тайский, турецкий, украинский, французский, чешский, шведский и японский.",
+        "Английские слова можно переводить на остальные языки списка, а также на греческий. Чтение греческих книг не поддерживается. Курдский охватывает курманджи на латинице, а не сорани; малайский — руми, а не джави.",
+        "Полезно знать\nВыберите язык книги, наведите камеру на слово и немного подождите. Смахните определение, чтобы читать дальше. Охват словарей и переводов слов различается. Для просмотра и загрузки языковых ресурсов нужен интернет.",
+        "Подбор значения по контексту требует iOS 26 или новее с доступной Apple Intelligence и зависит от языка. Если соответствие не найдено, появится обычное словарное определение. Перевод определений требует iOS 18 или новее и совместимых моделей; доступность зависит от устройства и версии iOS. Чешский, румынский, греческий, курманджи и малайский пока предлагают только переводы слов.",
+        "Для iPhone с iOS 17 или новее."
+      ],
+      "sourceLocale": "ru"
+    },
+    "sv": {
+      "subtitle": "Läs och slå snabbt upp ord",
+      "blocks": [
+        "Ett okänt ord ska inte dra dig ur en bra bok. Rikta iPhone-kameran mot ordet, slå upp betydelsen och fortsätt läsa. Du behöver inte skriva in ordet.",
+        "Hitta betydelsen i meningen\nOrd kan ha flera betydelser. På enheter som stöds använder Booktionary texten runt ordet för att hjälpa till att visa den relevanta ordboksbetydelsen först. Du kan också läsa de andra betydelserna.",
+        "Mer hjälp med engelska böcker\nVisa svenska ordöversättningar bredvid engelska definitioner. Du kan även aktivera översatta definitioner och växla mellan engelska och svenska. Hämta språkmodellerna som behövs före läsningen.",
+        "Hämta en gång. Läs offline.\nDen engelska ordboken ingår. Hämta andra ordböcker, ordöversättningar och nödvändiga översättningsmodeller efter behov. Installerade resurser fungerar offline. Inget konto krävs. Kamerabilder och igenkända ord stannar på din iPhone.",
+        "Ett köp omfattar alla tillgängliga ordböcker och paket med ordöversättningar. Ingen prenumeration eller köp i appen.",
+        "Ordböcker för 24 bokspråk\nDanska, engelska, franska, indonesiska, italienska, japanska, kinesiska (förenklad och traditionell skrift), koreanska, kurdiska (kurmanji, latinsk skrift), malajiska (rumi), nederländska, norska bokmål, polska, portugisiska, rumänska, ryska, spanska, svenska, thailändska, tjeckiska, turkiska, tyska, ukrainska och vietnamesiska.",
+        "Engelska ord kan översättas till de andra språken i listan samt grekiska. Grekiska böcker stöds inte. Kurdiska omfattar kurmanji med latinsk skrift, inte sorani; malajiska omfattar rumi, inte jawi.",
+        "Bra att veta\nVälj bokens språk, rikta kameran mot ett ord och håll stilla en kort stund. Svep bort definitionen för att fortsätta. Ordböckernas och ordöversättningarnas täckning varierar. Internet behövs för att hitta och hämta språkresurser.",
+        "Val av betydelse utifrån sammanhanget kräver iOS 26 eller senare med tillgänglig Apple Intelligence och beror på språket. Utan en kontextträff visas den vanliga ordboksdefinitionen. Översatta definitioner kräver iOS 18 eller senare och kompatibla modeller; tillgängligheten beror på enhet och iOS-version. Tjeckiska, rumänska, grekiska, kurmanji och malajiska erbjuder för närvarande endast ordöversättningar.",
+        "För iPhone med iOS 17 eller senare."
+      ],
+      "sourceLocale": "sv"
+    },
+    "th": {
+      "subtitle": "ค้นหาคำศัพท์ไวขณะอ่าน",
+      "blocks": [
+        "คำที่ไม่รู้จักไม่ควรทำให้คุณสะดุดจากหนังสือดี ๆ เพียงเล็งกล้อง iPhone ไปที่คำ ดูความหมาย แล้วอ่านต่อ โดยไม่ต้องพิมพ์คำเอง",
+        "หาความหมายที่เข้ากับประโยค\nคำหนึ่งคำอาจมีหลายความหมาย บนอุปกรณ์ที่รองรับ Booktionary ใช้ข้อความรอบข้างเพื่อช่วยแสดงความหมายจากพจนานุกรมที่เหมาะสมก่อน คุณยังเปิดดูความหมายอื่นได้",
+        "ตัวช่วยอ่านหนังสือภาษาอังกฤษ\nแสดงคำแปลภาษาไทยข้างคำอธิบายภาษาอังกฤษ หรือเปิดการแปลคำอธิบายแล้วสลับอ่านระหว่างภาษาอังกฤษกับภาษาไทย ดาวน์โหลดโมเดลภาษาที่จำเป็นไว้ก่อนอ่าน",
+        "ดาวน์โหลดครั้งเดียว ใช้งานออฟไลน์\nมีพจนานุกรมภาษาอังกฤษในแอปอยู่แล้ว เลือกดาวน์โหลดพจนานุกรมอื่น ชุดคำแปล และโมเดลแปลคำอธิบายที่ต้องการ เมื่อติดตั้งแล้วใช้งานได้โดยไม่ต่ออินเทอร์เน็ต ไม่ต้องมีบัญชี ภาพจากกล้องและคำที่ตรวจพบจะอยู่บน iPhone ของคุณ",
+        "ซื้อครั้งเดียวรวมพจนานุกรมและชุดคำแปลทั้งหมดที่มีให้ใช้ ไม่มีค่าสมาชิกหรือการซื้อเพิ่มเติมในแอป",
+        "พจนานุกรมสำหรับหนังสือ 24 ภาษา\nไทย, อังกฤษ, จีน (ตัวย่อและตัวเต็ม), ญี่ปุ่น, เกาหลี, ฝรั่งเศส, เยอรมัน, สเปน, โปรตุเกส, อิตาลี, เช็ก, เดนมาร์ก, ดัตช์, อินโดนีเซีย, เคิร์ด (เคอร์มันจี อักษรละติน), มลายู (รูมี), นอร์เวย์บุ๊กมอล, โปแลนด์, โรมาเนีย, รัสเซีย, สวีเดน, ตุรกี, ยูเครน และเวียดนาม",
+        "คำภาษาอังกฤษแปลเป็นภาษาอื่นในรายการนี้และภาษากรีกได้ ไม่รองรับการสแกนหนังสือภาษากรีก ภาษาเคิร์ดรองรับเคอร์มันจีอักษรละติน ไม่รวมโซรานี ภาษามลายูรองรับรูมี ไม่รวมยาวี",
+        "ก่อนเริ่มอ่าน\nเลือกภาษาของหนังสือ เล็งกล้องไปที่คำแล้วรอสักครู่ ปัดคำอธิบายออกเพื่ออ่านต่อ พจนานุกรมและคำแปลอาจไม่ครอบคลุมทุกคำ ต้องต่ออินเทอร์เน็ตเพื่อดูและดาวน์โหลดข้อมูลภาษา",
+        "การเลือกความหมายตามบริบทต้องใช้ iOS 26 ขึ้นไปที่มี Apple Intelligence พร้อมใช้งาน และขึ้นอยู่กับภาษาที่รองรับ หากหาความหมายตามบริบทไม่ได้ จะแสดงความหมายปกติจากพจนานุกรม การแปลคำอธิบายต้องใช้ iOS 18 ขึ้นไปและโมเดลที่รองรับ โดยขึ้นอยู่กับอุปกรณ์และเวอร์ชัน iOS ภาษาเช็ก โรมาเนีย กรีก เคอร์มันจี และมลายูมีเฉพาะคำแปลรายคำในขณะนี้",
+        "สำหรับ iPhone ที่ใช้ iOS 17 ขึ้นไป"
+      ],
+      "sourceLocale": "th"
+    },
+    "tr": {
+      "subtitle": "Okurken hızla sözcük ara",
+      "blocks": [
+        "Bilmediğiniz bir kelime sizi güzel bir kitaptan koparmasın. iPhone kameranızı kelimeye doğrultun, anlamına bakın ve okumaya devam edin. Kelimeyi yazmanız gerekmez.",
+        "Cümleye uygun anlamı bulun\nBir kelimenin birden fazla anlamı olabilir. Booktionary, desteklenen cihazlarda çevredeki metni kullanarak ilgili sözlük anlamını önce göstermeye yardımcı olur. Diğer anlamları da inceleyebilirsiniz.",
+        "İngilizce kitaplarda daha fazla destek\nİngilizce tanımların yanında Türkçe kelime karşılıklarını görün. Tanım çevirisini de açabilir, İngilizce ile Türkçe arasında geçiş yapabilirsiniz. Okumadan önce gerekli dil modellerini indirin.",
+        "Bir kez indirin. Çevrimdışı okuyun.\nİngilizce sözlük uygulamaya dahildir. Diğer sözlükleri, kelime çevirilerini ve gerekli çeviri modellerini ihtiyacınıza göre indirin. Yüklenen kaynaklar çevrimdışı çalışır. Hesap gerekmez. Kamera görüntüleri ve tanınan kelimeler iPhone’unuzda kalır.",
+        "Tek satın alma, mevcut tüm sözlükleri ve kelime çevirisi paketlerini kapsar. Abonelik veya uygulama içi satın alma yoktur.",
+        "24 kitap dili için sözlükler\nAlmanca, Çekçe, Çince (Basitleştirilmiş ve Geleneksel), Danca, Endonezce, Felemenkçe, Fransızca, İngilizce, İspanyolca, İsveççe, İtalyanca, Japonca, Korece, Kürtçe (Kurmancî, Latin alfabesi), Lehçe, Malayca (Rumi), Norveççe Bokmål, Portekizce, Rumence, Rusça, Tayca, Türkçe, Ukraynaca ve Vietnamca.",
+        "İngilizce kelimeler listedeki diğer dillere ve Yunancaya çevrilebilir. Yunanca kitap tarama desteklenmez. Kürtçe desteği Latin alfabesiyle Kurmancî içindir, Soranî’yi kapsamaz. Malayca desteği Rumi içindir, Jawi’yi kapsamaz.",
+        "Başlamadan önce\nKitabın dilini seçin, kamerayı bir kelimeye doğrultun ve kısa süre bekleyin. Devam etmek için tanımı kaydırın. Sözlük ve kelime çevirisi kapsamı değişebilir. Dil kaynaklarını görüntülemek ve indirmek için internet gerekir.",
+        "Bağlama göre anlam seçimi, Apple Intelligence kullanılabilir durumdayken iOS 26 veya üzerini gerektirir ve dile bağlıdır. Bağlamsal eşleşme yoksa normal sözlük tanımı gösterilir. Çevrilmiş tanımlar iOS 18 veya üzerini ve uyumlu modelleri gerektirir; kullanılabilirlik cihaza ve iOS sürümüne bağlıdır. Çekçe, Rumence, Yunanca, Kurmancî ve Malayca şu anda yalnızca kelime çevirisi sunar.",
+        "iOS 17 veya üzerini kullanan iPhone için."
+      ],
+      "sourceLocale": "tr"
+    },
+    "uk": {
+      "subtitle": "Швидко шукайте слова, читаючи",
+      "blocks": [
+        "Незнайоме слово не має відволікати від цікавої книжки. Наведіть на нього камеру iPhone, дізнайтеся значення й читайте далі. Вводити слово не потрібно.",
+        "Значення з урахуванням речення\nСлово може мати кілька значень. На підтримуваних пристроях Booktionary використовує текст довкола, щоб допомогти показати доречне словникове значення першим. Інші значення також можна переглянути.",
+        "Більше допомоги з книжками англійською\nДодайте українські переклади слів поряд з англійськими визначеннями. Можна також увімкнути переклад визначень і перемикатися між англійською та українською. Заздалегідь завантажте потрібні мовні моделі.",
+        "Завантажте раз. Читайте офлайн.\nАнглійський словник вбудовано. Завантажте інші словники, переклади слів і потрібні моделі перекладу. Установлені ресурси працюють офлайн. Обліковий запис не потрібен. Кадри камери й розпізнані слова залишаються на iPhone.",
+        "Одна покупка включає всі доступні словники й пакети перекладу слів. Без передплати та покупок у програмі.",
+        "Словники для книжок 24 мовами\nАнглійська, в’єтнамська, данська, індонезійська, іспанська, італійська, китайська (спрощене й традиційне письмо), корейська, курдська (курманджі, латиниця), малайська (румі), нідерландська, німецька, норвезька букмол, польська, португальська, румунська, російська, тайська, турецька, українська, французька, чеська, шведська та японська.",
+        "Англійські слова можна перекладати іншими мовами зі списку, а також грецькою. Читання грецьких книжок не підтримується. Курдська охоплює курманджі латиницею, а не сорані; малайська — румі, а не джаві.",
+        "Варто знати\nВиберіть мову книжки, наведіть камеру на слово й трохи зачекайте. Змахніть визначення, щоб читати далі. Покриття українського словника та словоформ обмежене: багато слів можуть бути відсутні. Покриття інших словників і перекладів слів також різниться. Для перегляду й завантаження мовних ресурсів потрібен інтернет.",
+        "Добір значення за контекстом потребує iOS 26 або новішої версії з доступною Apple Intelligence та залежить від мови. Без контекстної відповідності з’являється звичайне словникове визначення. Переклад визначень потребує iOS 18 або новішої версії та сумісних моделей; доступність залежить від пристрою й iOS. Чеська, румунська, грецька, курманджі й малайська поки пропонують лише переклади слів.",
+        "Для iPhone з iOS 17 або новішою версією."
+      ],
+      "sourceLocale": "uk"
+    },
+    "vi": {
+      "subtitle": "Tra từ nhanh khi đọc sách",
+      "blocks": [
+        "Một từ lạ không nên làm gián đoạn cuốn sách hay. Hướng camera iPhone vào từ đó, xem nghĩa rồi tiếp tục đọc. Không cần gõ từ.",
+        "Tìm nghĩa phù hợp với câu\nMột từ có thể có nhiều nghĩa. Trên thiết bị được hỗ trợ, Booktionary dùng đoạn văn xung quanh để giúp hiển thị nghĩa từ điển phù hợp trước. Bạn vẫn có thể xem các nghĩa khác.",
+        "Thêm trợ giúp khi đọc sách tiếng Anh\nXem bản dịch từ sang tiếng Việt bên cạnh định nghĩa tiếng Anh. Bạn cũng có thể bật dịch định nghĩa và chuyển đổi giữa tiếng Anh và tiếng Việt. Tải mô hình ngôn ngữ cần thiết trước khi đọc.",
+        "Tải một lần. Đọc ngoại tuyến.\nTừ điển tiếng Anh có sẵn trong ứng dụng. Tải thêm từ điển, bản dịch từ và mô hình dịch theo nhu cầu. Tài nguyên đã cài đặt dùng được khi không có mạng. Không cần tài khoản. Hình ảnh camera và từ được nhận diện luôn ở trên iPhone của bạn.",
+        "Một lần mua bao gồm tất cả từ điển và gói dịch từ hiện có. Không có thuê bao hay mua thêm trong ứng dụng.",
+        "Từ điển cho sách bằng 24 ngôn ngữ\nTiếng Anh, Ba Lan, Bồ Đào Nha, Đan Mạch, Đức, Hà Lan, Hàn, Indonesia, Kurd (Kurmanji, chữ Latin), Mã Lai (Rumi), Na Uy Bokmål, Nga, Nhật, Pháp, Romania, Séc, Tây Ban Nha, Thái, Thổ Nhĩ Kỳ, Thụy Điển, Trung (chữ giản thể và phồn thể), Ukraina, Việt và Ý.",
+        "Từ tiếng Anh có thể được dịch sang các ngôn ngữ khác trong danh sách và tiếng Hy Lạp. Không hỗ trợ quét sách tiếng Hy Lạp. Tiếng Kurd hỗ trợ Kurmanji viết bằng chữ Latin, không hỗ trợ Sorani; tiếng Mã Lai hỗ trợ Rumi, không hỗ trợ Jawi.",
+        "Trước khi bắt đầu\nChọn ngôn ngữ sách, hướng camera vào một từ rồi giữ yên trong giây lát. Vuốt định nghĩa để đọc tiếp. Phạm vi từ điển và bản dịch từ thay đổi theo từ và ngôn ngữ. Cần có mạng để xem và tải tài nguyên ngôn ngữ.",
+        "Chọn nghĩa theo ngữ cảnh cần iOS 26 trở lên với Apple Intelligence khả dụng và tùy thuộc ngôn ngữ. Nếu không tìm được nghĩa theo ngữ cảnh, ứng dụng hiển thị định nghĩa từ điển thông thường. Dịch định nghĩa cần iOS 18 trở lên và mô hình tương thích; khả năng sử dụng tùy thuộc thiết bị và phiên bản iOS. Tiếng Séc, Romania, Hy Lạp, Kurmanji và Mã Lai hiện chỉ có bản dịch từ.",
+        "Dành cho iPhone chạy iOS 17 trở lên."
+      ],
+      "sourceLocale": "vi"
+    },
+    "zh-Hans": {
+      "subtitle": "阅读时快速查词",
+      "blocks": [
+        "别让一个生词打断一本好书。用 iPhone 相机对准纸质书中的词语，查看意思，然后继续阅读。无需手动输入。",
+        "找到适合这句话的意思\n一个词可能有多种含义。在支持的设备上，Booktionary 会参考周围文字，帮助优先显示适合当前语境的词典释义。你也可以查看其他含义。",
+        "读英文书，多一份帮助\n在英文释义旁显示中文译词。你还可以开启释义翻译，在英文和简体中文之间切换。阅读前请先下载所需语言模型。",
+        "下载一次，离线查词\n应用内置英语词典。其他词典、单词翻译和释义翻译所需的模型可按需下载。安装后可离线使用，无需账号。相机画面和识别出的词语留在你的 iPhone 上。",
+        "一次购买包含所有已提供的词典和单词翻译包。无需订阅，没有应用内购买。",
+        "支持 24 种书籍语言的词典\n中文（简体和繁体）、英语、日语、韩语、法语、德语、西班牙语、葡萄牙语、意大利语、捷克语、丹麦语、荷兰语、印度尼西亚语、库尔德语（库尔曼吉，拉丁字母）、马来语（罗马字母 Rumi）、挪威语博克马尔语、波兰语、罗马尼亚语、俄语、瑞典语、泰语、土耳其语、乌克兰语、越南语。",
+        "英语单词可翻译成上述其他语言，以及希腊语。不支持扫描希腊语书籍。库尔德语仅支持使用拉丁字母的库尔曼吉，不包括索拉尼；马来语仅支持 Rumi，不包括 Jawi。中文词典释义保留来源文本的书写形式。",
+        "使用须知\n先选择书籍语言，对准一个词并稍作停留。划走释义即可继续阅读。词典和单词翻译的收录范围因词语和语言而异。浏览和下载语言资源需要联网。",
+        "根据语境选择词义需要 iOS 26 或更新版本，并且 Apple Intelligence 可用；支持情况取决于语言。如果无法匹配语境，将显示常规词典释义。释义翻译需要 iOS 18 或更新版本及兼容的模型，可用性取决于设备和 iOS 版本。捷克语、罗马尼亚语、希腊语、库尔曼吉和马来语目前仅提供单词翻译。",
+        "适用于运行 iOS 17 或更新版本的 iPhone。"
+      ],
+      "sourceLocale": "zh-Hans"
+    },
+    "zh-Hant": {
+      "subtitle": "閱讀時快速查詞",
+      "blocks": [
+        "別讓一個生字打斷一本好書。用 iPhone 相機對準紙本書中的詞語，查看意思，再繼續閱讀。不必手動輸入。",
+        "找到適合這句話的意思\n一個詞可能有多種含義。在支援的裝置上，Booktionary 會參考周圍文字，協助優先顯示符合當前語境的詞典釋義。你也可以查看其他含義。",
+        "閱讀英文書，多一份幫助\n在英文釋義旁顯示中文譯詞。你也可以開啟釋義翻譯，在英文和中文之間切換。釋義翻譯目前以簡體中文呈現。閱讀前請先下載所需語言模型。",
+        "下載一次，離線查詞\nApp 內建英語詞典。其他詞典、單字翻譯和釋義翻譯所需的模型可依需求下載。安裝後可離線使用，不需要帳號。相機畫面與辨識出的詞語留在你的 iPhone 上。",
+        "一次購買包含所有已提供的詞典和單字翻譯套件。不必訂閱，沒有 App 內購買。",
+        "支援 24 種書籍語言的詞典\n中文（簡體和繁體）、英語、日語、韓語、法語、德語、西班牙語、葡萄牙語、義大利語、捷克語、丹麥語、荷蘭語、印尼語、庫德語（庫爾曼吉，拉丁字母）、馬來語（羅馬字母 Rumi）、挪威語書面語（Bokmål）、波蘭語、羅馬尼亞語、俄語、瑞典語、泰語、土耳其語、烏克蘭語、越南語。",
+        "英語單字可翻譯成上述其他語言，以及希臘語。不支援掃描希臘語書籍。庫德語僅支援使用拉丁字母的庫爾曼吉，不包括索拉尼；馬來語僅支援 Rumi，不包括 Jawi。中文詞典釋義保留來源文字的書寫形式。",
+        "使用須知\n先選擇書籍語言，對準一個詞並稍作停留。滑開釋義即可繼續閱讀。詞典和單字翻譯的收錄範圍依詞語和語言而異。瀏覽和下載語言資源需要連網。",
+        "依語境選擇詞義需要 iOS 26 或更新版本，且 Apple Intelligence 可用；支援情況取決於語言。如果無法配合語境，會顯示一般詞典釋義。釋義翻譯需要 iOS 18 或更新版本及相容的模型，可用性取決於裝置和 iOS 版本。捷克語、羅馬尼亞語、希臘語、庫爾曼吉和馬來語目前僅提供單字翻譯。",
+        "適用於執行 iOS 17 或更新版本的 iPhone。"
+      ],
+      "sourceLocale": "zh-Hant"
+    }
+  }
+}

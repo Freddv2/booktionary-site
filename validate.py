@@ -3,11 +3,11 @@
 import json, os, re, sys
 from html import unescape
 from pathlib import Path
+from build import appstore_url_for
 
 BANNED_PHRASES = ["as mentioned above", "see below", "as we said",
                   "as discussed", "see above", "comme indiqué plus haut",
                   "voir ci-dessus", "comme dit plus haut"]
-APPSTORE = "https://apps.apple.com/app/apple-store/id6796368335?pt=129235559&ct=booktionary_website_ios&mt=8"
 REQUIRED_BOTS = ["GPTBot", "ClaudeBot", "PerplexityBot", "Google-Extended", "CCBot"]
 
 def text_of(html):
@@ -38,7 +38,11 @@ def check_file(path):
         fails.append("javascript present")
     if re.search(r'(src|href)="https?://(?!apps\.apple\.com|booktionary\.io)', html):
         fails.append("external asset or non-App-Store absolute link")
-    appstore_links = re.findall(r'<a\s[^>]*href="' + re.escape(APPSTORE) + r'"[^>]*>', unescape(html))
+    page_language = re.search(r'<html\s[^>]*lang="([^"]+)"', html)
+    if not page_language:
+        fails.append("missing page language for campaign attribution")
+    store_url = appstore_url_for(page_language[1]) if page_language else ''
+    appstore_links = re.findall(r'<a\s[^>]*href="' + re.escape(store_url) + r'"[^>]*>', unescape(html))
     expected_store_links = 3 if is_home else 1
     if len(appstore_links) != expected_store_links:
         fails.append(f"expected exactly {expected_store_links} App Store link(s), found {len(appstore_links)}")
@@ -51,7 +55,11 @@ def check_file(path):
     if "abandoned" in body_text:
         fails.append("'abandoned' claim about competitors")
     for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>', html, re.S):
-        try: json.loads(m.group(1))
+        try:
+            schema = json.loads(m.group(1))
+            if schema.get('@type') == 'SoftwareApplication':
+                if schema.get('installUrl') != store_url or schema.get('offers', {}).get('url') != store_url:
+                    fails.append("App Store schema campaign differs from page language")
         except json.JSONDecodeError as e: fails.append(f"invalid JSON-LD: {e}")
     fails += check_alternates(html)
     if is_home:
