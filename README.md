@@ -135,3 +135,21 @@ Search Console evidence and actual deployment state in the app repository's
 site root so Bing Webmaster Tools can verify `https://booktionary.io/`. The
 existing `sitemap.xml` contains all 47 content URLs; verification and sitemap
 submission do not establish that Bing has indexed those pages.
+
+
+## Prepared English expansion — iOS 1.0.14
+
+`english_translation_release.json` holds the same 27 localized product-fact
+paragraphs used for the 1.0.14 App Store preparation. The seven established
+homepages add these facts to their language section and translation FAQ; the
+20 extended editions add them to the existing translation-support block.
+All 23 supported non-English book sources offer separately downloaded English
+word equivalents. English definitions depend on a compatible Apple model.
+Greek remains excluded as a book source; no Sorani or Jawi coverage is added.
+Existing approved images, layout, campaign links and support contact remain.
+
+Publish this branch only after public iOS 1.0.14 is available. Its release PR
+and actual main/head IDs belong in the app release impact record. Do not
+re-enable or dispatch GitHub Actions as part of this preparation. The existing
+1.0.12 pending-website file is historical; this branch does not silently replace
+it on main or publish new app claims before release.

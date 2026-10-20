@@ -125,3 +125,17 @@ REFRESH['it']['example_caption'] = ('Libro inglese · Traduzione della parola in
 REFRESH['it']['example_alt'] = 'Un iPhone mostra luminous, l’equivalente italiano luminoso e una definizione inglese con controlli in italiano'
 REFRESH['de']['example_caption'] = ('Englisches Buch · Deutsche Wortübersetzung', 'Die Definition bleibt auf Englisch.')
 REFRESH['de']['example_alt'] = 'Ein iPhone zeigt luminous, die deutsche Entsprechung leuchtend und eine englische Definition mit deutschen Bedienelementen'
+
+
+# Prepared for iOS 1.0.14. Keep the established English-book examples while
+# describing the separately selectable native-book → English resources.
+import json as _json
+from pathlib import Path as _Path
+from home_ui import HOME_UI as _HOME_UI
+_ENGLISH_RELEASE = _json.loads((_Path(__file__).resolve().parent /
+                              'english_translation_release.json').read_text(encoding='utf-8'))['locales']
+for _locale, _refresh in REFRESH.items():
+    _facts = _ENGLISH_RELEASE[_locale]
+    _refresh['translation'] = _HOME_UI[_locale]['translation'] + ' ' + _facts
+    _question, _answer = _refresh['translation_faq']
+    _refresh['translation_faq'] = (_question, _answer + ' ' + _facts)

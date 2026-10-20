@@ -1,0 +1,32 @@
+{
+  "version": "1.0.14",
+  "locales": {
+    "en": "Translate words from all 23 supported non-English book languages into English. English definitions are optional where compatible translation models are available.",
+    "fr": "Traduisez en anglais les mots des 23 langues de livres prises en charge autres que l’anglais. La traduction des définitions en anglais est facultative et dépend des modèles compatibles disponibles.",
+    "de": "Übersetze Wörter aus allen 23 unterstützten nichtenglischen Buchsprachen ins Englische. Englische Definitionen sind optional verfügbar, wenn passende Übersetzungsmodelle vorhanden sind.",
+    "es": "Traduce al inglés palabras de los 23 idiomas de libros compatibles distintos del inglés. La traducción de definiciones al inglés es opcional cuando hay modelos de traducción compatibles disponibles.",
+    "it": "Traduci in inglese le parole di tutte le 23 lingue dei libri supportate diverse dall’inglese. Le definizioni in inglese sono facoltative e dipendono dalla disponibilità di modelli di traduzione compatibili.",
+    "pt-BR": "Traduza para inglês palavras dos 23 idiomas de livros compatíveis além do inglês. A tradução das definições para inglês é opcional quando há modelos de tradução compatíveis disponíveis.",
+    "pt-PT": "Traduza para inglês palavras das 23 línguas de livros suportadas além do inglês. A tradução das definições para inglês é opcional quando existem modelos de tradução compatíveis disponíveis.",
+    "cs": "Překládejte do angličtiny slova ze všech 23 podporovaných jazyků knih kromě angličtiny. Anglické překlady definic jsou volitelné a závisejí na dostupnosti kompatibilních překladových modelů.",
+    "da": "Oversæt ord til engelsk fra alle 23 understøttede bogsprog ud over engelsk. Engelske definitioner er valgfrie, når kompatible oversættelsesmodeller er tilgængelige.",
+    "nl": "Vertaal woorden uit alle 23 ondersteunde niet-Engelse boektalen naar het Engels. Engelse definities zijn optioneel als er geschikte vertaalmodellen beschikbaar zijn.",
+    "nb": "Oversett ord til engelsk fra alle de 23 støttede bokspråkene utenom engelsk. Engelske definisjoner er valgfrie når kompatible oversettelsesmodeller er tilgjengelige.",
+    "ru": "Переводите на английский слова со всех 23 поддерживаемых языков книг, кроме английского. Перевод определений на английский можно включить при наличии совместимых моделей перевода.",
+    "sv": "Översätt ord till engelska från alla 23 bokspråk som stöds utöver engelska. Engelska definitioner är valfria när kompatibla översättningsmodeller finns tillgängliga.",
+    "pl": "Tłumacz na angielski słowa ze wszystkich 23 obsługiwanych języków książek innych niż angielski. Angielskie definicje są opcjonalne, gdy dostępne są zgodne modele tłumaczenia.",
+    "ja": "英語以外の対応する23言語の本から、単語を英語に翻訳できます。対応する翻訳モデルが利用できる言語では、定義の英訳も選べます。",
+    "ko": "영어를 제외한 지원되는 23개 책 언어의 단어를 영어로 번역하세요. 호환되는 번역 모델을 사용할 수 있는 언어에서는 정의의 영어 번역도 선택할 수 있습니다.",
+    "th": "แปลคำจากภาษาหนังสือที่รองรับทั้ง 23 ภาษานอกเหนือจากภาษาอังกฤษเป็นภาษาอังกฤษได้ และเลือกแปลคำจำกัดความเป็นภาษาอังกฤษได้เมื่อมีโมเดลการแปลที่รองรับ",
+    "ro": "Tradu în engleză cuvinte din toate cele 23 de limbi de cărți acceptate, altele decât engleza. Definițiile în engleză sunt opționale acolo unde sunt disponibile modele de traducere compatibile.",
+    "vi": "Dịch từ sang tiếng Anh từ tất cả 23 ngôn ngữ sách được hỗ trợ ngoài tiếng Anh. Bạn có thể chọn bản dịch định nghĩa sang tiếng Anh khi có mô hình dịch tương thích.",
+    "el": "Μεταφράστε λέξεις στα αγγλικά από και τις 23 υποστηριζόμενες γλώσσες βιβλίων εκτός των αγγλικών. Οι αγγλικοί ορισμοί είναι προαιρετικοί όπου διατίθενται συμβατά μοντέλα μετάφρασης.",
+    "uk": "Перекладайте англійською слова з усіх 23 підтримуваних мов книжок, окрім англійської. Переклад визначень англійською можна ввімкнути за наявності сумісних моделей перекладу.",
+    "zh-Hans": "可将全部23种受支持的非英语书籍语言中的词语翻译成英语。对于有兼容翻译模型可用的语言，还可选择显示英语释义翻译。",
+    "zh-Hant": "可將全部23種受支援的非英語書籍語言中的詞語翻譯成英語。對於有相容翻譯模型可用的語言，還可選擇顯示英語釋義翻譯。",
+    "id": "Terjemahkan kata ke bahasa Inggris dari seluruh 23 bahasa buku yang didukung selain bahasa Inggris. Terjemahan definisi ke bahasa Inggris bersifat opsional jika model terjemahan yang kompatibel tersedia.",
+    "tr": "İngilizce dışındaki desteklenen 23 kitap dilinin tümünden sözcükleri İngilizceye çevirin. Uyumlu çeviri modelleri varsa tanımların İngilizce çevirisini de isteğe bağlı olarak açabilirsiniz.",
+    "ms": "Terjemah perkataan ke bahasa Inggeris daripada kesemua 23 bahasa buku yang disokong selain bahasa Inggeris. Terjemahan takrif ke bahasa Inggeris adalah pilihan apabila model terjemahan yang serasi tersedia.",
+    "ku": "Peyvan ji hemû 23 zimanên pirtûkan ên piştgirîkirî yên ne Îngilîzî wergerînin Îngilîzî. Li cihê ku modelên wergerê yên lihevhatî hene, hûn dikarin wergera pênaseyan a Îngilîzî jî hilbijêrin."
+  }
+}
