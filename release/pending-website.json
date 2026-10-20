@@ -1,6 +1,6 @@
 {
-  "version": "1.0.12",
-  "pull_request": 20,
-  "head_sha": "508e188a2f666080e452f02f4545a5cfe3d17104",
-  "expected_text": "Settings \u2192 App language"
+  "version": "1.0.14",
+  "pull_request": 29,
+  "head_sha": "010ec25d7312a2da6192c96153f33bbde82977a1",
+  "expected_text": "Translate words from all 23 supported non-English book languages into English."
 }
