@@ -1,0 +1,33 @@
+{
+  "version": "1.0.15",
+  "locales": {
+    "en": {
+      "wordActions": "Touch and hold a word in a definition to look it up, copy it or search Google. Return to the original entry when you are done. You can also search Google directly from a scanned word.",
+      "browserSearch": "Google search is optional, opens your browser and requires internet. Only when you choose it is the search text sent to Google. Camera images remain on your iPhone."
+    },
+    "fr": {
+      "wordActions": "Appuyez longuement sur un mot dans une définition pour le chercher, le copier ou lancer une recherche Google. Revenez ensuite à la définition de départ. Vous pouvez aussi chercher directement sur Google un mot scanné.",
+      "browserSearch": "La recherche Google est facultative, ouvre votre navigateur et nécessite Internet. Le texte recherché est transmis à Google uniquement lorsque vous choisissez cette action. Les images restent sur votre iPhone."
+    },
+    "es": {
+      "wordActions": "Mantén pulsada una palabra de una definición para consultarla, copiarla o buscarla en Google. Después puedes volver a la entrada original. También puedes buscar directamente en Google una palabra escaneada.",
+      "browserSearch": "La búsqueda en Google es opcional, abre el navegador y requiere internet. El texto de búsqueda solo se envía a Google cuando eliges esa acción. Las imágenes de la cámara permanecen en tu iPhone."
+    },
+    "de": {
+      "wordActions": "Halte ein Wort in einer Definition gedrückt, um es nachzuschlagen, zu kopieren oder mit Google zu suchen. Danach kannst du zum ursprünglichen Eintrag zurückkehren. Auch gescannte Wörter kannst du direkt mit Google suchen.",
+      "browserSearch": "Die optionale Google-Suche öffnet deinen Browser und benötigt Internet. Nur wenn du sie auswählst, wird der Suchtext an Google gesendet. Kamerabilder bleiben auf deinem iPhone."
+    },
+    "it": {
+      "wordActions": "Tieni premuta una parola in una definizione per cercarla nel dizionario, copiarla o cercarla su Google. Poi torna alla voce iniziale. Puoi anche cercare direttamente su Google una parola scansionata.",
+      "browserSearch": "La ricerca Google è facoltativa, apre il browser e richiede internet. Il testo della ricerca viene inviato a Google solo quando scegli questa azione. Le immagini della fotocamera restano sul tuo iPhone."
+    },
+    "pt-BR": {
+      "wordActions": "Toque e segure uma palavra em uma definição para consultá-la, copiá-la ou pesquisar no Google. Depois, volte à entrada original. Você também pode pesquisar diretamente no Google uma palavra escaneada.",
+      "browserSearch": "A pesquisa no Google é opcional, abre o navegador e requer internet. O texto da pesquisa só é enviado ao Google quando você escolhe essa ação. As imagens da câmera permanecem no iPhone."
+    },
+    "pt-PT": {
+      "wordActions": "Toque e segure uma palavra numa definição para consultá-la, copiá-la ou pesquisar no Google. Depois, volte à entrada original. Também pode pesquisar diretamente no Google uma palavra digitalizada.",
+      "browserSearch": "A pesquisa no Google é opcional, abre o navegador e requer internet. O texto da pesquisa só é enviado ao Google quando escolhe essa ação. As imagens da câmara permanecem no iPhone."
+    }
+  }
+}

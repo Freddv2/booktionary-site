@@ -139,3 +139,16 @@ for _locale, _refresh in REFRESH.items():
     _refresh['translation'] = _HOME_UI[_locale]['translation'] + ' ' + _facts
     _question, _answer = _refresh['translation_faq']
     _refresh['translation_faq'] = (_question, _answer + ' ' + _facts)
+
+# iOS 1.0.15: explicit external-search disclosure and definition word actions.
+_reading_actions = _json.loads((_Path(__file__).resolve().parent /
+                                'reading_actions_release.json').read_text(encoding='utf-8'))['locales']
+for _locale, _facts in _reading_actions.items():
+    _ui = _HOME_UI[_locale]
+    _title, _privacy = _ui['benefits'][1]
+    _ui['benefits'][1] = (_title, _facts['browserSearch'] + ' ' + _privacy.split('. ', 1)[1])
+    _question, _answer = _ui['faqs'][4]
+    _ui['faqs'][4] = (_question, _facts['browserSearch'] + ' ' + _answer.split('. ', 2)[2])
+    _steps = REFRESH[_locale]['steps']
+    _step_title, _step_body = _steps[2]
+    _steps[2] = (_step_title, _step_body + ' ' + _facts['wordActions'])

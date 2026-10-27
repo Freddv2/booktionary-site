@@ -1,10 +1,12 @@
 """Render additional language editions using every released listing paragraph."""
 from html import escape
 from language_support import BOOK_LANGUAGES
+from reading_artwork import ARTWORK
 
 
 def render(page, pages, *, labels, copy, url_for, store_url, schema, locale_names):
     lang = page['lang']
+    example = ARTWORK[lang]
     esc = escape
     blocks = copy['blocks']
 
@@ -60,7 +62,7 @@ def render(page, pages, *, labels, copy, url_for, store_url, schema, locale_name
     <section id="proof" class="bt-wrap bt-local-copy">{block(3)}{block(4)}</section>
     <section id="meaning" class="bt-meaning"><div class="bt-wrap bt-meaning-grid">
       <div class="bt-local-copy">{block(1)}{block(2)}</div>
-      <figure class="bt-native bt-photo-example"><div class="bt-reading-photo"><img src="../assets/booktionary-real-book-photo.jpg" alt="{esc(labels['image_caption'], quote=True)}" width="667" height="1100" loading="lazy"></div><figcaption>{esc(labels['image_caption'])}</figcaption></figure>
+      <figure class="bt-native bt-photo-example"><div class="bt-reading-photo"><img src="../{esc(example['file'], quote=True)}" alt="{esc(labels['image_caption'], quote=True)}" width="{example['dimensions'][0]}" height="{example['dimensions'][1]}" loading="lazy"></div><figcaption>{esc(labels['image_caption'])}</figcaption></figure>
     </div><aside class="bt-wrap"><div class="bt-definition">{block(8)}</div></aside></section>
     <section id="languages" class="bt-languages bt-wrap"><div class="bt-local-copy">{block(5)}{block(6)}</div><ul class="bt-language-list">{languages}</ul></section>
     <section id="support" class="bt-support-panel bt-wrap"><h2>{esc(labels['support'])}</h2>

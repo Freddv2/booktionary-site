@@ -71,7 +71,8 @@ class HomeRefreshTests(unittest.TestCase):
                 self.assertIn('id="proof"', rendered)
                 self.assertLess(rendered.index('id="how-it-works"'), rendered.index('id="proof"'))
                 self.assertLess(rendered.index('id="proof"'), rendered.index('id="meaning"'))
-                self.assertIn('booktionary-real-book-photo.jpg', rendered)
+                interface = 'pt' if page['lang'].startswith('pt-') else page['lang']
+                self.assertIn(f'assets/localized-interface/{interface}/reading-1.0.15.png', rendered)
                 self.assertIn('id="support"', rendered)
                 self.assertIn('mailto:fredddv@hotmail.com', rendered)
                 self.assertIn('iOS 26', rendered)

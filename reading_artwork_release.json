@@ -1,0 +1,363 @@
+{
+  "version": "1.0.15",
+  "status": "OWNER_APPROVED_PENDING_APP_RELEASE",
+  "approvedAt": "2026-10-27T19:32:45.110399+00:00",
+  "ownerQuotes": [
+    "Looks good",
+    "Approve the Kurmanji portrait"
+  ],
+  "scope": "Approved store-gallery originals reused unchanged for the website; additional Kurmanji interface portrait approved separately.",
+  "locales": {
+    "cs": {
+      "file": "assets/localized-interface/cs/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1849
+      ],
+      "sha256": "f3cd68f1b0f3c56033225a7781ed0714cbb3a0f545a9930f867f4106bec98807",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/cs/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "cs",
+      "bookLanguage": "en",
+      "translationLanguage": "cs",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "da": {
+      "file": "assets/localized-interface/da/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1847
+      ],
+      "sha256": "8a7bc7a628732c455431d28de7c1daae56d5c3893a7184f2670232745115dba3",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/da/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "da",
+      "bookLanguage": "en",
+      "translationLanguage": "da",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "de": {
+      "file": "assets/localized-interface/de/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1847
+      ],
+      "sha256": "e35b323f3ed518a0a77608bdb16c065ffa754d65ff561f248233877ac954bf89",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/de/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "de",
+      "bookLanguage": "en",
+      "translationLanguage": "de",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "el": {
+      "file": "assets/localized-interface/el/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1848
+      ],
+      "sha256": "ab0903a1cd9c2e8f152b9dbf55bd50867a97ef806f927875d1ac6bacc9dee9ae",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/el/2-read-meaning-6.9.png",
+      "interfaceLanguage": "el",
+      "bookLanguage": "en",
+      "translationLanguage": "el",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "en": {
+      "file": "assets/localized-interface/en/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1847
+      ],
+      "sha256": "9122355903843f3107ab1003de81e3fe4e0da390fa7ca4f253ec60cb4aeabbfc",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/en/6-english-french-translation-6.9.png",
+      "interfaceLanguage": "en",
+      "bookLanguage": "en",
+      "translationLanguage": "fr",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "es": {
+      "file": "assets/localized-interface/es/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1848
+      ],
+      "sha256": "03ac016e77553fb840d6fd12fc091fd978e4db3dff781943cdea77400742bef8",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/es/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "es",
+      "bookLanguage": "en",
+      "translationLanguage": "es",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "fr": {
+      "file": "assets/localized-interface/fr/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1848
+      ],
+      "sha256": "64bbcd743444835d6fa1a7dc96651ff1795d7e352cd00d0624790270ac704bc7",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/fr-translation-original.png",
+      "interfaceLanguage": "fr",
+      "bookLanguage": "en",
+      "translationLanguage": "fr",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "id": {
+      "file": "assets/localized-interface/id/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1847
+      ],
+      "sha256": "bba50be6d20cb1321cb9c350b1bfbff99dcf0de5abce29936628d3dd5a3cb0b8",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/id/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "id",
+      "bookLanguage": "en",
+      "translationLanguage": "id",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "it": {
+      "file": "assets/localized-interface/it/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1847
+      ],
+      "sha256": "4699d7c19595614e2479bd7792bc4b8a40536f86a58309b0646d0db39678b948",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/it/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "it",
+      "bookLanguage": "en",
+      "translationLanguage": "it",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "ja": {
+      "file": "assets/localized-interface/ja/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1848
+      ],
+      "sha256": "7d401a72679026ffc3922eb99ef5785a5edb165949973aee5ae28201141df967",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/ja/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "ja",
+      "bookLanguage": "en",
+      "translationLanguage": "ja",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "ko": {
+      "file": "assets/localized-interface/ko/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1847
+      ],
+      "sha256": "6904d2a6d1d2e69148e0bb328e2d9f92bbac378f2f70861dd9d4f2d3dcebacff",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/ko/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "ko",
+      "bookLanguage": "en",
+      "translationLanguage": "ko",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "ms": {
+      "file": "assets/localized-interface/ms/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1847
+      ],
+      "sha256": "b0923f02d52b605785bac16502dd0bc66822ba29760958d74d5b81472e99bf3c",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/ms/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "ms",
+      "bookLanguage": "en",
+      "translationLanguage": "ms",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "nb": {
+      "file": "assets/localized-interface/nb/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1848
+      ],
+      "sha256": "b09071b7d2676baf730e14ebdba234b05b453a6547899b21171b2a2bbf4ab67e",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/nb/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "nb",
+      "bookLanguage": "en",
+      "translationLanguage": "nb",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "nl": {
+      "file": "assets/localized-interface/nl/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1848
+      ],
+      "sha256": "234a6beae3e5dcee50ebfbbe523a76c2cce3b7d0d27092da66d5f49d5816a4b3",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/nl/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "nl",
+      "bookLanguage": "en",
+      "translationLanguage": "nl",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "pl": {
+      "file": "assets/localized-interface/pl/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1848
+      ],
+      "sha256": "7d42207f94e654e15497f7bea57101a1a885c4d6d1844cc9901a2d88cffbbbb4",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/pl/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "pl",
+      "bookLanguage": "en",
+      "translationLanguage": "pl",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "ro": {
+      "file": "assets/localized-interface/ro/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1849
+      ],
+      "sha256": "549d68b70203a9ebd4e9652cfd65256fda17e3b5377b76c3e65895e64ba12d6a",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/ro/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "ro",
+      "bookLanguage": "en",
+      "translationLanguage": "ro",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "ru": {
+      "file": "assets/localized-interface/ru/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1848
+      ],
+      "sha256": "9340bef39f87421f14ac9dbe978c7303b29f88b365ef3d38bf271ee9cdb65cca",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/ru/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "ru",
+      "bookLanguage": "en",
+      "translationLanguage": "ru",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "sv": {
+      "file": "assets/localized-interface/sv/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1848
+      ],
+      "sha256": "30dfbe9c34a9ee635f30a9868cee2b0cd0f888fc22203367f98f2cc7c91148c2",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/sv/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "sv",
+      "bookLanguage": "en",
+      "translationLanguage": "sv",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "th": {
+      "file": "assets/localized-interface/th/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1848
+      ],
+      "sha256": "cd79d2ce1c09dd63a6e1261c3f2339913b2e72d68d9660f15d0c0900cbfabe59",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/th/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "th",
+      "bookLanguage": "en",
+      "translationLanguage": "th",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "tr": {
+      "file": "assets/localized-interface/tr/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1848
+      ],
+      "sha256": "3b7b48ae4aa2ffde774e80764c623c560527ebe08870031239a63e56f23c33f4",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/tr/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "tr",
+      "bookLanguage": "en",
+      "translationLanguage": "tr",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "uk": {
+      "file": "assets/localized-interface/uk/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1848
+      ],
+      "sha256": "01b17d5805ae41f326c435441409c32dc2771c348ab12538735abf117d35fc46",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/uk/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "uk",
+      "bookLanguage": "en",
+      "translationLanguage": "uk",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "vi": {
+      "file": "assets/localized-interface/vi/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1848
+      ],
+      "sha256": "f0e4eb002cd77c1d54de09f1fe5e90bcda134f1c603cd29aa20ada30c1fc5c4f",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/vi/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "vi",
+      "bookLanguage": "en",
+      "translationLanguage": "vi",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "zh-Hans": {
+      "file": "assets/localized-interface/zh-Hans/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1849
+      ],
+      "sha256": "f30048476adb49bf4cab2c68352f474b87f6f2a5e20ac3dc03cf791561932921",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/zh-Hans/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "zh-Hans",
+      "bookLanguage": "en",
+      "translationLanguage": "zh-Hans",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "zh-Hant": {
+      "file": "assets/localized-interface/zh-Hant/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1849
+      ],
+      "sha256": "6418ada272e1bed43afdd1e8f90aeffb33f8a7a35474133a43c16307f7037a2e",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/zh-Hant/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "zh-Hant",
+      "bookLanguage": "en",
+      "translationLanguage": "zh-Hant",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "ku": {
+      "file": "assets/localized-interface/ku/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1847
+      ],
+      "sha256": "135666b014376ad02bf8181adeb53d56aff5feaf9daf9361a359fdac370ce9bc",
+      "source": "built-in image_gen: exec-a64dcbd7-ced6-4164-b402-c9fa5ad1c4c7.png",
+      "interfaceLanguage": "ku",
+      "bookLanguage": "en",
+      "translationLanguage": "fr",
+      "approval": "Owner approval: Approve the Kurmanji portrait"
+    },
+    "pt-BR": {
+      "file": "assets/localized-interface/pt/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1848
+      ],
+      "sha256": "de6eefe711b96c950827a5d9a8aec86050618b8569a65bf8113025a69506da00",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/pt/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "pt",
+      "bookLanguage": "en",
+      "translationLanguage": "pt",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    },
+    "pt-PT": {
+      "file": "assets/localized-interface/pt/reading-1.0.15.png",
+      "dimensions": [
+        851,
+        1848
+      ],
+      "sha256": "de6eefe711b96c950827a5d9a8aec86050618b8569a65bf8113025a69506da00",
+      "source": "booktionary/docs/appstore/screenshots/reading-controls-1.0.15-review-2026-10-27/rebuild-v2/originals/pt/2b-english-book-translation-6.9.png",
+      "interfaceLanguage": "pt",
+      "bookLanguage": "en",
+      "translationLanguage": "pt",
+      "approval": "Full gallery owner approval: Looks good; booktionary rebuild-v2/full-approval.json"
+    }
+  }
+}

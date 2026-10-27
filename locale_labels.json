@@ -9,7 +9,7 @@
     "site_language": "Jazyk webu",
     "built_in": "Součást aplikace",
     "download_pack": "Ke stažení",
-    "image_caption": "Ilustrace: anglická kniha a francouzský překlad slova."
+    "image_caption": "Ilustrace: anglická kniha a překlad slova do češtiny."
   },
   "da": {
     "native_name": "Dansk",
@@ -21,7 +21,7 @@
     "site_language": "Hjemmesidens sprog",
     "built_in": "Indbygget",
     "download_pack": "Kan downloades",
-    "image_caption": "Illustration: en engelsk bog og et ord oversat til fransk."
+    "image_caption": "Illustration: en engelsk bog og et ord oversat til dansk."
   },
   "el": {
     "native_name": "Ελληνικά",
@@ -33,7 +33,7 @@
     "site_language": "Γλώσσα ιστοτόπου",
     "built_in": "Ενσωματωμένο",
     "download_pack": "Με λήψη",
-    "image_caption": "Εικονογράφηση: αγγλικό βιβλίο και γαλλική μετάφραση λέξης."
+    "image_caption": "Εικονογράφηση: αγγλικό βιβλίο και ελληνική μετάφραση λέξης."
   },
   "id": {
     "native_name": "Bahasa Indonesia",
@@ -45,7 +45,7 @@
     "site_language": "Bahasa situs",
     "built_in": "Sudah tersedia",
     "download_pack": "Unduh kamus",
-    "image_caption": "Ilustrasi: buku berbahasa Inggris dan terjemahan kata dalam bahasa Prancis."
+    "image_caption": "Ilustrasi: buku berbahasa Inggris dan terjemahan kata dalam bahasa Indonesia."
   },
   "ja": {
     "native_name": "日本語",
@@ -57,7 +57,7 @@
     "site_language": "サイトの言語",
     "built_in": "内蔵",
     "download_pack": "ダウンロード",
-    "image_caption": "イメージ画像：英語の本とフランス語の訳語。"
+    "image_caption": "イメージ画像：英語の本と日本語の訳語。"
   },
   "ko": {
     "native_name": "한국어",
@@ -69,7 +69,7 @@
     "site_language": "사이트 언어",
     "built_in": "기본 제공",
     "download_pack": "다운로드",
-    "image_caption": "제품 설명용 이미지: 영어 책과 프랑스어 단어 번역."
+    "image_caption": "제품 설명용 이미지: 영어 책과 한국어 단어 번역."
   },
   "ku": {
     "native_name": "Kurdî (Kurmancî)",
@@ -93,7 +93,7 @@
     "site_language": "Bahasa laman",
     "built_in": "Terbina dalam",
     "download_pack": "Muat turun",
-    "image_caption": "Ilustrasi: buku bahasa Inggeris dan terjemahan perkataan dalam bahasa Perancis."
+    "image_caption": "Ilustrasi: buku bahasa Inggeris dan terjemahan perkataan dalam bahasa Melayu."
   },
   "nb": {
     "native_name": "Norsk (bokmål)",
@@ -105,7 +105,7 @@
     "site_language": "Nettstedets språk",
     "built_in": "Innebygd",
     "download_pack": "Last ned",
-    "image_caption": "Illustrasjon: en engelsk bok og en fransk ordoversettelse."
+    "image_caption": "Illustrasjon: en engelsk bok og en norsk ordoversettelse."
   },
   "nl": {
     "native_name": "Nederlands",
@@ -117,7 +117,7 @@
     "site_language": "Taal van de website",
     "built_in": "Ingebouwd",
     "download_pack": "Downloaden",
-    "image_caption": "Illustratie: een Engels boek en een Franse woordvertaling."
+    "image_caption": "Illustratie: een Engels boek en een Nederlandse woordvertaling."
   },
   "pl": {
     "native_name": "Polski",
@@ -129,7 +129,7 @@
     "site_language": "Język strony",
     "built_in": "W aplikacji",
     "download_pack": "Do pobrania",
-    "image_caption": "Ilustracja: angielska książka i francuskie tłumaczenie słowa."
+    "image_caption": "Ilustracja: angielska książka i polskie tłumaczenie słowa."
   },
   "ro": {
     "native_name": "Română",
@@ -141,7 +141,7 @@
     "site_language": "Limba site-ului",
     "built_in": "Inclus",
     "download_pack": "De descărcat",
-    "image_caption": "Ilustrație: o carte în engleză și traducerea unui cuvânt în franceză."
+    "image_caption": "Ilustrație: o carte în engleză și traducerea unui cuvânt în română."
   },
   "ru": {
     "native_name": "Русский",
@@ -153,7 +153,7 @@
     "site_language": "Язык сайта",
     "built_in": "Встроен",
     "download_pack": "Загрузить",
-    "image_caption": "Иллюстрация: английская книга и перевод слова на французский."
+    "image_caption": "Иллюстрация: английская книга и перевод слова на русский."
   },
   "sv": {
     "native_name": "Svenska",
@@ -165,7 +165,7 @@
     "site_language": "Webbplatsens språk",
     "built_in": "Inbyggd",
     "download_pack": "Ladda ned",
-    "image_caption": "Illustration: en engelsk bok och en fransk ordöversättning."
+    "image_caption": "Illustration: en engelsk bok och en svensk ordöversättning."
   },
   "th": {
     "native_name": "ไทย",
@@ -177,7 +177,7 @@
     "site_language": "ภาษาของเว็บไซต์",
     "built_in": "มีในแอปแล้ว",
     "download_pack": "ดาวน์โหลด",
-    "image_caption": "ภาพประกอบ: หนังสือภาษาอังกฤษและคำแปลภาษาฝรั่งเศส"
+    "image_caption": "ภาพประกอบ: หนังสือภาษาอังกฤษและคำแปลภาษาไทย"
   },
   "tr": {
     "native_name": "Türkçe",
@@ -189,7 +189,7 @@
     "site_language": "Site dili",
     "built_in": "Dahili",
     "download_pack": "İndirilebilir",
-    "image_caption": "Tanıtım görseli: İngilizce bir kitap ve Fransızca kelime çevirisi."
+    "image_caption": "Tanıtım görseli: İngilizce bir kitap ve Türkçe kelime çevirisi."
   },
   "uk": {
     "native_name": "Українська",
@@ -201,7 +201,7 @@
     "site_language": "Мова сайту",
     "built_in": "Вбудовано",
     "download_pack": "Завантажити",
-    "image_caption": "Ілюстрація: англійська книжка та французький переклад слова."
+    "image_caption": "Ілюстрація: англійська книжка та український переклад слова."
   },
   "vi": {
     "native_name": "Tiếng Việt",
@@ -213,7 +213,7 @@
     "site_language": "Ngôn ngữ trang web",
     "built_in": "Có sẵn",
     "download_pack": "Tải xuống",
-    "image_caption": "Hình minh họa: sách tiếng Anh và bản dịch từ sang tiếng Pháp."
+    "image_caption": "Hình minh họa: sách tiếng Anh và bản dịch từ sang tiếng Việt."
   },
   "zh-Hans": {
     "native_name": "简体中文",
@@ -225,7 +225,7 @@
     "site_language": "网站语言",
     "built_in": "内置",
     "download_pack": "下载",
-    "image_caption": "示意图：英文书籍及法语译词。"
+    "image_caption": "示意图：英文书籍及中文译词。"
   },
   "zh-Hant": {
     "native_name": "繁體中文",
@@ -237,6 +237,6 @@
     "site_language": "網站語言",
     "built_in": "內建",
     "download_pack": "下載",
-    "image_caption": "示意圖：英文書籍及法語譯詞。"
+    "image_caption": "示意圖：英文書籍及中文譯詞。"
   }
 }
