@@ -1,6 +1,6 @@
 {
   "version": "1.0.15",
   "pull_request": 31,
-  "head_sha": "b4273dccd78c9ecc229d0583a6424d1e0f658f7d",
+  "head_sha": "a0aea2b78979ae2311faa4502ee1b8a08499b89f",
   "expected_text": "Touch and hold a word in a definition to look it up, copy it or search Google."
 }
