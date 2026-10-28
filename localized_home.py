@@ -1,22 +1,27 @@
 """Render additional language editions using every released listing paragraph."""
 from html import escape
 from language_support import BOOK_LANGUAGES
+from platforms import COPY, play_url_for, android_details
 
 
 def render(page, pages, *, labels, copy, url_for, store_url, schema, locale_names):
     lang = page['lang']
     esc = escape
-    blocks = copy['blocks']
+    blocks = list(copy['blocks'])
+    blocks[0] = COPY[lang]['lead']
+    blocks[9] = 'iPhone · iOS 17+ / Android 8.0+'
 
     def block(index):
         text = blocks[index]
+        if index in (1, 2, 3, 6, 8): text = "iPhone · " + text
         if '\n' in text:
             title, body = text.split('\n', 1)
             return f'<h2>{esc(title)}</h2><p>{esc(body)}</p>'
         return f'<p>{esc(text)}</p>'
 
     def download():
-        return f'<a class="bt-download" href="{esc(store_url, quote=True)}">{esc(labels["get"])} <span aria-hidden="true">↗</span></a>'
+        return ''.join(f'<a class="bt-download" href="{esc(url, quote=True)}"><span><small>{platform}</small><strong>{store}</strong></span><span aria-hidden="true">↗</span></a>'
+                       for url, platform, store in ((store_url, 'iPhone', 'App Store'), (play_url_for(lang), 'Android', 'Google Play')))
 
     homes = [p for p in pages if not p['slug']]
     alternates = ''.join(f'<link rel="alternate" hreflang="{p["lang"]}" href="{url_for(p)}">\n' for p in homes)
@@ -46,16 +51,17 @@ def render(page, pages, *, labels, copy, url_for, store_url, schema, locale_name
 <body><div id="bt-refresh" class="bt-localized">
   <header class="bt-header bt-wrap">
     <a class="bt-brand" href="#top"><img src="../assets/app-icon-main.png" alt="" width="37" height="37">Booktionary</a>
-    <a class="bt-header-get" href="{esc(store_url, quote=True)}">{esc(labels['get'])} ↗</a>
+    <a class="bt-header-get" href="#download">App Store · Google Play ↗</a>
   </header>
   <main id="top">
     <section class="bt-hero bt-wrap" aria-labelledby="hero-title">
-      <div><p class="bt-kicker">Booktionary · iPhone</p><h1 id="hero-title">{esc(labels['headline'])}</h1>
-        <p class="bt-lead">{esc(blocks[0])}</p><div class="bt-actions">{download()}</div>
+      <div><p class="bt-kicker">Booktionary · iPhone · Android</p><h1 id="hero-title">{esc(labels['headline'])}</h1>
+        <p class="bt-lead">{esc(blocks[0])}</p><div class="bt-actions" id="download">{download()}</div>
         <p class="bt-purchase">{esc(blocks[9])} · $1.99 USD</p>
       </div>
       <figure class="bt-hero-photo"><img src="../assets/scanning.webp" alt="{esc(page['description'], quote=True)}" width="851" height="1848" fetchpriority="high"></figure>
     </section>
+{android_details(lang, labels['privacy'], '../')}
     <section id="how-it-works" class="bt-wrap bt-local-copy">{block(7)}</section>
     <section id="proof" class="bt-wrap bt-local-copy">{block(3)}{block(4)}</section>
     <section id="meaning" class="bt-meaning"><div class="bt-wrap bt-meaning-grid">
@@ -66,10 +72,10 @@ def render(page, pages, *, labels, copy, url_for, store_url, schema, locale_name
     <section id="support" class="bt-support-panel bt-wrap"><h2>{esc(labels['support'])}</h2>
       <p>{esc(copy['subtitle'])}</p><p><a href="mailto:fredddv@hotmail.com">{esc(labels['support'])}: fredddv@hotmail.com</a></p>
     </section>
-    <section class="bt-last">{download()}</section>
+    <section class="bt-last"><div class="bt-actions bt-store-pair">{download()}</div></section>
   </main>
   <footer class="bt-wrap"><div class="bt-footer"><a class="bt-brand" href="#top">Booktionary</a>
-    <nav><a href="../privacy.html">{esc(labels['privacy'])}</a><a href="../licenses.html">{esc(labels['licenses'])}</a><a href="#support">{esc(labels['support'])}</a></nav>
+    <nav><a href="../privacy.html">iPhone · {esc(labels['privacy'])}</a><a href="../privacy-android.html">Android · {esc(labels['privacy'])}</a><a href="../licenses.html">{esc(labels['licenses'])}</a><a href="#support">{esc(labels['support'])}</a></nav>
   </div><div class="bt-footer-bottom"><nav aria-label="{esc(labels['site_language'], quote=True)}">{links}</nav></div></footer>
 </div></body></html>
 '''

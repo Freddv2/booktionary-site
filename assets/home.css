@@ -38,3 +38,13 @@ html,body{margin:0;background:#f8f5ec}
 #bt-refresh.bt-localized .bt-header-get{white-space:normal;max-width:48%;text-align:center}
 #bt-refresh.bt-localized .bt-download{white-space:normal;max-width:100%}
 #bt-refresh .bt-footer-bottom nav a[aria-current=page]{font-weight:700;text-decoration-thickness:2px}
+
+/* Store destinations and device-specific requirements share the existing style. */
+#bt-refresh .bt-store-pair{justify-content:center;margin-top:0}
+#bt-refresh .bt-platform{padding-bottom:24px}
+#bt-refresh .bt-platform details{border-block:1px solid var(--bt-rule);padding-block:16px}
+#bt-refresh .bt-platform summary{cursor:pointer;font-size:16px;color:var(--bt-green)}
+#bt-refresh .bt-platform h3{font:24px var(--bt-serif);margin:22px 0 10px}
+#bt-refresh .bt-platform p{font-size:14px;color:var(--bt-muted);max-width:760px;margin-top:12px}
+#bt-refresh .bt-platform a{text-decoration:underline;text-underline-offset:3px}
+#bt-refresh .bt-footer nav{flex-wrap:wrap}
