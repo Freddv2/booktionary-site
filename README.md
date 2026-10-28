@@ -2,7 +2,9 @@
 
 Static site, generated. `content.py` holds article copy and detailed home-page
 support content. `home_ui.py` and `home_refresh.py` hold the localized landing-page copy;
-`build.py` renders both to committed HTML.
+`build.py` renders both to committed HTML. `platform_copy.json` holds the shared
+introductions and approved Android qualifications; `platforms.py` adds localized
+Google Play destinations and Android privacy links.
 
 ## Editing
 

@@ -58,11 +58,11 @@ class HomeRefreshTests(unittest.TestCase):
                 rendered = build.render_page(page, PAGES)
                 parser = Links()
                 parser.feed(rendered)
-                self.assertEqual(parser.store, [expected_url] * (1 if page['slug'] else 3))
+                self.assertEqual(parser.store, [expected_url] * (1 if page['slug'] else 2))
                 if not page['slug']:
                     schema = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', rendered, re.S)[1])
-                    self.assertEqual(schema['installUrl'], expected_url)
-                    self.assertEqual(schema['offers']['url'], expected_url)
+                    self.assertIn(expected_url, schema['installUrl'])
+                    self.assertIn(expected_url, [offer['url'] for offer in schema['offers']])
 
     def test_localized_home_preserves_support_and_reading_first_order(self):
         for page in (p for p in PAGES if not p['slug']):

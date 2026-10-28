@@ -1,0 +1,298 @@
+{
+  "en": {
+    "playLocale": "en-US",
+    "lead": "An unfamiliar word shouldn’t pull you out of a good book. Point your phone camera at a word, find its meaning, and keep reading. No typing needed.",
+    "androidBlocks": [
+      "Translations for English books\nAdd word translations alongside English definitions. Choose from 24 optional translation languages: the non-English languages listed above, plus Greek. Translation packs download separately. Greek is available for word translations only. Kurmanji uses Latin script, not Sorani; Malay uses Rumi, not Jawi. Definitions and equivalents come from the credited language resources.",
+      "Translate words from all 23 supported non-English book languages into English.",
+      "Optional contextual meanings for English books\nOn compatible phones with Android 12 or later and at least 8 GB RAM, an optional on-device model can help choose a dictionary meaning for English books. Download the model separately through Google Play. The app checks device performance and available resources before enabling it; meeting the minimum specifications does not guarantee availability. A contextual choice appears only when ready as the definition opens. Ordinary dictionary lookup works without it on supported phones.",
+      "Camera and privacy\nCamera images and recognized text are processed on your device. Google ML Kit collects technical diagnostics and usage data. Resource downloads send ordinary connection information to their hosts. If you choose a Google search, the search query is sent to your browser and Google and requires internet access. See the Android privacy policy for details.",
+      "Requires Android 8.0 or later and a camera."
+    ]
+  },
+  "fr": {
+    "playLocale": "fr-FR",
+    "lead": "Un mot inconnu ne devrait pas vous sortir d’un bon livre. Visez un mot avec l’appareil photo de votre téléphone, découvrez son sens et reprenez votre lecture. Rien à saisir.",
+    "androidBlocks": [
+      "Traductions de mots pour les livres anglais\nAffichez les traductions des mots à côté des définitions anglaises. Choisissez parmi 24 langues de traduction facultatives : les langues autres que l’anglais citées ci-dessus, ainsi que le grec. Les packs se téléchargent séparément. Le grec est proposé uniquement pour les traductions de mots. Le kurmanji utilise l’alphabet latin, pas le sorani ; le malais utilise le rumi, pas le jawi. Les définitions et équivalents viennent des ressources linguistiques créditées.",
+      "Traduisez en anglais les mots des 23 langues de livres prises en charge autres que l’anglais.",
+      "Choix du sens pour les livres anglais\nSur les téléphones compatibles sous Android 12 ou version ultérieure, avec au moins 8 Go de RAM, un modèle facultatif sur l’appareil aide à choisir un sens pour les livres anglais. Son téléchargement se fait séparément via Google Play. L’application vérifie les performances et les ressources disponibles avant de l’activer ; la configuration minimale ne garantit pas sa disponibilité. Le choix s’affiche seulement s’il est prêt à l’ouverture de la définition. La recherche habituelle reste disponible sans ce modèle.",
+      "Caméra et confidentialité\nLes images et le texte reconnu sont traités sur votre appareil. Google ML Kit recueille des diagnostics techniques et des données d’utilisation. Les téléchargements transmettent les informations habituelles de connexion aux hébergeurs. Si vous choisissez une recherche Google, la requête est envoyée à votre navigateur et à Google et nécessite Internet. Consultez la politique de confidentialité Android.",
+      "Android 8.0 ou version ultérieure et une caméra sont nécessaires."
+    ]
+  },
+  "es": {
+    "playLocale": "es-ES",
+    "lead": "Una palabra desconocida no debería sacarte de un buen libro. Apunta la cámara del teléfono a la palabra, consulta su significado y sigue leyendo. Sin tener que escribirla.",
+    "androidBlocks": [
+      "El diccionario de inglés está incluido. Descarga otros diccionarios y traducciones de palabras antes de leer; los recursos instalados funcionan sin conexión. No necesitas una cuenta.",
+      "Una sola compra incluye todos los diccionarios y paquetes de traducción de palabras disponibles. Sin suscripción ni compras integradas.",
+      "Selección contextual para libros en inglés\nEn teléfonos compatibles con Android 12 o posterior y al menos 8 GB de RAM, un modelo opcional en el dispositivo ayuda a elegir un significado para libros en inglés. Se descarga por separado desde Google Play. La app comprueba el rendimiento y los recursos disponibles antes de activarlo; cumplir los mínimos no garantiza su disponibilidad. La selección aparece solo si está lista al abrir la definición. La consulta habitual funciona sin el modelo.",
+      "Cámara y privacidad\nLas imágenes y el texto reconocido se procesan en tu dispositivo. Google ML Kit recopila diagnósticos técnicos y datos de uso. Las descargas envían información habitual de conexión a sus proveedores. Si eliges buscar en Google, la consulta se envía a tu navegador y a Google y requiere Internet. Consulta la política de privacidad de Android.",
+      "Requiere Android 8.0 o posterior y una cámara."
+    ]
+  },
+  "pt-BR": {
+    "playLocale": "pt-BR",
+    "lead": "Uma palavra desconhecida não deveria tirar você de uma boa leitura. Aponte a câmera do celular para a palavra, consulte o significado e continue lendo. Sem precisar digitar.",
+    "androidBlocks": [
+      "O dicionário de inglês está incluído. Baixe outros dicionários e traduções de palavras antes de ler; os recursos instalados funcionam offline. Não é preciso criar conta.",
+      "Uma compra inclui todos os dicionários e pacotes de tradução de palavras disponíveis. Sem assinatura nem compras no app.",
+      "Seleção contextual para livros em inglês\nEm celulares compatíveis com Android 12 ou posterior e pelo menos 8 GB de RAM, um modelo opcional no aparelho pode escolher um significado para livros em inglês. Baixe o modelo separadamente pelo Google Play. O app verifica o desempenho e os recursos disponíveis antes de ativá-lo; os requisitos mínimos não garantem disponibilidade. A escolha aparece apenas se estiver pronta ao abrir a definição. A consulta comum funciona sem o modelo.",
+      "Câmera e privacidade\nAs imagens e o texto reconhecido são processados no aparelho. O Google ML Kit coleta dados técnicos de diagnóstico e uso. Downloads enviam informações comuns de conexão aos seus servidores. Se você escolher a pesquisa no Google, a consulta será enviada ao navegador e ao Google e exigirá internet. Consulte a política de privacidade do Android.",
+      "Requer Android 8.0 ou posterior e câmera."
+    ]
+  },
+  "pt-PT": {
+    "playLocale": "pt-PT",
+    "lead": "Uma palavra desconhecida não devia interromper uma boa leitura. Aponte a câmara do telemóvel para a palavra, consulte o significado e continue a ler. Sem ter de escrever.",
+    "androidBlocks": [
+      "O dicionário de inglês está incluído. Descarregue outros dicionários e traduções de palavras antes de ler; os recursos instalados funcionam sem internet. Não é necessária uma conta.",
+      "Uma compra inclui todos os dicionários e pacotes de tradução de palavras disponíveis. Sem subscrição nem compras integradas.",
+      "Seleção contextual para livros em inglês\nEm telemóveis compatíveis com Android 12 ou posterior e pelo menos 8 GB de RAM, um modelo opcional no dispositivo pode escolher um significado para livros em inglês. Transfira o modelo separadamente através do Google Play. A aplicação verifica o desempenho e os recursos disponíveis antes de o ativar; os requisitos mínimos não garantem disponibilidade. A escolha aparece apenas se estiver pronta ao abrir a definição. A consulta habitual funciona sem o modelo.",
+      "Câmara e privacidade\nAs imagens e o texto reconhecido são processados no dispositivo. O Google ML Kit recolhe dados técnicos de diagnóstico e utilização. As transferências enviam informações habituais de ligação aos servidores. Se escolher a pesquisa no Google, a consulta será enviada ao navegador e ao Google e requer Internet. Consulte a política de privacidade do Android.",
+      "Requer Android 8.0 ou posterior e câmara."
+    ]
+  },
+  "it": {
+    "playLocale": "it-IT",
+    "lead": "Una parola sconosciuta non dovrebbe interrompere una bella lettura. Inquadrala con la fotocamera del telefono, consulta il significato e torna al libro. Senza digitare.",
+    "androidBlocks": [
+      "Il dizionario inglese è incluso. Scarica altri dizionari e traduzioni di parole prima di leggere; le risorse installate funzionano offline. Non serve un account.",
+      "Un solo acquisto include tutti i dizionari e i pacchetti di traduzione delle parole disponibili. Nessun abbonamento né acquisto in-app.",
+      "Significati contestuali per libri in inglese\nSui telefoni compatibili con Android 12 o successivo e almeno 8 GB di RAM, un modello facoltativo sul dispositivo può scegliere un significato per i libri in inglese. Si scarica separatamente da Google Play. L’app verifica prestazioni e risorse disponibili prima di attivarlo; i requisiti minimi non ne garantiscono la disponibilità. La scelta appare solo se pronta all’apertura della definizione. La ricerca normale funziona senza il modello.",
+      "Fotocamera e privacy\nLe immagini e il testo riconosciuto vengono elaborati sul dispositivo. Google ML Kit raccoglie dati tecnici di diagnostica e utilizzo. I download inviano le normali informazioni di connessione ai rispettivi host. Se scegli una ricerca Google, la query viene inviata al browser e a Google e richiede Internet. Consulta l’informativa sulla privacy per Android.",
+      "Richiede Android 8.0 o successivo e una fotocamera."
+    ]
+  },
+  "de": {
+    "playLocale": "de-DE",
+    "lead": "Ein unbekanntes Wort sollte dich nicht aus einem guten Buch reißen. Richte die Handykamera auf das Wort, schlage seine Bedeutung nach und lies weiter. Ganz ohne Tippen.",
+    "androidBlocks": [
+      "Das englische Wörterbuch ist enthalten. Lade weitere Wörterbücher und Wortübersetzungen vor dem Lesen herunter; installierte Ressourcen funktionieren offline. Kein Konto erforderlich.",
+      "Ein Kauf umfasst alle verfügbaren Wörterbücher und Wortübersetzungspakete. Kein Abo und keine In-App-Käufe.",
+      "Optionale Kontextauswahl für englische Bücher\nAuf kompatiblen Geräten ab Android 12 mit mindestens 8 GB RAM kann ein optionales Modell auf dem Gerät eine passende Wörterbuchbedeutung für englische Bücher auswählen. Das Modell wird separat über Google Play geladen. Vor der Aktivierung prüft die App Leistung und verfügbare Ressourcen; die Mindestanforderungen garantieren keine Verfügbarkeit. Eine Auswahl erscheint nur, wenn sie beim Öffnen der Definition bereitsteht. Die normale Wörterbuchsuche funktioniert auch ohne das Modell.",
+      "Kamera und Datenschutz\nKamerabilder und erkannter Text werden auf deinem Gerät verarbeitet. Google ML Kit erfasst technische Diagnose- und Nutzungsdaten. Downloads übermitteln übliche Verbindungsdaten an die Anbieter. Wenn du eine Google-Suche auswählst, wird die Suchanfrage an deinen Browser und Google gesendet; dafür ist Internet nötig. Details stehen in der Android-Datenschutzerklärung.",
+      "Erfordert Android 8.0 oder neuer und eine Kamera."
+    ]
+  },
+  "cs": {
+    "playLocale": "cs-CZ",
+    "lead": "Neznámé slovo vás nemusí vytrhnout z dobré knihy. Namiřte na něj fotoaparát telefonu, zjistěte význam a pokračujte ve čtení. Bez psaní.",
+    "androidBlocks": [
+      "Anglický slovník je součástí aplikace. Další slovníky a překlady jednotlivých slov si stáhněte předem; nainstalované zdroje fungují offline. Účet není potřeba.",
+      "Jeden nákup zahrnuje všechny dostupné slovníky a balíčky překladů slov. Bez předplatného a nákupů v aplikaci.",
+      "Volitelný výběr významu pro anglické knihy\nNa kompatibilních telefonech s Androidem 12 nebo novějším a alespoň 8 GB RAM může volitelný místní model vybrat slovníkový význam pro anglické knihy. Model se stahuje zvlášť přes Google Play. Aplikace před zapnutím ověří výkon a dostupné prostředky; minimální požadavky nezaručují dostupnost. Výběr se zobrazí jen tehdy, je-li připraven při otevření definice. Běžné vyhledávání funguje i bez modelu.",
+      "Fotoaparát a soukromí\nSnímky a rozpoznaný text se zpracovávají na zařízení. Google ML Kit shromažďuje technické diagnostické údaje a údaje o používání. Stahování odesílá hostitelům běžné údaje o připojení. Pokud zvolíte hledání na Googlu, dotaz se odešle prohlížeči a Googlu a vyžaduje internet. Viz zásady ochrany soukromí pro Android.",
+      "Vyžaduje Android 8.0 nebo novější a fotoaparát."
+    ]
+  },
+  "da": {
+    "playLocale": "da-DK",
+    "lead": "Et ukendt ord skal ikke tage dig ud af en god bog. Peg telefonens kamera mod ordet, find betydningen, og læs videre. Du behøver ikke skrive ordet.",
+    "androidBlocks": [
+      "Den engelske ordbog er inkluderet. Hent andre ordbøger og ordoversættelser før læsning; installerede ressourcer virker uden internet. Ingen konto er nødvendig.",
+      "Ét køb omfatter alle tilgængelige ordbøger og ordoversættelsespakker. Intet abonnement eller køb i appen.",
+      "Valgfrit betydningsvalg til engelske bøger\nPå kompatible telefoner med Android 12 eller nyere og mindst 8 GB RAM kan en valgfri model på enheden vælge en ordbogsbetydning til engelske bøger. Modellen hentes separat via Google Play. Appen kontrollerer ydeevne og tilgængelige ressourcer før aktivering; minimumskravene garanterer ikke tilgængelighed. Et valg vises kun, hvis det er klart, når definitionen åbnes. Almindelige opslag virker uden modellen.",
+      "Kamera og privatliv\nKamerabilleder og genkendt tekst behandles på din enhed. Google ML Kit indsamler tekniske diagnose- og brugsdata. Downloads sender almindelige forbindelsesoplysninger til deres værter. Vælger du Google-søgning, sendes søgningen til din browser og Google og kræver internet. Se privatlivspolitikken for Android.",
+      "Kræver Android 8.0 eller nyere og et kamera."
+    ]
+  },
+  "el": {
+    "playLocale": "el-GR",
+    "lead": "Μια άγνωστη αγγλική λέξη δεν χρειάζεται να σας βγάλει από την ιστορία. Στρέψτε την κάμερα του κινητού στη λέξη, δείτε τη σημασία της και συνεχίστε την ανάγνωση. Χωρίς πληκτρολόγηση.",
+    "androidBlocks": [
+      "Το αγγλικό λεξικό περιλαμβάνεται. Κατεβάστε άλλα λεξικά και μεταφράσεις λέξεων πριν διαβάσετε· οι εγκατεστημένοι πόροι λειτουργούν εκτός σύνδεσης. Δεν απαιτείται λογαριασμός.",
+      "Μία αγορά περιλαμβάνει όλα τα διαθέσιμα λεξικά και πακέτα μετάφρασης λέξεων. Χωρίς συνδρομή ή αγορές εντός εφαρμογής.",
+      "Προαιρετική επιλογή σημασίας για αγγλικά βιβλία\nΣε συμβατά τηλέφωνα με Android 12 ή νεότερο και τουλάχιστον 8 GB RAM, ένα προαιρετικό τοπικό μοντέλο βοηθά στην επιλογή σημασίας για αγγλικά βιβλία. Κατεβαίνει ξεχωριστά από το Google Play. Η εφαρμογή ελέγχει την απόδοση και τους διαθέσιμους πόρους πριν το ενεργοποιήσει· οι ελάχιστες προδιαγραφές δεν εγγυώνται διαθεσιμότητα. Η επιλογή εμφανίζεται μόνο αν είναι έτοιμη όταν ανοίγει ο ορισμός. Η απλή αναζήτηση λειτουργεί χωρίς το μοντέλο.",
+      "Κάμερα και απόρρητο\nΟι εικόνες και το αναγνωρισμένο κείμενο υποβάλλονται σε επεξεργασία στη συσκευή. Το Google ML Kit συλλέγει τεχνικά διαγνωστικά και δεδομένα χρήσης. Οι λήψεις στέλνουν συνήθη στοιχεία σύνδεσης στους παρόχους. Αν επιλέξετε αναζήτηση Google, το ερώτημα στέλνεται στο πρόγραμμα περιήγησης και στο Google και απαιτεί Internet. Δείτε την πολιτική απορρήτου Android.",
+      "Απαιτούνται Android 8.0 ή νεότερο και κάμερα."
+    ]
+  },
+  "id": {
+    "playLocale": "id",
+    "lead": "Kata yang belum Anda kenal tidak perlu memutus keseruan membaca. Arahkan kamera ponsel ke kata itu, temukan artinya, lalu lanjutkan membaca. Tidak perlu mengetik.",
+    "androidBlocks": [
+      "Kamus bahasa Inggris sudah disertakan. Unduh kamus lain dan terjemahan kata sebelum membaca; sumber yang terpasang dapat digunakan tanpa internet. Tidak perlu akun.",
+      "Sekali beli mencakup semua kamus dan paket terjemahan kata yang tersedia. Tanpa langganan atau pembelian dalam aplikasi.",
+      "Pilihan makna berdasarkan konteks untuk buku Inggris\nPada ponsel kompatibel dengan Android 12 atau lebih baru dan minimal RAM 8 GB, model opsional pada perangkat dapat memilih makna kamus untuk buku Inggris. Unduh model secara terpisah melalui Google Play. Aplikasi memeriksa kinerja dan sumber daya yang tersedia sebelum mengaktifkannya; syarat minimum tidak menjamin ketersediaan. Pilihan muncul hanya jika siap saat definisi dibuka. Pencarian kamus biasa tetap bekerja tanpa model.",
+      "Kamera dan privasi\nGambar kamera dan teks yang dikenali diproses pada perangkat. Google ML Kit mengumpulkan data diagnostik teknis dan penggunaan. Unduhan mengirim informasi koneksi biasa ke penyedia. Jika Anda memilih pencarian Google, kueri dikirim ke browser dan Google serta memerlukan internet. Lihat kebijakan privasi Android.",
+      "Memerlukan Android 8.0 atau lebih baru dan kamera."
+    ]
+  },
+  "ja": {
+    "playLocale": "ja-JP",
+    "lead": "知らない言葉に出会っても、読書の楽しみはそのままに。紙の本の言葉にスマートフォンのカメラを向けて、意味を確認し、続きを読みましょう。文字を入力する必要はありません。",
+    "androidBlocks": [
+      "英語辞書は内蔵されています。他の辞書や単語翻訳は読書前にダウンロードしてください。インストール済みのデータはオフラインで使えます。アカウントは不要です。",
+      "1回の購入で、提供中のすべての辞書と単語翻訳パックを利用できます。サブスクリプションやアプリ内課金はありません。",
+      "英語の本向けの文脈による意味選択\nAndroid 12以降、8 GB以上のRAMを備える対応端末では、端末内の追加モデルで英語の本に合う辞書の意味を選べます。モデルはGoogle Playから別途ダウンロードします。有効化前に端末の性能と利用可能なリソースを確認するため、最低条件を満たしても利用できるとは限りません。意味を開く時点で結果が準備できている場合のみ表示されます。通常の辞書検索はモデルなしで使えます。",
+      "カメラとプライバシー\nカメラ画像と認識した文章は端末内で処理されます。Google ML Kitは技術的な診断・使用状況データを収集します。リソースのダウンロードでは通常の接続情報が配信元に送信されます。Google検索を選ぶと検索内容がブラウザとGoogleに送られ、インターネット接続が必要です。詳しくはAndroid版のプライバシーポリシーをご覧ください。",
+      "Android 8.0以降とカメラが必要です。"
+    ]
+  },
+  "ko": {
+    "playLocale": "ko-KR",
+    "lead": "모르는 단어 때문에 좋은 책의 흐름을 놓치지 마세요. 휴대전화 카메라를 단어에 비추고 뜻을 확인한 뒤 계속 읽으세요. 직접 입력할 필요가 없습니다.",
+    "androidBlocks": [
+      "영어 사전이 기본으로 제공됩니다. 다른 사전과 단어 번역은 읽기 전에 다운로드하세요. 설치된 자료는 오프라인에서 사용할 수 있습니다. 계정은 필요하지 않습니다.",
+      "한 번 구매하면 제공되는 모든 사전과 단어 번역 팩이 포함됩니다. 구독이나 앱 내 구입이 없습니다.",
+      "영어 책을 위한 선택적 문맥 기능\nAndroid 12 이상 및 RAM 8 GB 이상의 호환 휴대전화에서는 선택적 기기 내 모델이 영어 책에 맞는 사전 뜻을 고를 수 있습니다. 모델은 Google Play에서 별도로 내려받습니다. 활성화 전 기기 성능과 가용 자원을 확인하므로 최소 사양을 충족해도 사용이 보장되지는 않습니다. 뜻을 여는 시점에 결과가 준비된 경우에만 표시됩니다. 일반 사전 검색은 모델 없이도 사용할 수 있습니다.",
+      "카메라와 개인정보\n카메라 이미지와 인식한 텍스트는 기기에서 처리됩니다. Google ML Kit는 기술 진단 및 사용 데이터를 수집합니다. 리소스 다운로드 시 일반적인 연결 정보가 호스트로 전송됩니다. Google 검색을 선택하면 검색어가 브라우저와 Google로 전송되며 인터넷 연결이 필요합니다. 자세한 내용은 Android 개인정보처리방침을 확인하세요.",
+      "Android 8.0 이상 및 카메라가 필요합니다."
+    ]
+  },
+  "ms": {
+    "playLocale": "ms",
+    "lead": "Perkataan yang belum dikenali tidak perlu mengganggu keseronokan membaca. Halakan kamera telefon ke perkataan itu, cari maknanya dan teruskan membaca. Tidak perlu menaip.",
+    "androidBlocks": [
+      "Kamus bahasa Inggeris disertakan. Muat turun kamus lain dan terjemahan perkataan sebelum membaca; sumber yang dipasang boleh digunakan tanpa internet. Akaun tidak diperlukan.",
+      "Satu pembelian merangkumi semua kamus dan pek terjemahan perkataan yang tersedia. Tiada langganan atau pembelian dalam aplikasi.",
+      "Pilihan makna mengikut konteks untuk buku Inggeris\nPada telefon serasi dengan Android 12 ke atas dan sekurang-kurangnya 8 GB RAM, model pilihan pada peranti boleh membantu memilih makna kamus bagi buku Inggeris. Muat turun model secara berasingan melalui Google Play. Aplikasi memeriksa prestasi dan sumber tersedia sebelum mengaktifkannya; syarat minimum tidak menjamin ketersediaan. Pilihan dipaparkan hanya jika siap apabila takrif dibuka. Carian kamus biasa boleh digunakan tanpa model.",
+      "Kamera dan privasi\nImej kamera dan teks yang dikenal pasti diproses pada peranti. Google ML Kit mengumpul data diagnostik teknikal dan penggunaan. Muat turun menghantar maklumat sambungan biasa kepada hos. Jika anda memilih carian Google, pertanyaan dihantar ke pelayar dan Google serta memerlukan internet. Lihat dasar privasi Android.",
+      "Memerlukan Android 8.0 atau lebih baharu dan kamera."
+    ]
+  },
+  "nb": {
+    "playLocale": "no-NO",
+    "lead": "Et ukjent ord skal ikke rive deg ut av en god bok. Pek telefonkameraet mot ordet, finn betydningen og les videre. Du slipper å skrive inn ordet.",
+    "androidBlocks": [
+      "Den engelske ordboken er inkludert. Last ned andre ordbøker og ordoversettelser før du leser; installerte ressurser virker uten nett. Ingen konto kreves.",
+      "Ett kjøp inkluderer alle tilgjengelige ordbøker og ordoversettelsespakker. Uten abonnement eller kjøp i appen.",
+      "Valgfritt betydningsvalg for engelske bøker\nPå kompatible telefoner med Android 12 eller nyere og minst 8 GB RAM kan en valgfri modell på enheten velge en ordbokbetydning for engelske bøker. Modellen lastes ned separat via Google Play. Appen kontrollerer ytelse og tilgjengelige ressurser før aktivering; minstekravene garanterer ikke tilgjengelighet. Et valg vises bare hvis det er klart når definisjonen åpnes. Vanlige oppslag fungerer uten modellen.",
+      "Kamera og personvern\nKamerabilder og gjenkjent tekst behandles på enheten. Google ML Kit samler inn tekniske diagnose- og bruksdata. Nedlastinger sender vanlige tilkoblingsopplysninger til vertene. Velger du Google-søk, sendes søket til nettleseren og Google og krever internett. Se personvernerklæringen for Android.",
+      "Krever Android 8.0 eller nyere og et kamera."
+    ]
+  },
+  "nl": {
+    "playLocale": "nl-NL",
+    "lead": "Een onbekend woord hoeft je niet uit een goed boek te halen. Richt de telefooncamera op het woord, zoek de betekenis op en lees verder. Zonder te typen.",
+    "androidBlocks": [
+      "Het Engelse woordenboek is inbegrepen. Download andere woordenboeken en woordvertalingen voordat je gaat lezen; geïnstalleerde bronnen werken offline. Geen account nodig.",
+      "Eén aankoop omvat alle beschikbare woordenboeken en woordvertaalpakketten. Geen abonnement of in-app aankopen.",
+      "Optionele contextkeuze voor Engelse boeken\nOp geschikte telefoons met Android 12 of hoger en minstens 8 GB RAM kan een optioneel model op het apparaat een woordenboekbetekenis voor Engelse boeken kiezen. Download het model apart via Google Play. De app controleert prestaties en beschikbare middelen vóór activering; voldoen aan de minimumeisen garandeert geen beschikbaarheid. Een keuze verschijnt alleen als deze klaar is wanneer de definitie opent. Gewoon opzoeken blijft zonder het model werken.",
+      "Camera en privacy\nCamerabeelden en herkende tekst worden op je apparaat verwerkt. Google ML Kit verzamelt technische diagnose- en gebruiksgegevens. Downloads sturen gebruikelijke verbindingsgegevens naar hun hosts. Kies je voor Google zoeken, dan gaat de zoekopdracht naar je browser en Google en is internet nodig. Zie het Android-privacybeleid.",
+      "Vereist Android 8.0 of nieuwer en een camera."
+    ]
+  },
+  "pl": {
+    "playLocale": "pl-PL",
+    "lead": "Nieznane słowo nie musi odrywać Cię od dobrej książki. Skieruj na nie aparat telefonu, sprawdź znaczenie i czytaj dalej. Bez wpisywania słowa.",
+    "androidBlocks": [
+      "Słownik angielski jest wbudowany. Pobierz inne słowniki i tłumaczenia słów przed czytaniem; zainstalowane zasoby działają offline. Konto nie jest wymagane.",
+      "Jeden zakup obejmuje wszystkie dostępne słowniki i pakiety tłumaczeń słów. Bez abonamentu i zakupów w aplikacji.",
+      "Opcjonalny wybór znaczenia dla książek po angielsku\nNa zgodnych telefonach z Androidem 12 lub nowszym i co najmniej 8 GB RAM opcjonalny model na urządzeniu może wybierać znaczenie słownikowe dla angielskich książek. Pobierz model oddzielnie z Google Play. Przed włączeniem aplikacja sprawdza wydajność i dostępne zasoby; minimalne wymagania nie gwarantują dostępności. Wybór pojawia się tylko wtedy, gdy jest gotowy przy otwieraniu definicji. Zwykłe wyszukiwanie działa bez modelu.",
+      "Aparat i prywatność\nObrazy i rozpoznany tekst są przetwarzane na urządzeniu. Google ML Kit zbiera techniczne dane diagnostyczne i dane użytkowania. Pobieranie wysyła zwykłe informacje o połączeniu do dostawców. Jeśli wybierzesz wyszukiwanie Google, zapytanie trafi do przeglądarki i Google i wymaga internetu. Zobacz politykę prywatności Androida.",
+      "Wymaga Androida 8.0 lub nowszego oraz aparatu."
+    ]
+  },
+  "ro": {
+    "playLocale": "ro",
+    "lead": "Un cuvânt necunoscut nu ar trebui să te scoată din poveste. Îndreaptă camera telefonului spre cuvânt, află sensul și continuă lectura. Fără să tastezi.",
+    "androidBlocks": [
+      "Dicționarul de engleză este inclus. Descarcă alte dicționare și traduceri de cuvinte înainte de lectură; resursele instalate funcționează offline. Nu ai nevoie de cont.",
+      "O singură achiziție include toate dicționarele și pachetele de traducere a cuvintelor disponibile. Fără abonament sau achiziții în aplicație.",
+      "Sensuri contextuale pentru cărți în engleză\nPe telefoane compatibile cu Android 12 sau ulterior și cel puțin 8 GB RAM, un model opțional local poate alege un sens pentru cărțile în engleză. Se descarcă separat prin Google Play. Aplicația verifică performanța și resursele disponibile înainte de activare; cerințele minime nu garantează disponibilitatea. Alegerea apare numai dacă este gata la deschiderea definiției. Căutarea obișnuită funcționează și fără model.",
+      "Cameră și confidențialitate\nImaginile și textul recunoscut sunt procesate pe dispozitiv. Google ML Kit colectează date tehnice de diagnostic și utilizare. Descărcările trimit gazdelor informații obișnuite de conexiune. Dacă alegi căutarea Google, interogarea este trimisă browserului și Google și necesită internet. Consultă politica de confidențialitate Android.",
+      "Necesită Android 8.0 sau ulterior și cameră foto."
+    ]
+  },
+  "ru": {
+    "playLocale": "ru-RU",
+    "lead": "Незнакомое слово не должно отвлекать от хорошей книги. Наведите на него камеру телефона, узнайте значение и продолжайте читать. Вводить слово не нужно.",
+    "androidBlocks": [
+      "Английский словарь встроен. Загрузите другие словари и переводы слов перед чтением; установленные ресурсы работают без интернета. Учётная запись не нужна.",
+      "Одна покупка включает все доступные словари и пакеты перевода слов. Без подписки и встроенных покупок.",
+      "Выбор значения по контексту для английских книг\nНа совместимых телефонах с Android 12 или новее и минимум 8 ГБ RAM необязательная модель на устройстве может выбирать словарное значение для английских книг. Модель загружается отдельно через Google Play. Перед включением приложение проверяет скорость работы и доступные ресурсы; минимальные требования не гарантируют доступность. Выбор появляется только если готов при открытии определения. Обычный поиск работает без модели.",
+      "Камера и конфиденциальность\nИзображения и распознанный текст обрабатываются на устройстве. Google ML Kit собирает технические диагностические данные и данные использования. Загрузки передают хостам обычные сведения о соединении. Если выбрать поиск Google, запрос отправляется браузеру и Google и требует интернета. См. политику конфиденциальности Android.",
+      "Требуются Android 8.0 или новее и камера."
+    ]
+  },
+  "sv": {
+    "playLocale": "sv-SE",
+    "lead": "Ett okänt ord ska inte dra dig ur en bra bok. Rikta mobilkameran mot ordet, slå upp betydelsen och fortsätt läsa. Du behöver inte skriva in ordet.",
+    "androidBlocks": [
+      "Den engelska ordboken ingår. Hämta andra ordböcker och ordöversättningar innan du läser; installerade resurser fungerar offline. Inget konto krävs.",
+      "Ett köp omfattar alla tillgängliga ordböcker och paket med ordöversättningar. Ingen prenumeration eller köp i appen.",
+      "Valfri kontextfunktion för engelska böcker\nPå kompatibla telefoner med Android 12 eller senare och minst 8 GB RAM kan en valfri modell på enheten välja en ordboksbetydelse för engelska böcker. Modellen hämtas separat via Google Play. Appen kontrollerar prestanda och tillgängliga resurser före aktivering; minimikraven garanterar inte tillgänglighet. Ett val visas bara om det är klart när definitionen öppnas. Vanliga uppslag fungerar utan modellen.",
+      "Kamera och integritet\nKamerabilder och igenkänd text behandlas på din enhet. Google ML Kit samlar in tekniska diagnostik- och användningsdata. Hämtningar skickar vanliga anslutningsuppgifter till sina värdar. Väljer du Google-sökning skickas sökfrågan till webbläsaren och Google och kräver internet. Se integritetspolicyn för Android.",
+      "Kräver Android 8.0 eller senare och en kamera."
+    ]
+  },
+  "th": {
+    "playLocale": "th",
+    "lead": "คำที่ไม่รู้จักไม่ควรทำให้คุณสะดุดจากหนังสือดี ๆ เพียงเล็งกล้อง โทรศัพท์ ไปที่คำ ดูความหมาย แล้วอ่านต่อ โดยไม่ต้องพิมพ์คำเอง",
+    "androidBlocks": [
+      "มีพจนานุกรมภาษาอังกฤษในแอป ดาวน์โหลดพจนานุกรมอื่นและชุดแปลคำก่อนอ่าน ข้อมูลที่ติดตั้งแล้วใช้แบบออฟไลน์ได้ ไม่ต้องมีบัญชี",
+      "ซื้อครั้งเดียวรวมพจนานุกรมและชุดคำแปลทั้งหมดที่มีให้ใช้ ไม่มีค่าสมาชิกหรือการซื้อเพิ่มเติมในแอป",
+      "เลือกความหมายตามบริบทสำหรับหนังสือภาษาอังกฤษ\nโทรศัพท์ที่รองรับ Android 12 ขึ้นไปและมี RAM อย่างน้อย 8 GB สามารถใช้โมเดลเสริมบนอุปกรณ์เพื่อช่วยเลือกความหมายสำหรับหนังสือภาษาอังกฤษ โดยดาวน์โหลดแยกผ่าน Google Play แอปจะตรวจสอบประสิทธิภาพและทรัพยากรที่ว่างก่อนเปิดใช้ การผ่านข้อกำหนดขั้นต่ำไม่รับประกันว่าจะใช้งานได้ ผลจะปรากฏเฉพาะเมื่อพร้อมตอนเปิดคำจำกัดความ การค้นหาพจนานุกรมปกติใช้งานได้โดยไม่ต้องมีโมเดลนี้",
+      "กล้องและความเป็นส่วนตัว\nภาพและข้อความที่รู้จำจะประมวลผลบนอุปกรณ์ Google ML Kit เก็บข้อมูลวินิจฉัยทางเทคนิคและการใช้งาน การดาวน์โหลดจะส่งข้อมูลการเชื่อมต่อตามปกติไปยังผู้ให้บริการ หากเลือกค้นหาใน Google คำค้นจะส่งไปยังเบราว์เซอร์และ Google และต้องใช้อินเทอร์เน็ต ดูรายละเอียดในนโยบายความเป็นส่วนตัวสำหรับ Android",
+      "ต้องใช้ Android 8.0 ขึ้นไปและกล้อง"
+    ]
+  },
+  "tr": {
+    "playLocale": "tr-TR",
+    "lead": "Bilmediğiniz bir kelime sizi güzel bir kitaptan koparmasın. Telefonunuzun kamerasını kelimeye doğrultun, anlamına bakın ve okumaya devam edin. Kelimeyi yazmanız gerekmez.",
+    "androidBlocks": [
+      "İngilizce sözlük uygulamaya dahildir. Diğer sözlükleri ve kelime çevirilerini okumadan önce indirin; yüklü kaynaklar çevrimdışı çalışır. Hesap gerekmez.",
+      "Tek satın alma, mevcut tüm sözlükleri ve kelime çevirisi paketlerini kapsar. Abonelik veya uygulama içi satın alma yoktur.",
+      "İngilizce kitaplar için isteğe bağlı bağlam seçimi\nAndroid 12 veya üzeri ve en az 8 GB RAM bulunan uyumlu telefonlarda, cihazdaki isteğe bağlı model İngilizce kitaplar için sözlük anlamı seçebilir. Model Google Play’den ayrıca indirilir. Uygulama etkinleştirmeden önce performansı ve kullanılabilir kaynakları denetler; asgari koşullar kullanılabilirliği garanti etmez. Seçim yalnızca tanım açılırken hazırsa gösterilir. Normal sözlük araması model olmadan da çalışır.",
+      "Kamera ve gizlilik\nKamera görüntüleri ve tanınan metin cihazınızda işlenir. Google ML Kit teknik tanılama ve kullanım verileri toplar. İndirmeler, sunuculara olağan bağlantı bilgilerini gönderir. Google aramasını seçerseniz sorgu tarayıcınıza ve Google’a gönderilir ve internet gerekir. Ayrıntılar için Android gizlilik politikasına bakın.",
+      "Android 8.0 veya üzeri ve kamera gerektirir."
+    ]
+  },
+  "uk": {
+    "playLocale": "uk",
+    "lead": "Незнайоме слово не має відволікати від цікавої книжки. Наведіть на нього камеру телефона, дізнайтеся значення й читайте далі. Вводити слово не потрібно.",
+    "androidBlocks": [
+      "Англійський словник вбудовано. Завантажте інші словники й переклади слів перед читанням; установлені ресурси працюють офлайн. Обліковий запис не потрібен.",
+      "Одна покупка включає всі доступні словники й пакети перекладу слів. Без передплати та покупок у програмі.",
+      "Необов’язковий вибір значення для англійських книжок\nНа сумісних телефонах з Android 12 або новішою версією та щонайменше 8 ГБ RAM локальна модель може обирати словникове значення для англійських книжок. Модель завантажується окремо через Google Play. Перед увімкненням застосунок перевіряє швидкодію та доступні ресурси; мінімальні вимоги не гарантують доступності. Вибір з’являється лише якщо готовий під час відкриття визначення. Звичайний пошук працює без моделі.",
+      "Камера й конфіденційність\nЗображення та розпізнаний текст обробляються на пристрої. Google ML Kit збирає технічні діагностичні дані й дані використання. Завантаження передають хостам звичайні відомості про з’єднання. Якщо вибрати пошук Google, запит надсилається браузеру та Google і потребує інтернету. Докладніше — у політиці конфіденційності Android.",
+      "Потрібні Android 8.0 або новіший і камера."
+    ]
+  },
+  "vi": {
+    "playLocale": "vi",
+    "lead": "Một từ lạ không nên làm gián đoạn cuốn sách hay. Hướng camera điện thoại vào từ đó, xem nghĩa rồi tiếp tục đọc. Không cần gõ từ.",
+    "androidBlocks": [
+      "Từ điển tiếng Anh có sẵn. Tải từ điển khác và bản dịch từ trước khi đọc; tài nguyên đã cài có thể dùng ngoại tuyến. Không cần tài khoản.",
+      "Một lần mua bao gồm tất cả từ điển và gói dịch từ hiện có. Không có thuê bao hay mua thêm trong ứng dụng.",
+      "Chọn nghĩa theo ngữ cảnh cho sách tiếng Anh\nTrên điện thoại tương thích chạy Android 12 trở lên và có ít nhất 8 GB RAM, mô hình tùy chọn trên thiết bị có thể chọn nghĩa từ điển cho sách tiếng Anh. Tải mô hình riêng qua Google Play. Ứng dụng kiểm tra hiệu năng và tài nguyên còn trống trước khi bật; đạt cấu hình tối thiểu không đảm bảo sử dụng được. Kết quả chỉ hiện nếu sẵn sàng khi mở định nghĩa. Tra từ thông thường không cần mô hình.",
+      "Máy ảnh và quyền riêng tư\nHình ảnh và văn bản nhận dạng được xử lý trên thiết bị. Google ML Kit thu thập dữ liệu chẩn đoán kỹ thuật và sử dụng. Việc tải tài nguyên gửi thông tin kết nối thông thường đến máy chủ. Nếu chọn tìm trên Google, truy vấn được gửi tới trình duyệt và Google và cần Internet. Xem chính sách quyền riêng tư Android.",
+      "Yêu cầu Android 8.0 trở lên và camera."
+    ]
+  },
+  "zh-Hans": {
+    "playLocale": "zh-CN",
+    "lead": "别让一个生词打断一本好书。用 手机 相机对准纸质书中的词语，查看意思，然后继续阅读。无需手动输入。",
+    "androidBlocks": [
+      "内置英语词典。阅读前可下载其他词典和单词翻译包；安装后可离线使用，无需账号。",
+      "一次购买包含所有已提供的词典和单词翻译包。无需订阅，没有应用内购买。",
+      "英语书籍的可选语境选义\n兼容的手机需运行 Android 12 或更高版本，并配备至少 8 GB RAM。可选的端侧模型可帮助为英语书籍选择词典释义，须通过 Google Play 单独下载。启用前，应用会检查设备性能和可用资源；达到最低配置不保证功能可用。只有在打开释义时结果已就绪，才会显示语境选择。普通词典查询无需此模型。",
+      "相机与隐私\n相机图像和识别出的文本在设备上处理。Google ML Kit 会收集技术诊断和使用数据。资源下载会向托管方发送常规连接信息。如果您选择 Google 搜索，查询内容会发送至浏览器和 Google，并需要联网。详情请参阅 Android 隐私政策。",
+      "需要 Android 8.0 或更高版本及相机。"
+    ]
+  },
+  "zh-Hant": {
+    "playLocale": "zh-TW",
+    "lead": "別讓一個生字打斷一本好書。用 手機 相機對準紙本書中的詞語，查看意思，再繼續閱讀。不必手動輸入。",
+    "androidBlocks": [
+      "內建英語詞典。閱讀前可下載其他詞典和單字翻譯套件；安裝後可離線使用，不需要帳號。",
+      "一次購買包含所有已提供的詞典和單字翻譯套件。不必訂閱，沒有 App 內購買。",
+      "英語書籍的可選語境選義\n相容的手機須執行 Android 12 或以上版本，並配備至少 8 GB RAM。可選的裝置端模型可協助為英語書籍選擇詞典釋義，須透過 Google Play 另外下載。啟用前，應用程式會檢查裝置效能和可用資源；達到最低規格不保證功能可用。只有在開啟釋義時結果已就緒，才會顯示語境選擇。一般查詞無需此模型。",
+      "相機與隱私\n相機影像和辨識出的文字在裝置上處理。Google ML Kit 會收集技術診斷和使用資料。資源下載會向託管方傳送一般連線資訊。如果您選擇 Google 搜尋，查詢內容會傳送至瀏覽器和 Google，並需要連網。詳情請參閱 Android 隱私權政策。",
+      "需要 Android 8.0 或更新版本及相機。"
+    ]
+  },
+  "ku": {
+    "playLocale": "en-US",
+    "lead": "Peyveke nenas divê we ji pirtûkeke xweş dûr nexîne. Kameraya telefonê li peyva di pirtûkê de bigirin, wateya wê bixwînin û xwendinê bidomînin. Pêwîst nake hûn peyvê binivîsin.",
+    "androidBlocks": [
+      "Wergerên peyvan\nPeyvên îngilîzî bi 24 zimanên wergerê yên vebijartî wergerînin. Peyvan ji hemû 23 zimanên pirtûkan ên piştgirîkirî yên ne îngilîzî wergerînin îngilîzî. Pakêtên wergerê cuda tên daxistin; piştî sazkirinê bê înternet dixebitin.",
+      "Wateyên li gorî hevokê ji bo pirtûkên îngilîzî\nLi ser telefonên guncaw bi Android 12 an nûtir û herî kêm 8 GB RAM, modelekî vebijartî yê li ser amûrê dikare ji bo pirtûkên îngilîzî wateya ferhengê hilbijêre. Model ji Google Play cuda tê daxistin. Sepan berî çalakkirinê performansa amûrê û çavkaniyên berdest kontrol dike; pêkanîna şertên herî kêm berdestbûnê garantî nake. Wateya li gorî hevokê tenê dema amade be tê nîşandan. Lêgerîna asayî ya ferhengê bê vê modelê jî dixebite.",
+      "Kamera û nepenî\nWêneyên kamerayê û nivîsa naskirî li ser amûra we tên pêvajokirin. Google ML Kit daneyên teşxîsa teknîkî û bikaranînê berhev dike. Daxistin agahiyên girêdanê ji mêvandarê re dişînin. Heke hûn li Google bigerin, peyva lêgerînê ji geroka we û Google re tê şandin û înternet pêwîst e. Ji bo hûrguliyan polîtîkaya nepeniyê ya Android bixwînin.",
+      "Android 8.0 an nûtir û kamera pêwîst in."
+    ]
+  }
+}
