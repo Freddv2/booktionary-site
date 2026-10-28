@@ -4,6 +4,7 @@ import json, os, re, sys
 from html import unescape
 from pathlib import Path
 from build import appstore_url_for
+from platforms import play_url_for
 
 BANNED_PHRASES = ["as mentioned above", "see below", "as we said",
                   "as discussed", "see above", "comme indiqué plus haut",
@@ -36,14 +37,16 @@ def check_file(path):
         fails.append("title and h1 differ")
     if re.search(r"<script(?![^>]*application/ld\+json)", html, re.I):
         fails.append("javascript present")
-    if re.search(r'(src|href)="https?://(?!apps\.apple\.com|booktionary\.io)', html):
-        fails.append("external asset or non-App-Store absolute link")
+    if re.search(r'src="https?://', html):
+        fails.append("external asset")
+    if re.search(r'href="https?://(?!apps\.apple\.com/|play\.google\.com/|booktionary\.io/)', html):
+        fails.append("unapproved external link")
     page_language = re.search(r'<html\s[^>]*lang="([^"]+)"', html)
     if not page_language:
         fails.append("missing page language for campaign attribution")
     store_url = appstore_url_for(page_language[1]) if page_language else ''
     appstore_links = re.findall(r'<a\s[^>]*href="' + re.escape(store_url) + r'"[^>]*>', unescape(html))
-    expected_store_links = 3 if is_home else 1
+    expected_store_links = 2 if is_home else 1
     if len(appstore_links) != expected_store_links:
         fails.append(f"expected exactly {expected_store_links} App Store link(s), found {len(appstore_links)}")
     if "apps.apple.com/ca/" in html:
@@ -58,11 +61,18 @@ def check_file(path):
         try:
             schema = json.loads(m.group(1))
             if schema.get('@type') == 'SoftwareApplication':
-                if schema.get('installUrl') != store_url or schema.get('offers', {}).get('url') != store_url:
-                    fails.append("App Store schema campaign differs from page language")
+                destinations = [store_url, play_url_for(page_language[1])]
+                if schema.get('installUrl') != destinations or [o.get('url') for o in schema.get('offers', [])] != destinations:
+                    fails.append("store schema destinations differ from page language")
         except json.JSONDecodeError as e: fails.append(f"invalid JSON-LD: {e}")
     fails += check_alternates(html)
     if is_home:
+        play_url = play_url_for(page_language[1])
+        play_links = re.findall(r'<a\s[^>]*href="' + re.escape(play_url) + r'"[^>]*>', unescape(html))
+        if len(play_links) != 2:
+            fails.append("expected exactly 2 localized Google Play links")
+        if 'privacy-android.html' not in html or 'id="android"' not in html:
+            fails.append("missing Android requirements or privacy destination")
         fails += check_home_page(html)
     else:
         fails += check_question_page(html)
