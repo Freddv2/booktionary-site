@@ -81,7 +81,11 @@ def check_file(path):
 def check_home_page(html):
     """Keep the approved design and App Store support essentials on every locale."""
     fails = []
-    for asset in ("app-icon-main.png", "booktionary-real-book-photo.jpg", "scanning.webp"):
+    language = re.search(r'<html lang="([^"]+)"', html)
+    interface = language.group(1) if language else ""
+    if interface.startswith("pt-"):
+        interface = "pt"
+    for asset in ("app-icon-main.png", f"assets/localized-interface/{interface}/reading-1.0.15.png", "scanning.webp"):
         if asset not in html:
             fails.append(f"missing home asset {asset}")
     if "$1.99 USD" not in html:

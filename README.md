@@ -155,3 +155,13 @@ and actual main/head IDs belong in the app release impact record. Do not
 re-enable or dispatch GitHub Actions as part of this preparation. The existing
 1.0.12 pending-website file is historical; this branch does not silently replace
 it on main or publish new app claims before release.
+
+## Prepared 1.0.15 update
+
+The release adds definition word actions and optional Google search disclosures
+in all 27 website editions. Both privacy policies describe the explicit browser
+search action. `reading_artwork_release.json` pins approved photographic examples
+with the matching interface language in every edition; the Kurmanji portrait has
+separate owner approval. Original PNGs are reused without resampling. Older
+illustrations remain historical assets. Publish this update only after iOS
+1.0.15 is public in both the US and Canada, using the pinned website release gate.
