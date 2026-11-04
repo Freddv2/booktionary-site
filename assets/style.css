@@ -159,3 +159,10 @@ footer a:hover { color: var(--accent); }
 }
 .languages [aria-current="page"] { font-weight: bold; text-decoration: none; }
 .purchase { color: var(--accent); font-weight: bold; }
+
+/* Reading-guide examples retain the approved app illustration. */
+.guide-example { margin: 2rem 0; }
+.guide-example img { display: block; width: 100%; max-width: 20rem; height: auto; margin: 0 auto 1rem; border-radius: 14px; }
+.guide-example figcaption { color: var(--muted); font-size: .9rem; line-height: 1.5; }
+ol { padding-left: 1.4rem; }
+ol li { margin-bottom: .65rem; }
