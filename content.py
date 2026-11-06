@@ -166,7 +166,7 @@ QUESTIONS_EN = [
 
 HOME_FR = dict(lang="fr", slug="", pair="",
   hero=("assets/definition.jpg", "Un iPhone tenu au-dessus d'un roman ouvert ; le mot luminous est surligné sur la page et sa définition apparaît en dessous."),
-  question="Booktionary — un dictionnaire par appareil photo pour les livres papier",
+  question="Booktionary — dictionnaire photo pour livres papier",
   description='Booktionary — Les définitions anglaises sont intégrées. Choisissez parmi 23 autres dictionnaires et téléchargez uniquement ceux qui vous servent.',
   paragraphs=['Cherchez un mot dans un livre papier avec la caméra de votre iPhone. Consultez sa définition et reprenez '
   'votre lecture.',
